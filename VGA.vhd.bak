@@ -1,0 +1,38 @@
+library ieee;
+use ieee. std_logic_1164.all;
+use ieee. std_logic_arith.all;
+use ieee. std_logic_unsigned.all;
+ 
+entity VGA is
+PORT( clk: 		in std_logic;
+		reset: 	in std_logic;
+		hsync:	out std_logic;
+		vsync:	out std_logic;
+		rgb:		out std_logic_vector(2 downto 0));
+end VGA;
+ 
+architecture behavioral of VGA is
+	signal clk25 : std_logic := '0';
+	
+	-- Constantes horizontales
+	constant HD: integer := 639;		-- Resolución horizontal (640)
+	constant HFP : integer := 16;		-- Horizontal Front Porch
+	constant HSP : integer := 96;		-- Horizontal Sync Pulse
+	constant HBP : integer := 48;		-- Horizontal Back Porch
+	
+	-- Constantes verticales
+	constant VD : integer := 479;		-- Resolución vertical (480)
+	constant VFP : integer := 10;		-- Vertical Front Porch
+	constant VSP : integer := 2;		-- Vertical Sync Pulse
+	constant VBP : integer := 33;		-- Vertical Back Porch
+
+begin
+
+	clk_div: process(clk)
+		begin
+			if(rising_edge(clk)) then
+				q <= d;
+			end if;
+	end process;
+	
+end behavioral;

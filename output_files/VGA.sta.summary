@@ -1,0 +1,113 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'Sincronizador:inst2|clk25'
+Slack : -6.766
+TNS   : -280.330
+
+Type  : Slow 1200mV 85C Model Setup 'Control:inst3|clk_velocidad'
+Slack : -4.448
+TNS   : -229.047
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -4.209
+TNS   : -72.506
+
+Type  : Slow 1200mV 85C Model Hold 'Control:inst3|clk_velocidad'
+Slack : 0.340
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.626
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Sincronizador:inst2|clk25'
+Slack : 0.640
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -38.075
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Sincronizador:inst2|clk25'
+Slack : -1.403
+TNS   : -110.837
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Control:inst3|clk_velocidad'
+Slack : -1.403
+TNS   : -81.374
+
+Type  : Slow 1200mV 0C Model Setup 'Sincronizador:inst2|clk25'
+Slack : -6.035
+TNS   : -250.856
+
+Type  : Slow 1200mV 0C Model Setup 'Control:inst3|clk_velocidad'
+Slack : -4.066
+TNS   : -206.140
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -3.847
+TNS   : -64.998
+
+Type  : Slow 1200mV 0C Model Hold 'Control:inst3|clk_velocidad'
+Slack : 0.305
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.579
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Sincronizador:inst2|clk25'
+Slack : 0.593
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -38.075
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Sincronizador:inst2|clk25'
+Slack : -1.403
+TNS   : -110.837
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Control:inst3|clk_velocidad'
+Slack : -1.403
+TNS   : -81.374
+
+Type  : Fast 1200mV 0C Model Setup 'Sincronizador:inst2|clk25'
+Slack : -2.187
+TNS   : -72.440
+
+Type  : Fast 1200mV 0C Model Setup 'Control:inst3|clk_velocidad'
+Slack : -1.317
+TNS   : -63.270
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.265
+TNS   : -15.586
+
+Type  : Fast 1200mV 0C Model Hold 'Control:inst3|clk_velocidad'
+Slack : 0.147
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.243
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Sincronizador:inst2|clk25'
+Slack : 0.247
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -28.879
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Sincronizador:inst2|clk25'
+Slack : -1.000
+TNS   : -79.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Control:inst3|clk_velocidad'
+Slack : -1.000
+TNS   : -58.000
+
+------------------------------------------------------------

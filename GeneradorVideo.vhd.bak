@@ -1,0 +1,20 @@
+library ieee;
+use ieee. std_logic_1164.all;
+use ieee. std_logic_arith.all;
+use ieee. std_logic_unsigned.all;
+ 
+entity GeneradorVideo is
+PORT( clk: 		in std_logic;
+		reset: 	in std_logic;
+		hsync:	out std_logic;
+		vsync:	out std_logic;
+		pos_x:	out integer;
+		pos_y: 	out integer;
+		habilitado:	out std_logic;
+		rgb: out std_logic_vector(11 downto 0));
+end VGA;
+ 
+architecture behavioral of GeneradorVideo is
+	
+	
+end behavioral;

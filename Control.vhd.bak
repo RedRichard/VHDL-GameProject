@@ -1,0 +1,24 @@
+library ieee;
+use ieee. std_logic_1164.all;
+use ieee. std_logic_arith.all;
+use ieee. std_logic_unsigned.all;
+
+entity Control is
+PORT( pos_x:	in integer;
+		pos_y:	in integer;
+		habilitado:	in std_logic;
+		clk:		in std_logic;
+		rgb: out std_logic_vector(11 downto 0));
+end Control;
+ 
+architecture behavioral of Control is
+begin
+	Clk: process(clk, pos_x, pos_y, habilitado)
+	begin
+		if(clk'event and clk = '1') then
+		
+		end if;
+	end process;
+	
+	
+end behavioral;
