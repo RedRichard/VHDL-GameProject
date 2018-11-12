@@ -64,6 +64,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
 					"name" : "b_derecha",
 					"strict" : false
 				},
@@ -77,10 +81,6 @@
 				},
 				{
 					"name" : "b_arriba",
-					"strict" : false
-				},
-				{
-					"name" : "clk",
 					"strict" : false
 				}
 			]
