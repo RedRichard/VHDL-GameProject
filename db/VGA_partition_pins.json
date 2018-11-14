@@ -68,6 +68,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "b_fire",
+					"strict" : false
+				},
+				{
 					"name" : "b_derecha",
 					"strict" : false
 				},
