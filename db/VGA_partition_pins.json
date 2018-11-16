@@ -72,11 +72,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "b_derecha",
+					"name" : "b_izquierda",
 					"strict" : false
 				},
 				{
-					"name" : "b_izquierda",
+					"name" : "b_derecha",
 					"strict" : false
 				},
 				{

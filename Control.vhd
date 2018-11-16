@@ -10,8 +10,9 @@ PORT( clk:		in std_logic;
 		boton_arriba	:in std_logic;
 		boton_abajo		:in std_logic;
 		boton_fire		:in std_logic;
-		control_fire	:out std_logic;
-		control_x, control_y: out integer);
+		c_nave 	:out integer range 1 to 7;
+		control_x, control_y: out integer;
+		control_fire	:out std_logic);
 end Control;
  
 architecture behavioral of Control is
@@ -30,6 +31,9 @@ architecture behavioral of Control is
 	signal pos_x: integer := izquierda_horizontal;
 	
 	signal allow_fire: std_logic := '0';
+	
+	signal carril_nave: integer range 1 to 8 := 1;
+	
 begin
 	ButtonDisparo: process(boton_fire)
 	begin
@@ -66,9 +70,13 @@ begin
 			if(boton_derecha = '1' and pos_x < 559)then
 				pos_x <= pos_x + 80;
 				pos_y <= pos_y;
+				
+				carril_nave <= carril_nave + 1;
 			elsif(boton_izquierda = '1' and pos_x > 79)then
 				pos_x <= pos_x - 80;
 				pos_y <= pos_y;
+				
+				carril_nave <= carril_nave - 1;
 			elsif(boton_derecha = '1' or boton_izquierda = '1')then
 				pos_y <= pos_y;
 			end if;
@@ -92,5 +100,7 @@ begin
 	control_fire <= allow_fire;
 	control_y <= pos_y;
 	control_x <= pos_x;
+	
+	c_nave <= carril_nave;
 	
 end behavioral;

@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for VGA
-Wed Nov 14 14:15:07 2018
+Fri Nov 16 01:12:45 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -91,12 +91,12 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.40        ;
+; Average used               ; 1.42        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  39.8%      ;
+;     Processor 2            ;  41.7%      ;
 +----------------------------+-------------+
 
 
@@ -118,11 +118,11 @@ refer to the applicable agreement for further details.
 +------------+-----------------+--------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                     ; Note ;
 +------------+-----------------+--------------------------------+------+
-; 112.46 MHz ; 112.46 MHz      ; Sincronizador:inst2|clk25      ;      ;
-; 185.63 MHz ; 185.63 MHz      ; Control:inst3|clk_velocidad    ;      ;
-; 202.22 MHz ; 202.22 MHz      ; clk                            ;      ;
-; 211.77 MHz ; 211.77 MHz      ; GeneradorVideo:inst|clk_met    ;      ;
-; 283.53 MHz ; 283.53 MHz      ; GeneradorVideo:inst|clk_bullet ;      ;
+; 112.04 MHz ; 112.04 MHz      ; Sincronizador:inst2|clk25      ;      ;
+; 124.94 MHz ; 124.94 MHz      ; GeneradorVideo:inst|clk_met    ;      ;
+; 184.33 MHz ; 184.33 MHz      ; Control:inst3|clk_velocidad    ;      ;
+; 190.62 MHz ; 190.62 MHz      ; clk                            ;      ;
+; 249.25 MHz ; 249.25 MHz      ; GeneradorVideo:inst|clk_bullet ;      ;
 +------------+-----------------+--------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -132,11 +132,11 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------+--------+---------------+
 ; Clock                          ; Slack  ; End Point TNS ;
 +--------------------------------+--------+---------------+
-; Sincronizador:inst2|clk25      ; -8.905 ; -1787.661     ;
-; Control:inst3|clk_velocidad    ; -4.387 ; -231.986      ;
-; clk                            ; -3.945 ; -69.622       ;
-; GeneradorVideo:inst|clk_met    ; -3.722 ; -110.892      ;
-; GeneradorVideo:inst|clk_bullet ; -2.527 ; -19.223       ;
+; Sincronizador:inst2|clk25      ; -9.749 ; -2521.298     ;
+; GeneradorVideo:inst|clk_met    ; -7.004 ; -201.818      ;
+; Control:inst3|clk_velocidad    ; -4.425 ; -241.783      ;
+; clk                            ; -4.246 ; -73.659       ;
+; GeneradorVideo:inst|clk_bullet ; -3.012 ; -22.789       ;
 +--------------------------------+--------+---------------+
 
 
@@ -145,11 +145,11 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------+-------+---------------+
 ; Clock                          ; Slack ; End Point TNS ;
 +--------------------------------+-------+---------------+
-; Control:inst3|clk_velocidad    ; 0.342 ; 0.000         ;
-; Sincronizador:inst2|clk25      ; 0.342 ; 0.000         ;
+; GeneradorVideo:inst|clk_met    ; 0.327 ; 0.000         ;
+; Sincronizador:inst2|clk25      ; 0.327 ; 0.000         ;
+; Control:inst3|clk_velocidad    ; 0.341 ; 0.000         ;
 ; GeneradorVideo:inst|clk_bullet ; 0.343 ; 0.000         ;
-; clk                            ; 0.612 ; 0.000         ;
-; GeneradorVideo:inst|clk_met    ; 0.639 ; 0.000         ;
+; clk                            ; 0.620 ; 0.000         ;
 +--------------------------------+-------+---------------+
 
 
@@ -171,9 +171,9 @@ No paths to report.
 ; Clock                          ; Slack  ; End Point TNS ;
 +--------------------------------+--------+---------------+
 ; clk                            ; -3.000 ; -38.075       ;
-; Sincronizador:inst2|clk25      ; -1.403 ; -423.706      ;
-; Control:inst3|clk_velocidad    ; -1.403 ; -81.374       ;
-; GeneradorVideo:inst|clk_met    ; -1.403 ; -44.896       ;
+; Sincronizador:inst2|clk25      ; -1.403 ; -517.707      ;
+; Control:inst3|clk_velocidad    ; -1.403 ; -85.583       ;
+; GeneradorVideo:inst|clk_met    ; -1.403 ; -49.105       ;
 ; GeneradorVideo:inst|clk_bullet ; -1.403 ; -14.030       ;
 +--------------------------------+--------+---------------+
 
@@ -189,11 +189,11 @@ No synchronizer chains to report.
 +------------+-----------------+--------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                     ; Note ;
 +------------+-----------------+--------------------------------+------+
-; 121.36 MHz ; 121.36 MHz      ; Sincronizador:inst2|clk25      ;      ;
-; 201.94 MHz ; 201.94 MHz      ; Control:inst3|clk_velocidad    ;      ;
-; 217.63 MHz ; 217.63 MHz      ; clk                            ;      ;
-; 228.83 MHz ; 228.83 MHz      ; GeneradorVideo:inst|clk_met    ;      ;
-; 307.13 MHz ; 307.13 MHz      ; GeneradorVideo:inst|clk_bullet ;      ;
+; 123.03 MHz ; 123.03 MHz      ; Sincronizador:inst2|clk25      ;      ;
+; 136.89 MHz ; 136.89 MHz      ; GeneradorVideo:inst|clk_met    ;      ;
+; 199.32 MHz ; 199.32 MHz      ; Control:inst3|clk_velocidad    ;      ;
+; 205.17 MHz ; 205.17 MHz      ; clk                            ;      ;
+; 270.12 MHz ; 270.12 MHz      ; GeneradorVideo:inst|clk_bullet ;      ;
 +------------+-----------------+--------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -203,11 +203,11 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------+--------+---------------+
 ; Clock                          ; Slack  ; End Point TNS ;
 +--------------------------------+--------+---------------+
-; Sincronizador:inst2|clk25      ; -8.054 ; -1612.256     ;
-; Control:inst3|clk_velocidad    ; -3.952 ; -209.195      ;
-; clk                            ; -3.595 ; -62.230       ;
-; GeneradorVideo:inst|clk_met    ; -3.370 ; -100.169      ;
-; GeneradorVideo:inst|clk_bullet ; -2.256 ; -16.859       ;
+; Sincronizador:inst2|clk25      ; -8.854 ; -2279.272     ;
+; GeneradorVideo:inst|clk_met    ; -6.305 ; -183.518      ;
+; Control:inst3|clk_velocidad    ; -4.017 ; -217.837      ;
+; clk                            ; -3.874 ; -66.197       ;
+; GeneradorVideo:inst|clk_bullet ; -2.702 ; -20.115       ;
 +--------------------------------+--------+---------------+
 
 
@@ -216,11 +216,11 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------+-------+---------------+
 ; Clock                          ; Slack ; End Point TNS ;
 +--------------------------------+-------+---------------+
-; Sincronizador:inst2|clk25      ; 0.307 ; 0.000         ;
-; Control:inst3|clk_velocidad    ; 0.308 ; 0.000         ;
+; Sincronizador:inst2|clk25      ; 0.293 ; 0.000         ;
+; GeneradorVideo:inst|clk_met    ; 0.294 ; 0.000         ;
+; Control:inst3|clk_velocidad    ; 0.307 ; 0.000         ;
 ; GeneradorVideo:inst|clk_bullet ; 0.308 ; 0.000         ;
-; clk                            ; 0.566 ; 0.000         ;
-; GeneradorVideo:inst|clk_met    ; 0.592 ; 0.000         ;
+; clk                            ; 0.574 ; 0.000         ;
 +--------------------------------+-------+---------------+
 
 
@@ -242,9 +242,9 @@ No paths to report.
 ; Clock                          ; Slack  ; End Point TNS ;
 +--------------------------------+--------+---------------+
 ; clk                            ; -3.000 ; -38.075       ;
-; Sincronizador:inst2|clk25      ; -1.403 ; -423.706      ;
-; Control:inst3|clk_velocidad    ; -1.403 ; -81.374       ;
-; GeneradorVideo:inst|clk_met    ; -1.403 ; -44.896       ;
+; Sincronizador:inst2|clk25      ; -1.403 ; -517.707      ;
+; Control:inst3|clk_velocidad    ; -1.403 ; -85.583       ;
+; GeneradorVideo:inst|clk_met    ; -1.403 ; -49.105       ;
 ; GeneradorVideo:inst|clk_bullet ; -1.403 ; -14.030       ;
 +--------------------------------+--------+---------------+
 
@@ -260,11 +260,11 @@ No synchronizer chains to report.
 +--------------------------------+--------+---------------+
 ; Clock                          ; Slack  ; End Point TNS ;
 +--------------------------------+--------+---------------+
-; Sincronizador:inst2|clk25      ; -3.176 ; -580.701      ;
-; Control:inst3|clk_velocidad    ; -1.286 ; -63.870       ;
-; clk                            ; -1.143 ; -14.274       ;
-; GeneradorVideo:inst|clk_met    ; -1.059 ; -29.494       ;
-; GeneradorVideo:inst|clk_bullet ; -0.490 ; -2.124        ;
+; Sincronizador:inst2|clk25      ; -3.602 ; -857.842      ;
+; GeneradorVideo:inst|clk_met    ; -2.344 ; -65.589       ;
+; Control:inst3|clk_velocidad    ; -1.366 ; -69.839       ;
+; clk                            ; -1.297 ; -15.900       ;
+; GeneradorVideo:inst|clk_bullet ; -0.721 ; -3.775        ;
 +--------------------------------+--------+---------------+
 
 
@@ -273,11 +273,11 @@ No synchronizer chains to report.
 +--------------------------------+-------+---------------+
 ; Clock                          ; Slack ; End Point TNS ;
 +--------------------------------+-------+---------------+
-; Control:inst3|clk_velocidad    ; 0.149 ; 0.000         ;
-; GeneradorVideo:inst|clk_bullet ; 0.149 ; 0.000         ;
-; Sincronizador:inst2|clk25      ; 0.150 ; 0.000         ;
-; clk                            ; 0.236 ; 0.000         ;
-; GeneradorVideo:inst|clk_met    ; 0.246 ; 0.000         ;
+; GeneradorVideo:inst|clk_met    ; 0.142 ; 0.000         ;
+; Sincronizador:inst2|clk25      ; 0.143 ; 0.000         ;
+; Control:inst3|clk_velocidad    ; 0.148 ; 0.000         ;
+; GeneradorVideo:inst|clk_bullet ; 0.150 ; 0.000         ;
+; clk                            ; 0.240 ; 0.000         ;
 +--------------------------------+-------+---------------+
 
 
@@ -298,10 +298,10 @@ No paths to report.
 +--------------------------------+--------+---------------+
 ; Clock                          ; Slack  ; End Point TNS ;
 +--------------------------------+--------+---------------+
-; clk                            ; -3.000 ; -28.913       ;
-; Sincronizador:inst2|clk25      ; -1.000 ; -302.000      ;
-; Control:inst3|clk_velocidad    ; -1.000 ; -58.000       ;
-; GeneradorVideo:inst|clk_met    ; -1.000 ; -32.000       ;
+; clk                            ; -3.000 ; -28.950       ;
+; Sincronizador:inst2|clk25      ; -1.000 ; -369.000      ;
+; Control:inst3|clk_velocidad    ; -1.000 ; -61.000       ;
+; GeneradorVideo:inst|clk_met    ; -1.000 ; -35.000       ;
 ; GeneradorVideo:inst|clk_bullet ; -1.000 ; -10.000       ;
 +--------------------------------+--------+---------------+
 
@@ -317,18 +317,18 @@ No synchronizer chains to report.
 +---------------------------------+-----------+-------+----------+---------+---------------------+
 ; Clock                           ; Setup     ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +---------------------------------+-----------+-------+----------+---------+---------------------+
-; Worst-case Slack                ; -8.905    ; 0.149 ; N/A      ; N/A     ; -3.000              ;
-;  Control:inst3|clk_velocidad    ; -4.387    ; 0.149 ; N/A      ; N/A     ; -1.403              ;
-;  GeneradorVideo:inst|clk_bullet ; -2.527    ; 0.149 ; N/A      ; N/A     ; -1.403              ;
-;  GeneradorVideo:inst|clk_met    ; -3.722    ; 0.246 ; N/A      ; N/A     ; -1.403              ;
-;  Sincronizador:inst2|clk25      ; -8.905    ; 0.150 ; N/A      ; N/A     ; -1.403              ;
-;  clk                            ; -3.945    ; 0.236 ; N/A      ; N/A     ; -3.000              ;
-; Design-wide TNS                 ; -2219.384 ; 0.0   ; 0.0      ; 0.0     ; -602.081            ;
-;  Control:inst3|clk_velocidad    ; -231.986  ; 0.000 ; N/A      ; N/A     ; -81.374             ;
-;  GeneradorVideo:inst|clk_bullet ; -19.223   ; 0.000 ; N/A      ; N/A     ; -14.030             ;
-;  GeneradorVideo:inst|clk_met    ; -110.892  ; 0.000 ; N/A      ; N/A     ; -44.896             ;
-;  Sincronizador:inst2|clk25      ; -1787.661 ; 0.000 ; N/A      ; N/A     ; -423.706            ;
-;  clk                            ; -69.622   ; 0.000 ; N/A      ; N/A     ; -38.075             ;
+; Worst-case Slack                ; -9.749    ; 0.142 ; N/A      ; N/A     ; -3.000              ;
+;  Control:inst3|clk_velocidad    ; -4.425    ; 0.148 ; N/A      ; N/A     ; -1.403              ;
+;  GeneradorVideo:inst|clk_bullet ; -3.012    ; 0.150 ; N/A      ; N/A     ; -1.403              ;
+;  GeneradorVideo:inst|clk_met    ; -7.004    ; 0.142 ; N/A      ; N/A     ; -1.403              ;
+;  Sincronizador:inst2|clk25      ; -9.749    ; 0.143 ; N/A      ; N/A     ; -1.403              ;
+;  clk                            ; -4.246    ; 0.240 ; N/A      ; N/A     ; -3.000              ;
+; Design-wide TNS                 ; -3061.347 ; 0.0   ; 0.0      ; 0.0     ; -704.5              ;
+;  Control:inst3|clk_velocidad    ; -241.783  ; 0.000 ; N/A      ; N/A     ; -85.583             ;
+;  GeneradorVideo:inst|clk_bullet ; -22.789   ; 0.000 ; N/A      ; N/A     ; -14.030             ;
+;  GeneradorVideo:inst|clk_met    ; -201.818  ; 0.000 ; N/A      ; N/A     ; -49.105             ;
+;  Sincronizador:inst2|clk25      ; -2521.298 ; 0.000 ; N/A      ; N/A     ; -517.707            ;
+;  clk                            ; -73.659   ; 0.000 ; N/A      ; N/A     ; -38.075             ;
 +---------------------------------+-----------+-------+----------+---------+---------------------+
 
 
@@ -363,8 +363,8 @@ No synchronizer chains to report.
 ; reset               ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; clk                 ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; b_fire              ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
-; b_derecha           ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; b_izquierda         ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; b_derecha           ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; b_abajo             ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; b_arriba            ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_TMS~        ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
@@ -454,13 +454,15 @@ No synchronizer chains to report.
 ; clk                            ; clk                            ; 660      ; 0        ; 0        ; 0        ;
 ; Control:inst3|clk_velocidad    ; clk                            ; 1        ; 1        ; 0        ; 0        ;
 ; Sincronizador:inst2|clk25      ; clk                            ; 1        ; 1        ; 0        ; 0        ;
-; Control:inst3|clk_velocidad    ; Control:inst3|clk_velocidad    ; 8251     ; 0        ; 0        ; 0        ;
+; Control:inst3|clk_velocidad    ; Control:inst3|clk_velocidad    ; 8532     ; 0        ; 0        ; 0        ;
 ; GeneradorVideo:inst|clk_bullet ; GeneradorVideo:inst|clk_bullet ; 189      ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|clk_met    ; GeneradorVideo:inst|clk_met    ; 1488     ; 0        ; 0        ; 0        ;
-; Control:inst3|clk_velocidad    ; Sincronizador:inst2|clk25      ; 146361   ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|clk_bullet ; Sincronizador:inst2|clk25      ; 468      ; 1        ; 0        ; 0        ;
-; GeneradorVideo:inst|clk_met    ; Sincronizador:inst2|clk25      ; 19982    ; 1        ; 0        ; 0        ;
-; Sincronizador:inst2|clk25      ; Sincronizador:inst2|clk25      ; 54816    ; 0        ; 0        ; 0        ;
+; Control:inst3|clk_velocidad    ; GeneradorVideo:inst|clk_met    ; 9        ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|clk_met    ; GeneradorVideo:inst|clk_met    ; 6018     ; 0        ; 0        ; 0        ;
+; Sincronizador:inst2|clk25      ; GeneradorVideo:inst|clk_met    ; 351      ; 0        ; 0        ; 0        ;
+; Control:inst3|clk_velocidad    ; Sincronizador:inst2|clk25      ; 205434   ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|clk_bullet ; Sincronizador:inst2|clk25      ; 478      ; 1        ; 0        ; 0        ;
+; GeneradorVideo:inst|clk_met    ; Sincronizador:inst2|clk25      ; 17151    ; 1        ; 0        ; 0        ;
+; Sincronizador:inst2|clk25      ; Sincronizador:inst2|clk25      ; 71717    ; 0        ; 0        ; 0        ;
 +--------------------------------+--------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -473,13 +475,15 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 ; clk                            ; clk                            ; 660      ; 0        ; 0        ; 0        ;
 ; Control:inst3|clk_velocidad    ; clk                            ; 1        ; 1        ; 0        ; 0        ;
 ; Sincronizador:inst2|clk25      ; clk                            ; 1        ; 1        ; 0        ; 0        ;
-; Control:inst3|clk_velocidad    ; Control:inst3|clk_velocidad    ; 8251     ; 0        ; 0        ; 0        ;
+; Control:inst3|clk_velocidad    ; Control:inst3|clk_velocidad    ; 8532     ; 0        ; 0        ; 0        ;
 ; GeneradorVideo:inst|clk_bullet ; GeneradorVideo:inst|clk_bullet ; 189      ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|clk_met    ; GeneradorVideo:inst|clk_met    ; 1488     ; 0        ; 0        ; 0        ;
-; Control:inst3|clk_velocidad    ; Sincronizador:inst2|clk25      ; 146361   ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|clk_bullet ; Sincronizador:inst2|clk25      ; 468      ; 1        ; 0        ; 0        ;
-; GeneradorVideo:inst|clk_met    ; Sincronizador:inst2|clk25      ; 19982    ; 1        ; 0        ; 0        ;
-; Sincronizador:inst2|clk25      ; Sincronizador:inst2|clk25      ; 54816    ; 0        ; 0        ; 0        ;
+; Control:inst3|clk_velocidad    ; GeneradorVideo:inst|clk_met    ; 9        ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|clk_met    ; GeneradorVideo:inst|clk_met    ; 6018     ; 0        ; 0        ; 0        ;
+; Sincronizador:inst2|clk25      ; GeneradorVideo:inst|clk_met    ; 351      ; 0        ; 0        ; 0        ;
+; Control:inst3|clk_velocidad    ; Sincronizador:inst2|clk25      ; 205434   ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|clk_bullet ; Sincronizador:inst2|clk25      ; 478      ; 1        ; 0        ; 0        ;
+; GeneradorVideo:inst|clk_met    ; Sincronizador:inst2|clk25      ; 17151    ; 1        ; 0        ; 0        ;
+; Sincronizador:inst2|clk25      ; Sincronizador:inst2|clk25      ; 71717    ; 0        ; 0        ; 0        ;
 +--------------------------------+--------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -504,7 +508,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 6     ; 6    ;
-; Unconstrained Input Port Paths  ; 245   ; 245  ;
+; Unconstrained Input Port Paths  ; 251   ; 251  ;
 ; Unconstrained Output Ports      ; 14    ; 14   ;
 ; Unconstrained Output Port Paths ; 14    ; 14   ;
 +---------------------------------+-------+------+
@@ -601,7 +605,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Nov 14 14:15:01 2018
+    Info: Processing started: Fri Nov 16 01:12:39 2018
 Info: Command: quartus_sta VGA -c VGA
 Info: qsta_default_script.tcl version: #3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -622,97 +626,97 @@ Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -8.905
+Info (332146): Worst-case setup slack is -9.749
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -8.905           -1787.661 Sincronizador:inst2|clk25 
-    Info (332119):    -4.387            -231.986 Control:inst3|clk_velocidad 
-    Info (332119):    -3.945             -69.622 clk 
-    Info (332119):    -3.722            -110.892 GeneradorVideo:inst|clk_met 
-    Info (332119):    -2.527             -19.223 GeneradorVideo:inst|clk_bullet 
-Info (332146): Worst-case hold slack is 0.342
+    Info (332119):    -9.749           -2521.298 Sincronizador:inst2|clk25 
+    Info (332119):    -7.004            -201.818 GeneradorVideo:inst|clk_met 
+    Info (332119):    -4.425            -241.783 Control:inst3|clk_velocidad 
+    Info (332119):    -4.246             -73.659 clk 
+    Info (332119):    -3.012             -22.789 GeneradorVideo:inst|clk_bullet 
+Info (332146): Worst-case hold slack is 0.327
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.342               0.000 Control:inst3|clk_velocidad 
-    Info (332119):     0.342               0.000 Sincronizador:inst2|clk25 
+    Info (332119):     0.327               0.000 GeneradorVideo:inst|clk_met 
+    Info (332119):     0.327               0.000 Sincronizador:inst2|clk25 
+    Info (332119):     0.341               0.000 Control:inst3|clk_velocidad 
     Info (332119):     0.343               0.000 GeneradorVideo:inst|clk_bullet 
-    Info (332119):     0.612               0.000 clk 
-    Info (332119):     0.639               0.000 GeneradorVideo:inst|clk_met 
+    Info (332119):     0.620               0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -3.000             -38.075 clk 
-    Info (332119):    -1.403            -423.706 Sincronizador:inst2|clk25 
-    Info (332119):    -1.403             -81.374 Control:inst3|clk_velocidad 
-    Info (332119):    -1.403             -44.896 GeneradorVideo:inst|clk_met 
+    Info (332119):    -1.403            -517.707 Sincronizador:inst2|clk25 
+    Info (332119):    -1.403             -85.583 Control:inst3|clk_velocidad 
+    Info (332119):    -1.403             -49.105 GeneradorVideo:inst|clk_met 
     Info (332119):    -1.403             -14.030 GeneradorVideo:inst|clk_bullet 
 Info: Analyzing Slow 1200mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -8.054
+Info (332146): Worst-case setup slack is -8.854
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -8.054           -1612.256 Sincronizador:inst2|clk25 
-    Info (332119):    -3.952            -209.195 Control:inst3|clk_velocidad 
-    Info (332119):    -3.595             -62.230 clk 
-    Info (332119):    -3.370            -100.169 GeneradorVideo:inst|clk_met 
-    Info (332119):    -2.256             -16.859 GeneradorVideo:inst|clk_bullet 
-Info (332146): Worst-case hold slack is 0.307
+    Info (332119):    -8.854           -2279.272 Sincronizador:inst2|clk25 
+    Info (332119):    -6.305            -183.518 GeneradorVideo:inst|clk_met 
+    Info (332119):    -4.017            -217.837 Control:inst3|clk_velocidad 
+    Info (332119):    -3.874             -66.197 clk 
+    Info (332119):    -2.702             -20.115 GeneradorVideo:inst|clk_bullet 
+Info (332146): Worst-case hold slack is 0.293
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.307               0.000 Sincronizador:inst2|clk25 
-    Info (332119):     0.308               0.000 Control:inst3|clk_velocidad 
+    Info (332119):     0.293               0.000 Sincronizador:inst2|clk25 
+    Info (332119):     0.294               0.000 GeneradorVideo:inst|clk_met 
+    Info (332119):     0.307               0.000 Control:inst3|clk_velocidad 
     Info (332119):     0.308               0.000 GeneradorVideo:inst|clk_bullet 
-    Info (332119):     0.566               0.000 clk 
-    Info (332119):     0.592               0.000 GeneradorVideo:inst|clk_met 
+    Info (332119):     0.574               0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -3.000             -38.075 clk 
-    Info (332119):    -1.403            -423.706 Sincronizador:inst2|clk25 
-    Info (332119):    -1.403             -81.374 Control:inst3|clk_velocidad 
-    Info (332119):    -1.403             -44.896 GeneradorVideo:inst|clk_met 
+    Info (332119):    -1.403            -517.707 Sincronizador:inst2|clk25 
+    Info (332119):    -1.403             -85.583 Control:inst3|clk_velocidad 
+    Info (332119):    -1.403             -49.105 GeneradorVideo:inst|clk_met 
     Info (332119):    -1.403             -14.030 GeneradorVideo:inst|clk_bullet 
 Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -3.176
+Info (332146): Worst-case setup slack is -3.602
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.176            -580.701 Sincronizador:inst2|clk25 
-    Info (332119):    -1.286             -63.870 Control:inst3|clk_velocidad 
-    Info (332119):    -1.143             -14.274 clk 
-    Info (332119):    -1.059             -29.494 GeneradorVideo:inst|clk_met 
-    Info (332119):    -0.490              -2.124 GeneradorVideo:inst|clk_bullet 
-Info (332146): Worst-case hold slack is 0.149
+    Info (332119):    -3.602            -857.842 Sincronizador:inst2|clk25 
+    Info (332119):    -2.344             -65.589 GeneradorVideo:inst|clk_met 
+    Info (332119):    -1.366             -69.839 Control:inst3|clk_velocidad 
+    Info (332119):    -1.297             -15.900 clk 
+    Info (332119):    -0.721              -3.775 GeneradorVideo:inst|clk_bullet 
+Info (332146): Worst-case hold slack is 0.142
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.149               0.000 Control:inst3|clk_velocidad 
-    Info (332119):     0.149               0.000 GeneradorVideo:inst|clk_bullet 
-    Info (332119):     0.150               0.000 Sincronizador:inst2|clk25 
-    Info (332119):     0.236               0.000 clk 
-    Info (332119):     0.246               0.000 GeneradorVideo:inst|clk_met 
+    Info (332119):     0.142               0.000 GeneradorVideo:inst|clk_met 
+    Info (332119):     0.143               0.000 Sincronizador:inst2|clk25 
+    Info (332119):     0.148               0.000 Control:inst3|clk_velocidad 
+    Info (332119):     0.150               0.000 GeneradorVideo:inst|clk_bullet 
+    Info (332119):     0.240               0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000             -28.913 clk 
-    Info (332119):    -1.000            -302.000 Sincronizador:inst2|clk25 
-    Info (332119):    -1.000             -58.000 Control:inst3|clk_velocidad 
-    Info (332119):    -1.000             -32.000 GeneradorVideo:inst|clk_met 
+    Info (332119):    -3.000             -28.950 clk 
+    Info (332119):    -1.000            -369.000 Sincronizador:inst2|clk25 
+    Info (332119):    -1.000             -61.000 Control:inst3|clk_velocidad 
+    Info (332119):    -1.000             -35.000 GeneradorVideo:inst|clk_met 
     Info (332119):    -1.000             -10.000 GeneradorVideo:inst|clk_bullet 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4860 megabytes
-    Info: Processing ended: Wed Nov 14 14:15:07 2018
+    Info: Peak virtual memory: 4864 megabytes
+    Info: Processing ended: Fri Nov 16 01:12:45 2018
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:08
 

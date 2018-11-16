@@ -119,7 +119,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -160 72 8 88)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "b_fire" (rect 5 0 34 12)(font "Arial" ))
+	(text "b_fire" (rect 5 0 33 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -468,9 +468,9 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 224 32)
 		(output)
-		(text "control_fire" (rect 0 0 55 12)(font "Arial" ))
-		(text "control_fire" (rect 157 27 203 39)(font "Arial" ))
-		(line (pt 224 32)(pt 208 32))
+		(text "c_nave[2..0]" (rect 0 0 62 12)(font "Arial" ))
+		(text "c_nave[2..0]" (rect 151 27 203 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32)(line_width 3))
 	)
 	(port
 		(pt 224 48)
@@ -485,6 +485,13 @@ refer to the applicable agreement for further details.
 		(text "control_y[31..0]" (rect 0 0 77 12)(font "Arial" ))
 		(text "control_y[31..0]" (rect 138 59 203 71)(font "Arial" ))
 		(line (pt 224 64)(pt 208 64)(line_width 3))
+	)
+	(port
+		(pt 224 80)
+		(output)
+		(text "control_fire" (rect 0 0 55 12)(font "Arial" ))
+		(text "control_fire" (rect 157 75 203 87)(font "Arial" ))
+		(line (pt 224 80)(pt 208 80))
 	)
 	(drawing
 		(rectangle (rect 16 16 208 128))
@@ -542,6 +549,13 @@ refer to the applicable agreement for further details.
 		(text "clk" (rect 0 0 14 12)(font "Arial" ))
 		(text "clk" (rect 21 123 35 135)(font "Arial" ))
 		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "carril_nave[2..0]" (rect 0 0 80 12)(font "Arial" ))
+		(text "carril_nave[2..0]" (rect 21 139 101 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
 	)
 	(port
 		(pt 200 32)
@@ -823,16 +837,31 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 344 0)
-	(pt 464 0)
-)
-(connector
-	(pt 464 0)
-	(pt 464 120)
-)
-(connector
 	(pt 544 120)
 	(pt 464 120)
+)
+(connector
+	(pt 344 48)
+	(pt 464 48)
+)
+(connector
+	(pt 464 48)
+	(pt 464 120)
+)
+(connector
+	(pt 344 0)
+	(pt 488 0)
+	(bus)
+)
+(connector
+	(pt 488 0)
+	(pt 488 200)
+	(bus)
+)
+(connector
+	(pt 544 200)
+	(pt 488 200)
+	(bus)
 )
 (junction (pt 776 88))
 (junction (pt 776 -72))
