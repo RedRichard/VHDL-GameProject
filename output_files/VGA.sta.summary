@@ -3,31 +3,27 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'Sincronizador:inst2|clk25'
-Slack : -9.749
-TNS   : -2521.298
+Slack : -8.413
+TNS   : -2204.620
 
 Type  : Slow 1200mV 85C Model Setup 'GeneradorVideo:inst|clk_met'
-Slack : -7.004
-TNS   : -201.818
+Slack : -6.589
+TNS   : -203.334
 
 Type  : Slow 1200mV 85C Model Setup 'Control:inst3|clk_velocidad'
-Slack : -4.425
-TNS   : -241.783
+Slack : -4.391
+TNS   : -243.039
 
 Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -4.246
-TNS   : -73.659
+Slack : -4.242
+TNS   : -73.591
 
 Type  : Slow 1200mV 85C Model Setup 'GeneradorVideo:inst|clk_bullet'
-Slack : -3.012
-TNS   : -22.789
-
-Type  : Slow 1200mV 85C Model Hold 'GeneradorVideo:inst|clk_met'
-Slack : 0.327
-TNS   : 0.000
+Slack : -2.888
+TNS   : -24.086
 
 Type  : Slow 1200mV 85C Model Hold 'Sincronizador:inst2|clk25'
-Slack : 0.327
+Slack : 0.326
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'Control:inst3|clk_velocidad'
@@ -35,11 +31,15 @@ Slack : 0.341
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'GeneradorVideo:inst|clk_bullet'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'GeneradorVideo:inst|clk_met'
 Slack : 0.343
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clk'
-Slack : 0.620
+Slack : 0.625
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
@@ -48,7 +48,7 @@ TNS   : -38.075
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Sincronizador:inst2|clk25'
 Slack : -1.403
-TNS   : -517.707
+TNS   : -516.304
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Control:inst3|clk_velocidad'
 Slack : -1.403
@@ -56,38 +56,34 @@ TNS   : -85.583
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'GeneradorVideo:inst|clk_met'
 Slack : -1.403
-TNS   : -49.105
+TNS   : -51.911
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'GeneradorVideo:inst|clk_bullet'
 Slack : -1.403
 TNS   : -14.030
 
 Type  : Slow 1200mV 0C Model Setup 'Sincronizador:inst2|clk25'
-Slack : -8.854
-TNS   : -2279.272
+Slack : -7.617
+TNS   : -2001.219
 
 Type  : Slow 1200mV 0C Model Setup 'GeneradorVideo:inst|clk_met'
-Slack : -6.305
-TNS   : -183.518
+Slack : -5.869
+TNS   : -183.363
 
 Type  : Slow 1200mV 0C Model Setup 'Control:inst3|clk_velocidad'
-Slack : -4.017
-TNS   : -217.837
+Slack : -3.980
+TNS   : -219.560
 
 Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -3.874
-TNS   : -66.197
+Slack : -3.892
+TNS   : -65.963
 
 Type  : Slow 1200mV 0C Model Setup 'GeneradorVideo:inst|clk_bullet'
-Slack : -2.702
-TNS   : -20.115
+Slack : -2.589
+TNS   : -21.358
 
 Type  : Slow 1200mV 0C Model Hold 'Sincronizador:inst2|clk25'
 Slack : 0.293
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'GeneradorVideo:inst|clk_met'
-Slack : 0.294
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'Control:inst3|clk_velocidad'
@@ -95,11 +91,15 @@ Slack : 0.307
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'GeneradorVideo:inst|clk_bullet'
-Slack : 0.308
+Slack : 0.307
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'GeneradorVideo:inst|clk_met'
+Slack : 0.309
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clk'
-Slack : 0.574
+Slack : 0.579
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
@@ -108,7 +108,7 @@ TNS   : -38.075
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Sincronizador:inst2|clk25'
 Slack : -1.403
-TNS   : -517.707
+TNS   : -516.304
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Control:inst3|clk_velocidad'
 Slack : -1.403
@@ -116,38 +116,34 @@ TNS   : -85.583
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'GeneradorVideo:inst|clk_met'
 Slack : -1.403
-TNS   : -49.105
+TNS   : -51.911
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'GeneradorVideo:inst|clk_bullet'
 Slack : -1.403
 TNS   : -14.030
 
 Type  : Fast 1200mV 0C Model Setup 'Sincronizador:inst2|clk25'
-Slack : -3.602
-TNS   : -857.842
+Slack : -3.252
+TNS   : -723.350
 
 Type  : Fast 1200mV 0C Model Setup 'GeneradorVideo:inst|clk_met'
-Slack : -2.344
-TNS   : -65.589
+Slack : -2.080
+TNS   : -64.120
 
 Type  : Fast 1200mV 0C Model Setup 'Control:inst3|clk_velocidad'
-Slack : -1.366
-TNS   : -69.839
+Slack : -1.330
+TNS   : -68.517
 
 Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -1.297
-TNS   : -15.900
+Slack : -1.288
+TNS   : -15.973
 
 Type  : Fast 1200mV 0C Model Setup 'GeneradorVideo:inst|clk_bullet'
-Slack : -0.721
-TNS   : -3.775
-
-Type  : Fast 1200mV 0C Model Hold 'GeneradorVideo:inst|clk_met'
-Slack : 0.142
-TNS   : 0.000
+Slack : -0.707
+TNS   : -4.863
 
 Type  : Fast 1200mV 0C Model Hold 'Sincronizador:inst2|clk25'
-Slack : 0.143
+Slack : 0.142
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'Control:inst3|clk_velocidad'
@@ -155,20 +151,24 @@ Slack : 0.148
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'GeneradorVideo:inst|clk_bullet'
-Slack : 0.150
+Slack : 0.148
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'GeneradorVideo:inst|clk_met'
+Slack : 0.149
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clk'
-Slack : 0.240
+Slack : 0.243
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -28.950
+TNS   : -28.879
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Sincronizador:inst2|clk25'
 Slack : -1.000
-TNS   : -369.000
+TNS   : -368.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Control:inst3|clk_velocidad'
 Slack : -1.000
@@ -176,7 +176,7 @@ TNS   : -61.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'GeneradorVideo:inst|clk_met'
 Slack : -1.000
-TNS   : -35.000
+TNS   : -37.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'GeneradorVideo:inst|clk_bullet'
 Slack : -1.000

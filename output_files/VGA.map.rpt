@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VGA
-Fri Nov 16 01:11:51 2018
+Sun Nov 18 01:47:52 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -46,15 +46,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov 16 01:11:51 2018       ;
+; Analysis & Synthesis Status        ; Successful - Sun Nov 18 01:47:51 2018       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; VGA                                         ;
 ; Top-level Entity Name              ; VGA                                         ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 3,990                                       ;
-;     Total combinational functions  ; 3,957                                       ;
-;     Dedicated logic registers      ; 500                                         ;
-; Total registers                    ; 500                                         ;
+; Total logic elements               ; 4,008                                       ;
+;     Total combinational functions  ; 3,975                                       ;
+;     Dedicated logic registers      ; 501                                         ;
+; Total registers                    ; 501                                         ;
 ; Total pins                         ; 21                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -185,20 +185,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------------------------+
 ; Resource                                    ; Usage                            ;
 +---------------------------------------------+----------------------------------+
-; Estimated Total logic elements              ; 3,990                            ;
+; Estimated Total logic elements              ; 4,008                            ;
 ;                                             ;                                  ;
-; Total combinational functions               ; 3957                             ;
+; Total combinational functions               ; 3975                             ;
 ; Logic element usage by number of LUT inputs ;                                  ;
-;     -- 4 input functions                    ; 2526                             ;
-;     -- 3 input functions                    ; 656                              ;
-;     -- <=2 input functions                  ; 775                              ;
+;     -- 4 input functions                    ; 2473                             ;
+;     -- 3 input functions                    ; 747                              ;
+;     -- <=2 input functions                  ; 755                              ;
 ;                                             ;                                  ;
 ; Logic elements by mode                      ;                                  ;
-;     -- normal mode                          ; 3073                             ;
-;     -- arithmetic mode                      ; 884                              ;
+;     -- normal mode                          ; 3007                             ;
+;     -- arithmetic mode                      ; 968                              ;
 ;                                             ;                                  ;
-; Total registers                             ; 500                              ;
-;     -- Dedicated logic registers            ; 500                              ;
+; Total registers                             ; 501                              ;
+;     -- Dedicated logic registers            ; 501                              ;
 ;     -- I/O registers                        ; 0                                ;
 ;                                             ;                                  ;
 ; I/O pins                                    ; 21                               ;
@@ -206,9 +206,9 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0                                ;
 ;                                             ;                                  ;
 ; Maximum fan-out node                        ; GeneradorVideo:inst|aux_met_x[1] ;
-; Maximum fan-out                             ; 418                              ;
-; Total fan-out                               ; 15099                            ;
-; Average fan-out                             ; 3.36                             ;
+; Maximum fan-out                             ; 420                              ;
+; Total fan-out                               ; 15124                            ;
+; Average fan-out                             ; 3.35                             ;
 +---------------------------------------------+----------------------------------+
 
 
@@ -217,10 +217,10 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------+----------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name      ; Entity Name    ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------+----------------+--------------+
-; |VGA                       ; 3957 (0)            ; 500 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 21   ; 0            ; 0          ; |VGA                     ; VGA            ; work         ;
-;    |Control:inst3|         ; 261 (261)           ; 85 (85)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGA|Control:inst3       ; Control        ; work         ;
-;    |GeneradorVideo:inst|   ; 3594 (3594)         ; 347 (347)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGA|GeneradorVideo:inst ; GeneradorVideo ; work         ;
-;    |Sincronizador:inst2|   ; 102 (102)           ; 68 (68)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGA|Sincronizador:inst2 ; Sincronizador  ; work         ;
+; |VGA                       ; 3975 (0)            ; 501 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 21   ; 0            ; 0          ; |VGA                     ; VGA            ; work         ;
+;    |Control:inst3|         ; 260 (260)           ; 85 (85)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGA|Control:inst3       ; Control        ; work         ;
+;    |GeneradorVideo:inst|   ; 3615 (3615)         ; 348 (348)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGA|GeneradorVideo:inst ; GeneradorVideo ; work         ;
+;    |Sincronizador:inst2|   ; 100 (100)           ; 68 (68)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGA|Sincronizador:inst2 ; Sincronizador  ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -5255,12 +5255,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 500   ;
+; Total registers                              ; 501   ;
 ; Number of registers using Synchronous Clear  ; 138   ;
 ; Number of registers using Synchronous Load   ; 12    ;
 ; Number of registers using Asynchronous Clear ; 67    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 258   ;
+; Number of registers using Clock Enable       ; 259   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -5270,25 +5270,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------+---------+
 ; Inverted Register                               ; Fan out ;
 +-------------------------------------------------+---------+
+; GeneradorVideo:inst|vida[2]                     ; 4       ;
 ; GeneradorVideo:inst|vida[1]                     ; 4       ;
-; GeneradorVideo:inst|vida[0]                     ; 4       ;
-; GeneradorVideo:inst|met1_exists                 ; 3       ;
+; GeneradorVideo:inst|met1_exists                 ; 5       ;
+; GeneradorVideo:inst|posx_proyectil_izq[31]      ; 2       ;
 ; GeneradorVideo:inst|posy_proyectil_superior[31] ; 2       ;
 ; GeneradorVideo:inst|posy_proyectil_superior[0]  ; 2       ;
 ; GeneradorVideo:inst|posx_proyectil_der[31]      ; 2       ;
 ; GeneradorVideo:inst|posy_proyectil_inferior[31] ; 1       ;
 ; GeneradorVideo:inst|posy_proyectil_inferior[0]  ; 1       ;
-; GeneradorVideo:inst|posx_proyectil_izq[31]      ; 2       ;
-; GeneradorVideo:inst|aux_x[0]                    ; 345     ;
-; GeneradorVideo:inst|aux_y[0]                    ; 157     ;
-; Control:inst3|pos_y[8]                          ; 13      ;
-; Control:inst3|pos_y[6]                          ; 11      ;
+; GeneradorVideo:inst|aux_x[0]                    ; 340     ;
+; GeneradorVideo:inst|aux_y[0]                    ; 162     ;
+; Control:inst3|pos_y[8]                          ; 12      ;
+; Control:inst3|pos_y[6]                          ; 10      ;
 ; Control:inst3|pos_x[3]                          ; 7       ;
-; GeneradorVideo:inst|aux_x_cor[0]                ; 11      ;
+; GeneradorVideo:inst|aux_x_cor[0]                ; 12      ;
 ; GeneradorVideo:inst|aux_y_cor[0]                ; 6       ;
-; Control:inst3|carril_nave[0]                    ; 3       ;
-; GeneradorVideo:inst|posy_nave_inferior[31]      ; 2       ;
 ; GeneradorVideo:inst|posy_nave_superior[31]      ; 2       ;
+; GeneradorVideo:inst|posy_nave_inferior[31]      ; 2       ;
+; Control:inst3|carril_nave[0]                    ; 3       ;
 ; Total number of inverted registers = 19         ;         ;
 +-------------------------------------------------+---------+
 
@@ -5298,11 +5298,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 0 LEs                ; 8 LEs                  ; Yes        ; |VGA|GeneradorVideo:inst|aux_x_cor[2]             ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |VGA|GeneradorVideo:inst|ship[54][46][6]          ;
-; 3:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |VGA|GeneradorVideo:inst|count_bullet_movement[2] ;
-; 5:1                ; 28 bits   ; 84 LEs        ; 56 LEs               ; 28 LEs                 ; Yes        ; |VGA|Control:inst3|pos_x[29]                      ;
-; 6:1                ; 26 bits   ; 104 LEs       ; 52 LEs               ; 52 LEs                 ; Yes        ; |VGA|Control:inst3|pos_y[23]                      ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 0 LEs                ; 8 LEs                  ; Yes        ; |VGA|GeneradorVideo:inst|aux_x_cor[3]             ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |VGA|GeneradorVideo:inst|ship[59][45][0]          ;
+; 3:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |VGA|GeneradorVideo:inst|count_bullet_movement[3] ;
+; 5:1                ; 28 bits   ; 84 LEs        ; 56 LEs               ; 28 LEs                 ; Yes        ; |VGA|Control:inst3|pos_x[28]                      ;
+; 6:1                ; 26 bits   ; 104 LEs       ; 52 LEs               ; 52 LEs                 ; Yes        ; |VGA|Control:inst3|pos_y[31]                      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|Control:inst3|pos_x[3]                       ;
 ; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |VGA|Control:inst3|pos_y[8]                       ;
 ; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |VGA|GeneradorVideo:inst|Mux37                    ;
@@ -5327,25 +5327,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 21                          ;
-; cycloneiii_ff         ; 500                         ;
+; cycloneiii_ff         ; 501                         ;
 ;     CLR               ; 35                          ;
-;     ENA               ; 226                         ;
+;     ENA               ; 227                         ;
 ;     ENA CLR           ; 32                          ;
 ;     SCLR              ; 126                         ;
 ;     SCLR SLD          ; 12                          ;
 ;     plain             ; 69                          ;
-; cycloneiii_lcell_comb ; 3957                        ;
-;     arith             ; 884                         ;
-;         2 data inputs ; 570                         ;
-;         3 data inputs ; 314                         ;
-;     normal            ; 3073                        ;
-;         1 data inputs ; 44                          ;
-;         2 data inputs ; 161                         ;
-;         3 data inputs ; 342                         ;
-;         4 data inputs ; 2526                        ;
+; cycloneiii_lcell_comb ; 3975                        ;
+;     arith             ; 968                         ;
+;         2 data inputs ; 544                         ;
+;         3 data inputs ; 424                         ;
+;     normal            ; 3007                        ;
+;         1 data inputs ; 43                          ;
+;         2 data inputs ; 168                         ;
+;         3 data inputs ; 323                         ;
+;         4 data inputs ; 2473                        ;
 ;                       ;                             ;
 ; Max LUT depth         ; 11.00                       ;
-; Average LUT depth     ; 7.07                        ;
+; Average LUT depth     ; 7.02                        ;
 +-----------------------+-----------------------------+
 
 
@@ -5354,7 +5354,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:30     ;
+; Top            ; 00:00:31     ;
 +----------------+--------------+
 
 
@@ -5364,7 +5364,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Nov 16 01:10:56 2018
+    Info: Processing started: Sun Nov 18 01:47:00 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VGA -c VGA
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -5394,18 +5394,18 @@ Info (12128): Elaborating entity "Sincronizador" for hierarchy "Sincronizador:in
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (17016): Found the following redundant logic cells in design
-    Info (17048): Logic cell "GeneradorVideo:inst|Add15~62" File: C:/Users/gomri/Documents/UNAM/SéptimoSemestre/DiseñoDigitalVLSI/Juego/VHDL-GameProject/GeneradorVideo.vhd Line: 211
-    Info (17048): Logic cell "GeneradorVideo:inst|Add17~62" File: C:/Users/gomri/Documents/UNAM/SéptimoSemestre/DiseñoDigitalVLSI/Juego/VHDL-GameProject/GeneradorVideo.vhd Line: 212
+    Info (17048): Logic cell "GeneradorVideo:inst|Add14~62" File: C:/Users/gomri/Documents/UNAM/SéptimoSemestre/DiseñoDigitalVLSI/Juego/VHDL-GameProject/GeneradorVideo.vhd Line: 225
+    Info (17048): Logic cell "GeneradorVideo:inst|Add16~62" File: C:/Users/gomri/Documents/UNAM/SéptimoSemestre/DiseñoDigitalVLSI/Juego/VHDL-GameProject/GeneradorVideo.vhd Line: 226
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 4036 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4054 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 7 input pins
     Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 4015 logic cells
+    Info (21061): Implemented 4033 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 5154 megabytes
-    Info: Processing ended: Fri Nov 16 01:11:51 2018
-    Info: Elapsed time: 00:00:55
-    Info: Total CPU time (on all processors): 00:01:12
+    Info: Peak virtual memory: 5091 megabytes
+    Info: Processing ended: Sun Nov 18 01:47:52 2018
+    Info: Elapsed time: 00:00:52
+    Info: Total CPU time (on all processors): 00:01:10
 
 

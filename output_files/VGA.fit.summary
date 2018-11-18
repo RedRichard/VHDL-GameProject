@@ -1,14 +1,14 @@
-Fitter Status : Successful - Fri Nov 16 01:12:32 2018
+Fitter Status : Successful - Sun Nov 18 01:48:37 2018
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : VGA
 Top-level Entity Name : VGA
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 3,982 / 49,760 ( 8 % )
-    Total combinational functions : 3,959 / 49,760 ( 8 % )
-    Dedicated logic registers : 500 / 49,760 ( 1 % )
-Total registers : 500
+Total logic elements : 3,983 / 49,760 ( 8 % )
+    Total combinational functions : 3,977 / 49,760 ( 8 % )
+    Dedicated logic registers : 501 / 49,760 ( 1 % )
+Total registers : 501
 Total pins : 21 / 360 ( 6 % )
 Total virtual pins : 0
 Total memory bits : 0 / 1,677,312 ( 0 % )

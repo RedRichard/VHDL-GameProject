@@ -77,13 +77,15 @@ architecture behavioral of GeneradorVideo is
 	signal aux_x_cor : integer;
 	signal aux_y_cor : integer;
 	
-	signal vida: integer range 0 to 3 := 3;
+	signal vida: integer range 0 to 6 := 6;
 	
 	-- Meteoritos:
 	constant posx_met_izq: integer := 10;
 	constant posx_met_der: integer := 70;
 	constant posy_met_superior: integer := 0;
 	constant posy_met_inferior: integer := 60;
+	constant spawn_time: integer := 3;
+	signal aux_cont_met1: integer range 0 to 3 := 0;
 	signal aux_met_x : integer := 0;
 	signal aux_met_y : integer := 0;
 	
@@ -95,6 +97,9 @@ architecture behavioral of GeneradorVideo is
 	signal met1_hit: std_logic := '0'; 			-- indica si el meteorito ha golpeado al jugador o no
 	
 	signal clk_met: std_logic := '0';			-- reloj de velocidad de movimiento. Indica cuando avanzar un pixel.
+	
+	-- Puntuación
+	signal puntuacion: integer range 0 to 999 := 0;
 	
 begin
 	
@@ -124,11 +129,20 @@ begin
 	MeteorMovement: process(clk_met, count_meteor)
 	begin
 		if(clk_met'event and clk_met = '1')then
-			if((posy_nave_superior = count_meteor+60) or (posy_nave_superior = count_meteor+30) or (posy_nave_inferior = count_meteor + 30) or (posy_nave_inferior = count_meteor)) and (carril_nave = 1) and (met1_exists = '1')then
+			-- if((posy_nave_superior = count_meteor+60) or (posy_nave_superior = count_meteor+30) or (posy_nave_superior = count_meteor) or (posy_nave_inferior = count_meteor + 60) or (posy_nave_inferior = count_meteor + 30) or (posy_nave_inferior = count_meteor)) and (carril_nave = 1) and (met1_exists = '1')then
+			if((posy_nave_superior <= count_meteor+60 and posy_nave_superior >= count_meteor) or (posy_nave_inferior <= count_meteor+60 and posy_nave_inferior >= count_meteor))and (carril_nave = 1) and (met1_exists = '1')then	
 				vida <= vida - 1; 	-- Aqui quitamos vida cuando se detecta colisión de meteorito
 				met1_hit <= '1';
+			-- Aquí se destruye el meteorito si choca un proyectil
+			elsif (allow_fire = '1') and (posy_proyectil_superior <= posy_met_inferior) and (posx_proyectil_izq >= posx_met_izq and posx_proyectil_der <= posx_met_der) then
+				met1_exists <= '0';
+				puntuacion <= puntuacion + 1;
+			-- Aquí se reinstancia el meteorito después de que se alcanza el límite de la variable count_meteor 
+			elsif (met1_exists = '0') and (count_meteor = max_m_meteor) then
+				met1_exists <= '1';
+				count_meteor <= 0;
 			end if;
-			if(count_meteor < max_m_meteor) and (met1_hit = '0') then
+			if(count_meteor < max_m_meteor) and ((met1_hit = '0') or (met1_exists = '0')) then
 				count_meteor <= count_meteor + 1;
 			else
 				count_meteor <= 0;
@@ -214,9 +228,6 @@ begin
 				elsif ((allow_fire = '1') and (pos_x >= posx_proyectil_izq and pos_x <= posx_proyectil_der) and (pos_y >= posy_proyectil_superior and pos_y <= posy_proyectil_inferior))then
 					rgb <= bullet(pos_y)(pos_x);
 					
-					if(posy_proyectil_superior <= posy_met_inferior) and (posx_proyectil_izq >= posx_met_izq and posx_proyectil_der <= posx_met_der) then
-						met1_exists <= '0';
-					end if;
 				-- Meteoro 1
 				elsif ((met1_exists = '1') and (pos_x >= posx_met_izq and pos_x <= posx_met_der) and (pos_y >= posy_met_superior + count_meteor and pos_y <= posy_met_inferior + count_meteor))then
 										
@@ -224,17 +235,17 @@ begin
 					aux_met_y <= pos_y-posy_met_superior-count_meteor;
 					rgb <= meteor(aux_met_y)(aux_met_x);
 				-- Corazon1
-				elsif (vida >= 3) and (pos_x >= pos_x_cor1 and pos_x <= pos_x_cor1+30) and (pos_y >= pos_y_cor and pos_y <= pos_y_cor+30) then
+				elsif (vida >= 6) and (pos_x >= pos_x_cor1 and pos_x <= pos_x_cor1+30) and (pos_y >= pos_y_cor and pos_y <= pos_y_cor+30) then
 					aux_x_cor <= pos_x - pos_x_cor1;
 					aux_y_cor <= pos_y - pos_y_cor;
 					rgb <= heart(aux_y_cor)(aux_x_cor);
 				-- Corazon2
-				elsif (vida >= 2) and (pos_x >= pos_x_cor2 and pos_x <= pos_x_cor2+30) and (pos_y >= pos_y_cor and pos_y <= pos_y_cor+30) then
+				elsif (vida >= 4) and (pos_x >= pos_x_cor2 and pos_x <= pos_x_cor2+30) and (pos_y >= pos_y_cor and pos_y <= pos_y_cor+30) then
 					aux_x_cor <= pos_x - pos_x_cor2;
 					aux_y_cor <= pos_y - pos_y_cor;
 					rgb <= heart(aux_y_cor)(aux_x_cor);
 				-- Corazon3
-				elsif (vida >= 1) and (pos_x >= pos_x_cor3 and pos_x <= pos_x_cor3+30) and (pos_y >= pos_y_cor and pos_y <= pos_y_cor+30) then
+				elsif (vida >= 2) and (pos_x >= pos_x_cor3 and pos_x <= pos_x_cor3+30) and (pos_y >= pos_y_cor and pos_y <= pos_y_cor+30) then
 					aux_x_cor <= pos_x - pos_x_cor3;
 					aux_y_cor <= pos_y - pos_y_cor;
 					rgb <= heart(aux_y_cor)(aux_x_cor);
