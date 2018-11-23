@@ -1,5 +1,5 @@
 Flow report for VGA
-Sun Nov 18 01:48:51 2018
+Sun Nov 18 20:19:03 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,17 +40,17 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Nov 18 01:48:43 2018       ;
+; Flow Status                        ; Successful - Sun Nov 18 20:18:38 2018       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; VGA                                         ;
 ; Top-level Entity Name              ; VGA                                         ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 3,983 / 49,760 ( 8 % )                      ;
-;     Total combinational functions  ; 3,977 / 49,760 ( 8 % )                      ;
-;     Dedicated logic registers      ; 501 / 49,760 ( 1 % )                        ;
-; Total registers                    ; 501                                         ;
+; Total logic elements               ; 14,545 / 49,760 ( 29 % )                    ;
+;     Total combinational functions  ; 14,513 / 49,760 ( 29 % )                    ;
+;     Dedicated logic registers      ; 829 / 49,760 ( 2 % )                        ;
+; Total registers                    ; 829                                         ;
 ; Total pins                         ; 21 / 360 ( 6 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/18/2018 01:47:00 ;
+; Start date & time ; 11/18/2018 20:12:19 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; VGA                 ;
 +-------------------+---------------------+
@@ -77,12 +77,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 27332937840559.154252722024008         ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 27332937840559.154259353924900         ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --         ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --         ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 
@@ -92,11 +94,11 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:50     ; 1.0                     ; 5091 MB             ; 00:01:09                           ;
-; Fitter                    ; 00:00:44     ; 1.2                     ; 5507 MB             ; 00:01:05                           ;
-; Assembler                 ; 00:00:04     ; 1.0                     ; 4707 MB             ; 00:00:04                           ;
-; TimeQuest Timing Analyzer ; 00:00:07     ; 1.4                     ; 4865 MB             ; 00:00:10                           ;
-; Total                     ; 00:01:45     ; --                      ; --                  ; 00:02:28                           ;
+; Analysis & Synthesis      ; 00:02:45     ; 1.0                     ; 5139 MB             ; 00:03:05                           ;
+; Fitter                    ; 00:03:17     ; 1.2                     ; 5527 MB             ; 00:05:14                           ;
+; Assembler                 ; 00:00:07     ; 1.0                     ; 4735 MB             ; 00:00:06                           ;
+; TimeQuest Timing Analyzer ; 00:00:24     ; 1.6                     ; 4966 MB             ; 00:00:36                           ;
+; Total                     ; 00:06:33     ; --                      ; --                  ; 00:09:01                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

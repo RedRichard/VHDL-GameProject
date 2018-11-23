@@ -1,0 +1,21 @@
+library ieee;
+use ieee. std_logic_1164.all;
+use ieee. std_logic_arith.all;
+use ieee. std_logic_unsigned.all;
+ 
+entity Sincronizador is
+PORT( clk: 		in std_logic;
+		reset: 	in std_logic;
+		pos_x:	out integer;
+		pos_y: 	out integer;
+		habilitado:	out std_logic;
+		a_clk:	out std_logic;
+		hsync:	out std_logic;
+		vsync:	out std_logic);
+end Sincronizador;
+ 
+architecture behavioral of Sincronizador is
+
+begin
+	
+end behavioral;

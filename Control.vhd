@@ -10,7 +10,7 @@ PORT( clk:		in std_logic;
 		boton_arriba	:in std_logic;
 		boton_abajo		:in std_logic;
 		boton_fire		:in std_logic;
-		c_nave 	:out integer range 1 to 7;
+		c_nave 	:out integer range 1 to 8;
 		control_x, control_y: out integer;
 		control_fire	:out std_logic);
 end Control;

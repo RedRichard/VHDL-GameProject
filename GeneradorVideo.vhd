@@ -80,24 +80,134 @@ architecture behavioral of GeneradorVideo is
 	signal vida: integer range 0 to 6 := 6;
 	
 	-- Meteoritos:
-	constant posx_met_izq: integer := 10;
-	constant posx_met_der: integer := 70;
-	constant posy_met_superior: integer := 0;
-	constant posy_met_inferior: integer := 60;
-	constant spawn_time: integer := 3;
-	signal aux_cont_met1: integer range 0 to 3 := 0;
-	signal aux_met_x : integer := 0;
-	signal aux_met_y : integer := 0;
+	--  Meteorito 1:
+	constant posx_met1_izq: integer := 10;
+	constant posx_met1_der: integer := 70;
+	constant posy_met1_superior: integer := -60;
+	constant posy_met1_inferior: integer := 0;
+	signal aux_met1_x : integer := 0;
+	signal aux_met1_y : integer := 0;
 	
-	constant max_m_meteor: integer := 420;		-- posicion mayima en 'y' del meteorito
-	constant max_c_meteor: integer := 250000; -- para la velocidad del meteorito (frecuencia)
-	signal count_c_meteor: integer := 0;		-- contador de avance en reloj
-	signal count_meteor: integer := 0;			-- contador de avance en posicion 'y'
-	signal met1_exists: std_logic := '1';		-- indica si existe el meteorito o no
-	signal met1_hit: std_logic := '0'; 			-- indica si el meteorito ha golpeado al jugador o no
+	signal met1_exists: std_logic;		-- indica si existe el meteorito o no
+	signal count_meteor1: integer := 0;			-- contador de avance en posicion 'y'
+	signal aux_vida1: std_logic := '0'; 
 	
-	signal clk_met: std_logic := '0';			-- reloj de velocidad de movimiento. Indica cuando avanzar un pixel.
+	--  Meteorito 2:
+	constant posx_met2_izq: integer := 90;
+	constant posx_met2_der: integer := 150;
+	constant posy_met2_superior: integer := -120;
+	constant posy_met2_inferior: integer := -60;
+	signal aux_met2_x : integer := 0;
+	signal aux_met2_y : integer := 0;
+	signal aux_vida2: std_logic; 
 	
+	signal met2_exists: std_logic;		-- indica si existe el meteorito o no
+	signal count_meteor2: integer := 0;	
+	
+	--  Meteorito 3:
+	constant posx_met3_izq: integer := 170;
+	constant posx_met3_der: integer := 230;
+	constant posy_met3_superior: integer := -60;
+	constant posy_met3_inferior: integer := 0;
+	signal aux_met3_x : integer := 0;
+	signal aux_met3_y : integer := 0;
+	
+	signal met3_exists: std_logic;		-- indica si existe el meteorito o no
+	signal count_meteor3: integer := 0;			-- contador de avance en posicion 'y'
+	signal aux_vida3: std_logic := '0'; 
+	
+	--  Meteorito 4:
+	constant posx_met4_izq: integer := 250;
+	constant posx_met4_der: integer := 310;
+	constant posy_met4_superior: integer := -120;
+	constant posy_met4_inferior: integer := -60;
+	signal aux_met4_x : integer := 0;
+	signal aux_met4_y : integer := 0;
+	signal aux_vida4: std_logic; 
+	
+	signal met4_exists: std_logic;		-- indica si existe el meteorito o no
+	signal count_meteor4: integer := 0;	
+	
+	--  Meteorito 5:
+	constant posx_met5_izq: integer := 330;
+	constant posx_met5_der: integer := 390;
+	constant posy_met5_superior: integer := -60;
+	constant posy_met5_inferior: integer := 0;
+	signal aux_met5_x : integer := 0;
+	signal aux_met5_y : integer := 0;
+	
+	signal met5_exists: std_logic;		-- indica si existe el meteorito o no
+	signal count_meteor5: integer := 0;			-- contador de avance en posicion 'y'
+	signal aux_vida5: std_logic := '0';
+	
+	--  Meteorito 6:
+	constant posx_met6_izq: integer := 410;
+	constant posx_met6_der: integer := 470;
+	constant posy_met6_superior: integer := -120;
+	constant posy_met6_inferior: integer := -60;
+	signal aux_met6_x : integer := 0;
+	signal aux_met6_y : integer := 0;
+	signal aux_vida6: std_logic; 
+	
+	signal met6_exists: std_logic;		-- indica si existe el meteorito o no
+	signal count_meteor6: integer := 0;	
+	
+	--  Meteorito 7:
+	constant posx_met7_izq: integer := 490;
+	constant posx_met7_der: integer := 550;
+	constant posy_met7_superior: integer := -60;
+	constant posy_met7_inferior: integer := 0;
+	signal aux_met7_x : integer := 0;
+	signal aux_met7_y : integer := 0;
+	
+	signal met7_exists: std_logic;		-- indica si existe el meteorito o no
+	signal count_meteor7: integer := 0;			-- contador de avance en posicion 'y'
+	signal aux_vida7: std_logic := '0';
+	
+	--  Meteorito 8:
+	constant posx_met8_izq: integer := 570;
+	constant posx_met8_der: integer := 630;
+	constant posy_met8_superior: integer := -120;
+	constant posy_met8_inferior: integer := -60;
+	signal aux_met8_x : integer := 0;
+	signal aux_met8_y : integer := 0;
+	signal aux_vida8: std_logic; 
+	
+	signal met8_exists: std_logic;		-- indica si existe el meteorito o no
+	signal count_meteor8: integer := 0;	
+	
+	constant max_c_meteor: integer := 250000; -- para la velocidad del meteorito (frecuencia)	
+	--constant max_m_meteor: integer := 420;		-- posicion mayima en 'y' del meteorito
+	
+	--signal count_c_meteor: integer := 0;		-- contador de avance en reloj
+	
+	
+	--signal met1_hit: std_logic := '0'; 			-- indica si el meteorito ha golpeado al jugador o no
+	
+	--signal clk_met: std_logic := '0';			-- reloj de velocidad de movimiento. Indica cuando avanzar un pixel.
+	
+	Component Meteorito is
+	port( clk: 		in std_logic;
+		num_met:		in integer;
+		max_c_meteor:	in integer;
+		posx_met_der:			in	integer;
+		posx_met_izq:			in integer;
+		posy_met_inferior:	in integer;
+		posy_nave_superior:	in integer;
+		posy_nave_inferior:	in integer;
+		posy_proyectil_superior:	in integer;
+		posx_proyectil_izq:			in integer;
+		posx_proyectil_der:			in integer;
+		carril_nave:			in integer range 1 to 8;
+		allow_fire:				in std_logic;
+		aux_vida:				out std_logic;
+		
+		
+		met_exists:				out std_logic;
+		c_meteor:			out integer
+	
+	);
+	end component;
 	-- Puntuación
 	signal puntuacion: integer range 0 to 999 := 0;
 	
@@ -112,41 +222,27 @@ begin
 	
 	heart <= ((x"000",x"000",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"000"),(x"000",x"000",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"000"),(x"000",x"000",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"f00",x"fee",x"fee",x"fee",x"f00",x"f00",x"f00",x"f00",x"000"),(x"000",x"000",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"f00",x"f00",x"f00",x"fee",x"fee",x"fee",x"fee",x"f00",x"f00",x"f00",x"000"),(x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"fee",x"f00",x"f00",x"f00"),(x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"fee",x"f00",x"f00",x"f00"),(x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"fee",x"fee",x"f00",x"f00"),(x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"fee",x"fee",x"f00",x"f00"),(x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00"),(x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00"),(x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00"),(x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00"),(x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00"),(x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"000"),(x"000",x"000",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"000"),(x"000",x"000",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"000"),(x"000",x"000",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"000",x"000",x"000",x"000"),(x"000",x"000",x"000",x"000",x"000",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"000",x"000",x"000",x"000"),(x"000",x"000",x"000",x"000",x"000",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"000",x"000",x"000",x"000"),(x"000",x"000",x"000",x"000",x"000",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"000",x"000",x"000",x"000"),(x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"000",x"000",x"000",x"000",x"000",x"000",x"000"),(x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"000",x"000",x"000",x"000",x"000",x"000",x"000"),(x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"000",x"000",x"000",x"000",x"000",x"000",x"000"),(x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000"),(x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000"),(x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000"),(x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"f00",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000"),(x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"f00",x"f00",x"f00",x"f00",x"f00",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000"),(x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"f00",x"f00",x"f00",x"f00",x"f00",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000"),(x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"f00",x"f00",x"f00",x"f00",x"f00",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000",x"000"));
 	
-	-- Reloj meteorito:
-	ClkMeteor: process(clk)
-	begin
-		if(clk'event and clk='1')then
-			if(count_c_meteor < max_c_meteor)then
-				count_c_meteor <= count_c_meteor + 1;
-			else
-				clk_met <= not clk_met;
-				count_c_meteor <= 0;
-			end if;
-		end if;
-	end process;
+	Met1: Meteorito port map(clk, 1,max_c_meteor, posx_met1_der, posx_met1_izq, posy_met1_inferior, posy_nave_superior, posy_nave_inferior, posy_proyectil_superior, posx_proyectil_izq, posx_proyectil_der,carril_nave,allow_fire, aux_vida1, met1_exists, count_meteor1);
 	
-	-- Contador para movimiento de meteorito:
-	MeteorMovement: process(clk_met, count_meteor)
+	Met2: Meteorito port map(clk, 2,max_c_meteor, posx_met2_der, posx_met2_izq, posy_met2_inferior, posy_nave_superior, posy_nave_inferior, posy_proyectil_superior, posx_proyectil_izq, posx_proyectil_der,carril_nave,allow_fire, aux_vida2, met2_exists, count_meteor2);
+
+	Met3: Meteorito port map(clk, 3,max_c_meteor, posx_met3_der, posx_met3_izq, posy_met3_inferior, posy_nave_superior, posy_nave_inferior, posy_proyectil_superior, posx_proyectil_izq, posx_proyectil_der,carril_nave,allow_fire, aux_vida3, met3_exists, count_meteor3);
+	
+	Met4: Meteorito port map(clk, 4,max_c_meteor, posx_met4_der, posx_met4_izq, posy_met4_inferior, posy_nave_superior, posy_nave_inferior, posy_proyectil_superior, posx_proyectil_izq, posx_proyectil_der,carril_nave,allow_fire, aux_vida4, met4_exists, count_meteor4);
+
+	Met5: Meteorito port map(clk, 5,max_c_meteor, posx_met5_der, posx_met5_izq, posy_met5_inferior, posy_nave_superior, posy_nave_inferior, posy_proyectil_superior, posx_proyectil_izq, posx_proyectil_der,carril_nave,allow_fire, aux_vida5, met5_exists, count_meteor5);
+
+	Met6: Meteorito port map(clk, 6,max_c_meteor, posx_met6_der, posx_met6_izq, posy_met6_inferior, posy_nave_superior, posy_nave_inferior, posy_proyectil_superior, posx_proyectil_izq, posx_proyectil_der,carril_nave,allow_fire, aux_vida6, met6_exists, count_meteor6);
+
+	Met7: Meteorito port map(clk, 7,max_c_meteor, posx_met7_der, posx_met7_izq, posy_met7_inferior, posy_nave_superior, posy_nave_inferior, posy_proyectil_superior, posx_proyectil_izq, posx_proyectil_der,carril_nave,allow_fire, aux_vida7, met7_exists, count_meteor7);
+
+	Met8: Meteorito port map(clk, 8,max_c_meteor, posx_met8_der, posx_met8_izq, posy_met8_inferior, posy_nave_superior, posy_nave_inferior, posy_proyectil_superior, posx_proyectil_izq, posx_proyectil_der,carril_nave,allow_fire, aux_vida8, met8_exists, count_meteor8);
+
+	Life: process (clk, aux_vida1, aux_vida2)
 	begin
-		if(clk_met'event and clk_met = '1')then
-			-- if((posy_nave_superior = count_meteor+60) or (posy_nave_superior = count_meteor+30) or (posy_nave_superior = count_meteor) or (posy_nave_inferior = count_meteor + 60) or (posy_nave_inferior = count_meteor + 30) or (posy_nave_inferior = count_meteor)) and (carril_nave = 1) and (met1_exists = '1')then
-			if((posy_nave_superior <= count_meteor+60 and posy_nave_superior >= count_meteor) or (posy_nave_inferior <= count_meteor+60 and posy_nave_inferior >= count_meteor))and (carril_nave = 1) and (met1_exists = '1')then	
-				vida <= vida - 1; 	-- Aqui quitamos vida cuando se detecta colisión de meteorito
-				met1_hit <= '1';
-			-- Aquí se destruye el meteorito si choca un proyectil
-			elsif (allow_fire = '1') and (posy_proyectil_superior <= posy_met_inferior) and (posx_proyectil_izq >= posx_met_izq and posx_proyectil_der <= posx_met_der) then
-				met1_exists <= '0';
-				puntuacion <= puntuacion + 1;
-			-- Aquí se reinstancia el meteorito después de que se alcanza el límite de la variable count_meteor 
-			elsif (met1_exists = '0') and (count_meteor = max_m_meteor) then
-				met1_exists <= '1';
-				count_meteor <= 0;
-			end if;
-			if(count_meteor < max_m_meteor) and ((met1_hit = '0') or (met1_exists = '0')) then
-				count_meteor <= count_meteor + 1;
-			else
-				count_meteor <= 0;
-				met1_hit <= '0';
+		if (clk'event and clk = '1') then
+			if (aux_vida1 = '1') or (aux_vida2 = '1') or (aux_vida3 = '1') or (aux_vida4 = '1') or (aux_vida5 = '1') or (aux_vida6 = '1') or (aux_vida7 = '1') or (aux_vida8 = '1')then
+				vida <= vida - 1;
 			end if;
 		end if;
 	end process;
@@ -228,12 +324,47 @@ begin
 				elsif ((allow_fire = '1') and (pos_x >= posx_proyectil_izq and pos_x <= posx_proyectil_der) and (pos_y >= posy_proyectil_superior and pos_y <= posy_proyectil_inferior))then
 					rgb <= bullet(pos_y)(pos_x);
 					
-				-- Meteoro 1
-				elsif ((met1_exists = '1') and (pos_x >= posx_met_izq and pos_x <= posx_met_der) and (pos_y >= posy_met_superior + count_meteor and pos_y <= posy_met_inferior + count_meteor))then
+				-- Meteorito 1
+				elsif ((met1_exists = '1') and (pos_x >= posx_met1_izq and pos_x <= posx_met1_der) and (pos_y >= posy_met1_superior + count_meteor1 and pos_y <= posy_met1_inferior + count_meteor1))then
 										
-					aux_met_x <= pos_x-posx_met_izq;
-					aux_met_y <= pos_y-posy_met_superior-count_meteor;
-					rgb <= meteor(aux_met_y)(aux_met_x);
+					aux_met1_x <= pos_x-posx_met1_izq;
+					aux_met1_y <= pos_y-posy_met1_superior-count_meteor1;
+					rgb <= meteor(aux_met1_y)(aux_met1_x);
+				-- Meteorito 2
+				elsif ((met2_exists = '1') and (pos_x >= posx_met2_izq and pos_x <= posx_met2_der) and (pos_y >= posy_met2_superior + count_meteor2 and pos_y <= posy_met2_inferior + count_meteor2))then					
+					aux_met2_x <= pos_x-posx_met2_izq;
+					aux_met2_y <= pos_y-posy_met2_superior-count_meteor2;
+					rgb <= meteor(aux_met2_y)(aux_met2_x);
+				-- Meteorito 3
+				elsif ((met3_exists = '1') and (pos_x >= posx_met3_izq and pos_x <= posx_met3_der) and (pos_y >= posy_met3_superior + count_meteor3 and pos_y <= posy_met3_inferior + count_meteor3))then					
+					aux_met3_x <= pos_x-posx_met3_izq;
+					aux_met3_y <= pos_y-posy_met3_superior-count_meteor3;
+					rgb <= meteor(aux_met3_y)(aux_met3_x);
+				-- Meteorito 4
+				elsif ((met4_exists = '1') and (pos_x >= posx_met4_izq and pos_x <= posx_met4_der) and (pos_y >= posy_met4_superior + count_meteor4 and pos_y <= posy_met4_inferior + count_meteor4))then					
+					aux_met4_x <= pos_x-posx_met4_izq;
+					aux_met4_y <= pos_y-posy_met4_superior-count_meteor4;
+					rgb <= meteor(aux_met4_y)(aux_met4_x);
+				-- Meteorito 5
+				elsif ((met5_exists = '1') and (pos_x >= posx_met5_izq and pos_x <= posx_met5_der) and (pos_y >= posy_met5_superior + count_meteor5 and pos_y <= posy_met5_inferior + count_meteor5))then					
+					aux_met5_x <= pos_x-posx_met5_izq;
+					aux_met5_y <= pos_y-posy_met5_superior-count_meteor5;
+					rgb <= meteor(aux_met5_y)(aux_met5_x);
+				-- Meteorito 6
+				elsif ((met6_exists = '1') and (pos_x >= posx_met6_izq and pos_x <= posx_met6_der) and (pos_y >= posy_met6_superior + count_meteor6 and pos_y <= posy_met6_inferior + count_meteor6))then					
+					aux_met6_x <= pos_x-posx_met6_izq;
+					aux_met6_y <= pos_y-posy_met6_superior-count_meteor6;
+					rgb <= meteor(aux_met6_y)(aux_met6_x);
+				-- Meteorito 7
+				elsif ((met7_exists = '1') and (pos_x >= posx_met7_izq and pos_x <= posx_met7_der) and (pos_y >= posy_met7_superior + count_meteor7 and pos_y <= posy_met7_inferior + count_meteor7))then					
+					aux_met7_x <= pos_x-posx_met7_izq;
+					aux_met7_y <= pos_y-posy_met7_superior-count_meteor7;
+					rgb <= meteor(aux_met7_y)(aux_met7_x);
+				-- Meteorito 8
+				elsif ((met8_exists = '1') and (pos_x >= posx_met8_izq and pos_x <= posx_met8_der) and (pos_y >= posy_met8_superior + count_meteor8 and pos_y <= posy_met8_inferior + count_meteor8))then					
+					aux_met8_x <= pos_x-posx_met8_izq;
+					aux_met8_y <= pos_y-posy_met8_superior-count_meteor8;
+					rgb <= meteor(aux_met8_y)(aux_met8_x);
 				-- Corazon1
 				elsif (vida >= 6) and (pos_x >= pos_x_cor1 and pos_x <= pos_x_cor1+30) and (pos_y >= pos_y_cor and pos_y <= pos_y_cor+30) then
 					aux_x_cor <= pos_x - pos_x_cor1;
