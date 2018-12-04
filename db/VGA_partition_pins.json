@@ -64,19 +64,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "clk",
-					"strict" : false
-				},
-				{
 					"name" : "b_fire",
 					"strict" : false
 				},
 				{
-					"name" : "b_izquierda",
+					"name" : "b_derecha",
 					"strict" : false
 				},
 				{
-					"name" : "b_derecha",
+					"name" : "b_izquierda",
 					"strict" : false
 				},
 				{
@@ -85,6 +81,10 @@
 				},
 				{
 					"name" : "b_arriba",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
 					"strict" : false
 				}
 			]

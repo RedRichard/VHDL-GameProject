@@ -3,99 +3,99 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'Sincronizador:inst2|clk25'
-Slack : -11.524
-TNS   : -3383.151
+Slack : -24.551
+TNS   : -7593.332
 
 Type  : Slow 1200mV 85C Model Setup 'GeneradorVideo:inst|Meteorito:Met6|clk_met'
-Slack : -8.666
-TNS   : -178.583
-
-Type  : Slow 1200mV 85C Model Setup 'GeneradorVideo:inst|Meteorito:Met2|clk_met'
-Slack : -7.728
-TNS   : -150.657
-
-Type  : Slow 1200mV 85C Model Setup 'GeneradorVideo:inst|Meteorito:Met4|clk_met'
-Slack : -7.486
-TNS   : -181.027
-
-Type  : Slow 1200mV 85C Model Setup 'GeneradorVideo:inst|Meteorito:Met5|clk_met'
-Slack : -6.622
-TNS   : -188.569
-
-Type  : Slow 1200mV 85C Model Setup 'GeneradorVideo:inst|Meteorito:Met7|clk_met'
-Slack : -6.371
-TNS   : -181.308
-
-Type  : Slow 1200mV 85C Model Setup 'GeneradorVideo:inst|Meteorito:Met3|clk_met'
-Slack : -5.881
-TNS   : -152.885
-
-Type  : Slow 1200mV 85C Model Setup 'GeneradorVideo:inst|Meteorito:Met1|clk_met'
-Slack : -5.835
-TNS   : -162.965
-
-Type  : Slow 1200mV 85C Model Setup 'Control:inst3|clk_velocidad'
-Slack : -5.053
-TNS   : -264.356
-
-Type  : Slow 1200mV 85C Model Setup 'GeneradorVideo:inst|clk_bullet'
-Slack : -4.926
-TNS   : -42.953
-
-Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -4.500
-TNS   : -75.482
+Slack : -8.898
+TNS   : -227.845
 
 Type  : Slow 1200mV 85C Model Setup 'GeneradorVideo:inst|Meteorito:Met8|clk_met'
-Slack : -3.238
-TNS   : -101.075
+Slack : -8.329
+TNS   : -206.314
 
-Type  : Slow 1200mV 85C Model Hold 'Sincronizador:inst2|clk25'
-Slack : -0.643
-TNS   : -0.643
+Type  : Slow 1200mV 85C Model Setup 'GeneradorVideo:inst|Meteorito:Met2|clk_met'
+Slack : -8.275
+TNS   : -233.037
+
+Type  : Slow 1200mV 85C Model Setup 'GeneradorVideo:inst|Meteorito:Met4|clk_met'
+Slack : -8.253
+TNS   : -237.195
+
+Type  : Slow 1200mV 85C Model Setup 'GeneradorVideo:inst|Meteorito:Met3|clk_met'
+Slack : -6.806
+TNS   : -188.680
+
+Type  : Slow 1200mV 85C Model Setup 'GeneradorVideo:inst|Meteorito:Met5|clk_met'
+Slack : -6.779
+TNS   : -223.126
+
+Type  : Slow 1200mV 85C Model Setup 'GeneradorVideo:inst|Meteorito:Met7|clk_met'
+Slack : -6.366
+TNS   : -172.446
+
+Type  : Slow 1200mV 85C Model Setup 'GeneradorVideo:inst|Meteorito:Met1|clk_met'
+Slack : -6.123
+TNS   : -175.040
+
+Type  : Slow 1200mV 85C Model Setup 'GeneradorVideo:inst|clk_bullet'
+Slack : -5.755
+TNS   : -135.738
+
+Type  : Slow 1200mV 85C Model Setup 'Control:inst3|clk_velocidad'
+Slack : -4.973
+TNS   : -278.158
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -4.340
+TNS   : -72.764
 
 Type  : Slow 1200mV 85C Model Hold 'GeneradorVideo:inst|clk_bullet'
-Slack : 0.325
+Slack : 0.323
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Sincronizador:inst2|clk25'
+Slack : 0.323
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'Control:inst3|clk_velocidad'
-Slack : 0.340
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'GeneradorVideo:inst|Meteorito:Met1|clk_met'
-Slack : 0.340
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'GeneradorVideo:inst|Meteorito:Met2|clk_met'
-Slack : 0.340
+Slack : 0.324
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'GeneradorVideo:inst|Meteorito:Met4|clk_met'
 Slack : 0.340
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'GeneradorVideo:inst|Meteorito:Met3|clk_met'
-Slack : 0.342
+Type  : Slow 1200mV 85C Model Hold 'GeneradorVideo:inst|Meteorito:Met5|clk_met'
+Slack : 0.340
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'GeneradorVideo:inst|Meteorito:Met5|clk_met'
-Slack : 0.342
+Type  : Slow 1200mV 85C Model Hold 'GeneradorVideo:inst|Meteorito:Met2|clk_met'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'GeneradorVideo:inst|Meteorito:Met3|clk_met'
+Slack : 0.341
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'GeneradorVideo:inst|Meteorito:Met6|clk_met'
-Slack : 0.342
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'GeneradorVideo:inst|Meteorito:Met8|clk_met'
+Slack : 0.341
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'GeneradorVideo:inst|Meteorito:Met7|clk_met'
-Slack : 0.342
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'GeneradorVideo:inst|Meteorito:Met1|clk_met'
+Slack : 0.356
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clk'
 Slack : 0.617
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'GeneradorVideo:inst|Meteorito:Met8|clk_met'
-Slack : 0.642
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
@@ -104,7 +104,7 @@ TNS   : -38.075
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Sincronizador:inst2|clk25'
 Slack : -1.403
-TNS   : -648.186
+TNS   : -952.637
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Control:inst3|clk_velocidad'
 Slack : -1.403
@@ -112,105 +112,105 @@ TNS   : -85.583
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'GeneradorVideo:inst|Meteorito:Met1|clk_met'
 Slack : -1.403
-TNS   : -47.702
+TNS   : -49.105
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'GeneradorVideo:inst|Meteorito:Met2|clk_met'
 Slack : -1.403
-TNS   : -47.702
+TNS   : -49.105
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'GeneradorVideo:inst|Meteorito:Met3|clk_met'
 Slack : -1.403
-TNS   : -47.702
+TNS   : -49.105
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'GeneradorVideo:inst|Meteorito:Met4|clk_met'
 Slack : -1.403
-TNS   : -47.702
+TNS   : -49.105
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'GeneradorVideo:inst|Meteorito:Met5|clk_met'
 Slack : -1.403
-TNS   : -47.702
+TNS   : -49.105
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'GeneradorVideo:inst|Meteorito:Met6|clk_met'
 Slack : -1.403
-TNS   : -47.702
+TNS   : -49.105
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'GeneradorVideo:inst|Meteorito:Met7|clk_met'
 Slack : -1.403
-TNS   : -47.702
+TNS   : -49.105
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'GeneradorVideo:inst|Meteorito:Met8|clk_met'
 Slack : -1.403
-TNS   : -46.299
+TNS   : -49.105
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'GeneradorVideo:inst|clk_bullet'
 Slack : -1.403
-TNS   : -14.030
+TNS   : -43.493
 
 Type  : Slow 1200mV 0C Model Setup 'Sincronizador:inst2|clk25'
-Slack : -10.473
-TNS   : -3056.847
+Slack : -22.323
+TNS   : -6886.864
 
 Type  : Slow 1200mV 0C Model Setup 'GeneradorVideo:inst|Meteorito:Met6|clk_met'
-Slack : -7.747
-TNS   : -161.077
-
-Type  : Slow 1200mV 0C Model Setup 'GeneradorVideo:inst|Meteorito:Met2|clk_met'
-Slack : -6.963
-TNS   : -135.967
+Slack : -8.036
+TNS   : -207.104
 
 Type  : Slow 1200mV 0C Model Setup 'GeneradorVideo:inst|Meteorito:Met4|clk_met'
-Slack : -6.734
-TNS   : -163.583
-
-Type  : Slow 1200mV 0C Model Setup 'GeneradorVideo:inst|Meteorito:Met5|clk_met'
-Slack : -5.863
-TNS   : -170.347
-
-Type  : Slow 1200mV 0C Model Setup 'GeneradorVideo:inst|Meteorito:Met7|clk_met'
-Slack : -5.758
-TNS   : -163.919
-
-Type  : Slow 1200mV 0C Model Setup 'GeneradorVideo:inst|Meteorito:Met1|clk_met'
-Slack : -5.219
-TNS   : -148.525
-
-Type  : Slow 1200mV 0C Model Setup 'GeneradorVideo:inst|Meteorito:Met3|clk_met'
-Slack : -5.207
-TNS   : -138.693
-
-Type  : Slow 1200mV 0C Model Setup 'Control:inst3|clk_velocidad'
-Slack : -4.599
-TNS   : -238.245
-
-Type  : Slow 1200mV 0C Model Setup 'GeneradorVideo:inst|clk_bullet'
-Slack : -4.445
-TNS   : -38.725
-
-Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -4.109
-TNS   : -67.742
+Slack : -7.476
+TNS   : -216.423
 
 Type  : Slow 1200mV 0C Model Setup 'GeneradorVideo:inst|Meteorito:Met8|clk_met'
-Slack : -2.914
-TNS   : -90.752
+Slack : -7.445
+TNS   : -187.879
 
-Type  : Slow 1200mV 0C Model Hold 'Sincronizador:inst2|clk25'
-Slack : -0.536
-TNS   : -0.536
+Type  : Slow 1200mV 0C Model Setup 'GeneradorVideo:inst|Meteorito:Met2|clk_met'
+Slack : -7.410
+TNS   : -212.418
+
+Type  : Slow 1200mV 0C Model Setup 'GeneradorVideo:inst|Meteorito:Met5|clk_met'
+Slack : -6.122
+TNS   : -204.304
+
+Type  : Slow 1200mV 0C Model Setup 'GeneradorVideo:inst|Meteorito:Met3|clk_met'
+Slack : -6.072
+TNS   : -170.931
+
+Type  : Slow 1200mV 0C Model Setup 'GeneradorVideo:inst|Meteorito:Met7|clk_met'
+Slack : -5.731
+TNS   : -155.819
+
+Type  : Slow 1200mV 0C Model Setup 'GeneradorVideo:inst|Meteorito:Met1|clk_met'
+Slack : -5.480
+TNS   : -157.477
+
+Type  : Slow 1200mV 0C Model Setup 'GeneradorVideo:inst|clk_bullet'
+Slack : -5.240
+TNS   : -122.717
+
+Type  : Slow 1200mV 0C Model Setup 'Control:inst3|clk_velocidad'
+Slack : -4.522
+TNS   : -252.736
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -3.970
+TNS   : -65.285
 
 Type  : Slow 1200mV 0C Model Hold 'GeneradorVideo:inst|clk_bullet'
-Slack : 0.292
+Slack : 0.289
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Sincronizador:inst2|clk25'
+Slack : 0.289
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'Control:inst3|clk_velocidad'
+Slack : 0.290
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'GeneradorVideo:inst|Meteorito:Met5|clk_met'
 Slack : 0.305
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'GeneradorVideo:inst|Meteorito:Met1|clk_met'
-Slack : 0.305
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'GeneradorVideo:inst|Meteorito:Met2|clk_met'
+Type  : Slow 1200mV 0C Model Hold 'GeneradorVideo:inst|Meteorito:Met3|clk_met'
 Slack : 0.306
 TNS   : 0.000
 
@@ -218,28 +218,28 @@ Type  : Slow 1200mV 0C Model Hold 'GeneradorVideo:inst|Meteorito:Met4|clk_met'
 Slack : 0.306
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'GeneradorVideo:inst|Meteorito:Met5|clk_met'
+Type  : Slow 1200mV 0C Model Hold 'GeneradorVideo:inst|Meteorito:Met6|clk_met'
 Slack : 0.306
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'GeneradorVideo:inst|Meteorito:Met3|clk_met'
+Type  : Slow 1200mV 0C Model Hold 'GeneradorVideo:inst|Meteorito:Met8|clk_met'
+Slack : 0.306
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'GeneradorVideo:inst|Meteorito:Met2|clk_met'
 Slack : 0.307
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'GeneradorVideo:inst|Meteorito:Met1|clk_met'
+Slack : 0.321
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'GeneradorVideo:inst|Meteorito:Met7|clk_met'
-Slack : 0.307
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'GeneradorVideo:inst|Meteorito:Met6|clk_met'
-Slack : 0.308
+Slack : 0.322
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clk'
 Slack : 0.572
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'GeneradorVideo:inst|Meteorito:Met8|clk_met'
-Slack : 0.594
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
@@ -248,7 +248,7 @@ TNS   : -38.075
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Sincronizador:inst2|clk25'
 Slack : -1.403
-TNS   : -648.186
+TNS   : -952.637
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Control:inst3|clk_velocidad'
 Slack : -1.403
@@ -256,105 +256,109 @@ TNS   : -85.583
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'GeneradorVideo:inst|Meteorito:Met1|clk_met'
 Slack : -1.403
-TNS   : -47.702
+TNS   : -49.105
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'GeneradorVideo:inst|Meteorito:Met2|clk_met'
 Slack : -1.403
-TNS   : -47.702
+TNS   : -49.105
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'GeneradorVideo:inst|Meteorito:Met3|clk_met'
 Slack : -1.403
-TNS   : -47.702
+TNS   : -49.105
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'GeneradorVideo:inst|Meteorito:Met4|clk_met'
 Slack : -1.403
-TNS   : -47.702
+TNS   : -49.105
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'GeneradorVideo:inst|Meteorito:Met5|clk_met'
 Slack : -1.403
-TNS   : -47.702
+TNS   : -49.105
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'GeneradorVideo:inst|Meteorito:Met6|clk_met'
 Slack : -1.403
-TNS   : -47.702
+TNS   : -49.105
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'GeneradorVideo:inst|Meteorito:Met7|clk_met'
 Slack : -1.403
-TNS   : -47.702
+TNS   : -49.105
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'GeneradorVideo:inst|Meteorito:Met8|clk_met'
 Slack : -1.403
-TNS   : -46.299
+TNS   : -49.105
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'GeneradorVideo:inst|clk_bullet'
 Slack : -1.403
-TNS   : -14.030
+TNS   : -43.493
 
 Type  : Fast 1200mV 0C Model Setup 'Sincronizador:inst2|clk25'
-Slack : -4.422
-TNS   : -1168.032
+Slack : -9.610
+TNS   : -2810.939
 
 Type  : Fast 1200mV 0C Model Setup 'GeneradorVideo:inst|Meteorito:Met6|clk_met'
-Slack : -2.980
-TNS   : -55.968
+Slack : -3.059
+TNS   : -78.480
 
 Type  : Fast 1200mV 0C Model Setup 'GeneradorVideo:inst|Meteorito:Met2|clk_met'
-Slack : -2.537
-TNS   : -42.907
-
-Type  : Fast 1200mV 0C Model Setup 'GeneradorVideo:inst|Meteorito:Met4|clk_met'
-Slack : -2.374
-TNS   : -57.191
-
-Type  : Fast 1200mV 0C Model Setup 'GeneradorVideo:inst|Meteorito:Met5|clk_met'
-Slack : -2.128
-TNS   : -61.711
-
-Type  : Fast 1200mV 0C Model Setup 'GeneradorVideo:inst|Meteorito:Met7|clk_met'
-Slack : -1.947
-TNS   : -58.272
-
-Type  : Fast 1200mV 0C Model Setup 'GeneradorVideo:inst|Meteorito:Met3|clk_met'
-Slack : -1.796
-TNS   : -45.177
-
-Type  : Fast 1200mV 0C Model Setup 'GeneradorVideo:inst|Meteorito:Met1|clk_met'
-Slack : -1.750
-TNS   : -48.998
-
-Type  : Fast 1200mV 0C Model Setup 'GeneradorVideo:inst|clk_bullet'
-Slack : -1.581
-TNS   : -13.177
-
-Type  : Fast 1200mV 0C Model Setup 'Control:inst3|clk_velocidad'
-Slack : -1.567
-TNS   : -77.264
-
-Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -1.433
-TNS   : -16.989
+Slack : -2.802
+TNS   : -81.016
 
 Type  : Fast 1200mV 0C Model Setup 'GeneradorVideo:inst|Meteorito:Met8|clk_met'
-Slack : -0.850
-TNS   : -25.274
+Slack : -2.764
+TNS   : -68.677
 
-Type  : Fast 1200mV 0C Model Hold 'Sincronizador:inst2|clk25'
-Slack : -0.520
-TNS   : -0.520
+Type  : Fast 1200mV 0C Model Setup 'GeneradorVideo:inst|Meteorito:Met4|clk_met'
+Slack : -2.696
+TNS   : -81.690
+
+Type  : Fast 1200mV 0C Model Setup 'GeneradorVideo:inst|Meteorito:Met5|clk_met'
+Slack : -2.208
+TNS   : -76.473
+
+Type  : Fast 1200mV 0C Model Setup 'GeneradorVideo:inst|Meteorito:Met3|clk_met'
+Slack : -2.197
+TNS   : -60.097
+
+Type  : Fast 1200mV 0C Model Setup 'GeneradorVideo:inst|clk_bullet'
+Slack : -2.031
+TNS   : -43.454
+
+Type  : Fast 1200mV 0C Model Setup 'GeneradorVideo:inst|Meteorito:Met7|clk_met'
+Slack : -2.003
+TNS   : -53.105
+
+Type  : Fast 1200mV 0C Model Setup 'GeneradorVideo:inst|Meteorito:Met1|clk_met'
+Slack : -1.856
+TNS   : -53.193
+
+Type  : Fast 1200mV 0C Model Setup 'Control:inst3|clk_velocidad'
+Slack : -1.622
+TNS   : -83.792
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.327
+TNS   : -15.514
 
 Type  : Fast 1200mV 0C Model Hold 'GeneradorVideo:inst|clk_bullet'
-Slack : 0.142
+Slack : 0.140
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'Control:inst3|clk_velocidad'
-Slack : 0.148
+Slack : 0.141
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'GeneradorVideo:inst|Meteorito:Met1|clk_met'
-Slack : 0.148
+Type  : Fast 1200mV 0C Model Hold 'Sincronizador:inst2|clk25'
+Slack : 0.141
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'GeneradorVideo:inst|Meteorito:Met5|clk_met'
+Slack : 0.147
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'GeneradorVideo:inst|Meteorito:Met2|clk_met'
+Slack : 0.148
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'GeneradorVideo:inst|Meteorito:Met3|clk_met'
 Slack : 0.148
 TNS   : 0.000
 
@@ -362,37 +366,33 @@ Type  : Fast 1200mV 0C Model Hold 'GeneradorVideo:inst|Meteorito:Met4|clk_met'
 Slack : 0.148
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'GeneradorVideo:inst|Meteorito:Met3|clk_met'
-Slack : 0.149
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'GeneradorVideo:inst|Meteorito:Met5|clk_met'
-Slack : 0.149
-TNS   : 0.000
-
 Type  : Fast 1200mV 0C Model Hold 'GeneradorVideo:inst|Meteorito:Met6|clk_met'
 Slack : 0.149
 TNS   : 0.000
 
+Type  : Fast 1200mV 0C Model Hold 'GeneradorVideo:inst|Meteorito:Met8|clk_met'
+Slack : 0.149
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'GeneradorVideo:inst|Meteorito:Met1|clk_met'
+Slack : 0.152
+TNS   : 0.000
+
 Type  : Fast 1200mV 0C Model Hold 'GeneradorVideo:inst|Meteorito:Met7|clk_met'
-Slack : 0.150
+Slack : 0.153
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clk'
-Slack : 0.238
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'GeneradorVideo:inst|Meteorito:Met8|clk_met'
-Slack : 0.249
+Slack : 0.237
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -28.860
+TNS   : -28.828
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Sincronizador:inst2|clk25'
 Slack : -1.000
-TNS   : -462.000
+TNS   : -679.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Control:inst3|clk_velocidad'
 Slack : -1.000
@@ -400,38 +400,38 @@ TNS   : -61.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'GeneradorVideo:inst|Meteorito:Met1|clk_met'
 Slack : -1.000
-TNS   : -34.000
+TNS   : -35.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'GeneradorVideo:inst|Meteorito:Met2|clk_met'
 Slack : -1.000
-TNS   : -34.000
+TNS   : -35.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'GeneradorVideo:inst|Meteorito:Met3|clk_met'
 Slack : -1.000
-TNS   : -34.000
+TNS   : -35.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'GeneradorVideo:inst|Meteorito:Met4|clk_met'
 Slack : -1.000
-TNS   : -34.000
+TNS   : -35.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'GeneradorVideo:inst|Meteorito:Met5|clk_met'
 Slack : -1.000
-TNS   : -34.000
+TNS   : -35.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'GeneradorVideo:inst|Meteorito:Met6|clk_met'
 Slack : -1.000
-TNS   : -34.000
+TNS   : -35.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'GeneradorVideo:inst|Meteorito:Met7|clk_met'
 Slack : -1.000
-TNS   : -34.000
+TNS   : -35.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'GeneradorVideo:inst|Meteorito:Met8|clk_met'
 Slack : -1.000
-TNS   : -33.000
+TNS   : -35.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'GeneradorVideo:inst|clk_bullet'
 Slack : -1.000
-TNS   : -10.000
+TNS   : -31.000
 
 ------------------------------------------------------------

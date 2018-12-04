@@ -4,7 +4,10 @@ use ieee. std_logic_arith.all;
 use ieee. std_logic_unsigned.all;
  
 entity Meteorito is
-PORT( clk: 		in std_logic;
+PORT( new_game: in std_logic;
+		num_pantalla: in integer range 0 to 3;
+		vida_actual:	in integer range 0 to 3;
+		clk: 		in std_logic;
 		num_met:			in integer;
 		max_c_meteor:	in integer;
 		posx_met_der:			in	integer;
@@ -17,7 +20,7 @@ PORT( clk: 		in std_logic;
 		posx_proyectil_der:			in integer;
 		carril_nave:			in integer range 1 to 8;
 		allow_fire:				in std_logic;
-		aux_vida:				out std_logic;
+		aux_vida:				out integer range 0 to 3;
 		
 		
 		met_exists:				out std_logic;
@@ -27,14 +30,14 @@ PORT( clk: 		in std_logic;
 end Meteorito;
  
 architecture behavioral of Meteorito is
-	constant max_m_meteor: integer := 420;		-- posicion mayima en 'y' del meteorito
+	constant max_m_meteor: integer := 420;		-- posicion maxima en 'y' del meteorito
 	signal count_c_meteor: integer := 0;		-- contador de avance en reloj
 	signal clk_met: std_logic := '0';			-- reloj de velocidad de movimiento. Indica cuando avanzar un pixel.
 	signal count_meteor: integer := 0;			-- contador de avance en posicion 'y'
 	signal met1_exists: std_logic := '1';		-- indica si existe el meteorito o no
 	signal met1_hit: std_logic := '0'; 			-- indica si el meteorito ha golpeado al jugador o no
 
-
+	signal vida: integer range 0 to 3 := 3;
 begin
 	ClkMeteor: process(clk)
 	begin
@@ -51,10 +54,16 @@ begin
 	MeteorMovement: process(clk_met, count_meteor)
 	begin
 		if(clk_met'event and clk_met = '1')then
+			if (vida_actual < vida) then
+				vida <= vida_actual;
+			elsif (vida_actual >= vida) then
+				vida <= vida_actual;
+			end if;
 			-- if((posy_nave_superior = count_meteor+60) or (posy_nave_superior = count_meteor+30) or (posy_nave_superior = count_meteor) or (posy_nave_inferior = count_meteor + 60) or (posy_nave_inferior = count_meteor + 30) or (posy_nave_inferior = count_meteor)) and (carril_nave = 1) and (met1_exists = '1')then
 			if((posy_nave_superior <= count_meteor + posy_met_inferior and posy_nave_superior >= count_meteor - 60 + posy_met_inferior) or (posy_nave_inferior <= count_meteor + posy_met_inferior and posy_nave_inferior >= count_meteor - 60 + posy_met_inferior))and (num_met = carril_nave) and (met1_exists = '1')then	
-				--vida <= vida - 1; 	-- Aqui quitamos vida cuando se detecta colisión de meteorito
-				met1_hit <= '1';
+				vida <= vida - 1; 	-- Aqui quitamos vida cuando se detecta colisión de meteorito
+				--met1_hit <= '1';
+				met1_exists <= '0';
 			-- Aquí se destruye el meteorito si choca un proyectil
 			elsif (allow_fire = '1') and (posy_proyectil_superior <= posy_met_inferior) and (posx_proyectil_izq >= posx_met_izq and posx_proyectil_der <= posx_met_der) then
 				met1_exists <= '0';
@@ -64,18 +73,21 @@ begin
 			elsif (met1_exists = '0') then				
 				met1_exists <= '1';
 				count_meteor <= 0;
+				--met1_hit <= '0';
 			end if;
 			--if(count_meteor < max_m_meteor) and ((met1_hit = '0') or (met1_exists = '0')) then
-			if(count_meteor < max_m_meteor + 120) and (met1_hit = '0') and (met1_exists = '1') then
+			if (num_pantalla = 2) then
+				count_meteor <= 0;
+			elsif(count_meteor < max_m_meteor + 120) and (met1_hit = '0') and (met1_exists = '1') then
 				count_meteor <= count_meteor + 1;
 			else
 				count_meteor <= 0;				-- Posición de reinstanciación
-				met1_hit <= '0';
+				--met1_hit <= '0';
 			end if;
 		end if;
 	end process;
 	
-	aux_vida <= met1_hit;
+	aux_vida <= vida;
 	met_exists <= met1_exists;		-- Enviar condición de existencia
 	c_meteor <= count_meteor;
 end behavioral;

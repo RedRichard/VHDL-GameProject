@@ -1,5 +1,5 @@
 Flow report for VGA
-Sun Nov 18 20:19:03 2018
+Tue Dec 04 16:08:01 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,17 +40,17 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Nov 18 20:18:38 2018       ;
+; Flow Status                        ; Successful - Tue Dec 04 16:08:01 2018       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; VGA                                         ;
 ; Top-level Entity Name              ; VGA                                         ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 14,545 / 49,760 ( 29 % )                    ;
-;     Total combinational functions  ; 14,513 / 49,760 ( 29 % )                    ;
-;     Dedicated logic registers      ; 829 / 49,760 ( 2 % )                        ;
-; Total registers                    ; 829                                         ;
+; Total logic elements               ; 18,339 / 49,760 ( 37 % )                    ;
+;     Total combinational functions  ; 18,302 / 49,760 ( 37 % )                    ;
+;     Dedicated logic registers      ; 1,076 / 49,760 ( 2 % )                      ;
+; Total registers                    ; 1076                                        ;
 ; Total pins                         ; 21 / 360 ( 6 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
@@ -66,27 +66,35 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/18/2018 20:12:19 ;
+; Start date & time ; 12/04/2018 16:00:49 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; VGA                 ;
 +-------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                        ;
-+-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
-+-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 27332937840559.154259353924900         ; --            ; --          ; --         ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --         ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --         ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --         ;
-+-------------------------------------+----------------------------------------+---------------+-------------+------------+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                  ;
++-------------------------------------+----------------------------------------+---------------+-------------+----------------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id           ;
++-------------------------------------+----------------------------------------+---------------+-------------+----------------------+
+; ALLOW_REGISTER_RETIMING             ; Off                                    ; On            ; --          ; --                   ;
+; COMPILER_SIGNATURE_ID               ; 27332937840559.154396084914000         ; --            ; --          ; --                   ;
+; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL     ; Synplify                               ; <None>        ; --          ; --                   ;
+; EDA_INPUT_DATA_FORMAT               ; Vqm                                    ; --            ; --          ; eda_design_synthesis ;
+; EDA_LMF_FILE                        ; synplcty.lmf                           ; --            ; --          ; eda_design_synthesis ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --                   ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --                   ;
+; NUM_PARALLEL_PROCESSORS             ; All                                    ; --            ; --          ; --                   ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top                  ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top                  ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top                  ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --                   ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                   ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --                   ;
+; SYNTHESIS_EFFORT                    ; Fast                                   ; Auto          ; --          ; --                   ;
+; VHDL_INPUT_VERSION                  ; VHDL_2008                              ; VHDL_1993     ; --          ; --                   ;
+; VHDL_SHOW_LMF_MAPPING_MESSAGES      ; Off                                    ; --            ; --          ; --                   ;
++-------------------------------------+----------------------------------------+---------------+-------------+----------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -94,11 +102,11 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:02:45     ; 1.0                     ; 5139 MB             ; 00:03:05                           ;
-; Fitter                    ; 00:03:17     ; 1.2                     ; 5527 MB             ; 00:05:14                           ;
-; Assembler                 ; 00:00:07     ; 1.0                     ; 4735 MB             ; 00:00:06                           ;
-; TimeQuest Timing Analyzer ; 00:00:24     ; 1.6                     ; 4966 MB             ; 00:00:36                           ;
-; Total                     ; 00:06:33     ; --                      ; --                  ; 00:09:01                           ;
+; Analysis & Synthesis      ; 00:03:17     ; 1.0                     ; 6090 MB             ; 00:03:18                           ;
+; Fitter                    ; 00:03:14     ; 1.2                     ; 5561 MB             ; 00:04:58                           ;
+; Assembler                 ; 00:00:05     ; 1.0                     ; 4740 MB             ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:20     ; 1.6                     ; 4981 MB             ; 00:00:31                           ;
+; Total                     ; 00:06:56     ; --                      ; --                  ; 00:08:52                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -121,6 +129,7 @@ quartus_map --read_settings_files=on --write_settings_files=off VGA -c VGA
 quartus_fit --read_settings_files=off --write_settings_files=off VGA -c VGA
 quartus_asm --read_settings_files=off --write_settings_files=off VGA -c VGA
 quartus_sta VGA -c VGA
+quartus_eda --read_settings_files=off --write_settings_files=off VGA -c VGA
 
 
 

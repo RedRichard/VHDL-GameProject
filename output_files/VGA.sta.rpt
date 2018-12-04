@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for VGA
-Sun Nov 18 20:19:03 2018
+Tue Dec 04 16:07:58 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -91,12 +91,12 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.58        ;
+; Average used               ; 1.61        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  58.0%      ;
+;     Processor 2            ;  60.6%      ;
 +----------------------------+-------------+
 
 
@@ -125,18 +125,18 @@ refer to the applicable agreement for further details.
 +------------+-----------------+--------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                 ; Note ;
 +------------+-----------------+--------------------------------------------+------+
-; 92.1 MHz   ; 92.1 MHz        ; Sincronizador:inst2|clk25                  ;      ;
-; 103.46 MHz ; 103.46 MHz      ; GeneradorVideo:inst|Meteorito:Met6|clk_met ;      ;
-; 114.57 MHz ; 114.57 MHz      ; GeneradorVideo:inst|Meteorito:Met2|clk_met ;      ;
-; 117.84 MHz ; 117.84 MHz      ; GeneradorVideo:inst|Meteorito:Met4|clk_met ;      ;
-; 131.2 MHz  ; 131.2 MHz       ; GeneradorVideo:inst|Meteorito:Met5|clk_met ;      ;
-; 135.67 MHz ; 135.67 MHz      ; GeneradorVideo:inst|Meteorito:Met7|clk_met ;      ;
-; 145.33 MHz ; 145.33 MHz      ; GeneradorVideo:inst|Meteorito:Met3|clk_met ;      ;
-; 146.31 MHz ; 146.31 MHz      ; GeneradorVideo:inst|Meteorito:Met1|clk_met ;      ;
-; 165.21 MHz ; 165.21 MHz      ; Control:inst3|clk_velocidad                ;      ;
-; 168.75 MHz ; 168.75 MHz      ; GeneradorVideo:inst|clk_bullet             ;      ;
-; 181.82 MHz ; 181.82 MHz      ; clk                                        ;      ;
-; 235.96 MHz ; 235.96 MHz      ; GeneradorVideo:inst|Meteorito:Met8|clk_met ;      ;
+; 79.52 MHz  ; 79.52 MHz       ; Sincronizador:inst2|clk25                  ;      ;
+; 101.03 MHz ; 101.03 MHz      ; GeneradorVideo:inst|Meteorito:Met6|clk_met ;      ;
+; 107.19 MHz ; 107.19 MHz      ; GeneradorVideo:inst|Meteorito:Met8|clk_met ;      ;
+; 107.82 MHz ; 107.82 MHz      ; GeneradorVideo:inst|Meteorito:Met2|clk_met ;      ;
+; 108.07 MHz ; 108.07 MHz      ; GeneradorVideo:inst|Meteorito:Met4|clk_met ;      ;
+; 128.11 MHz ; 128.11 MHz      ; GeneradorVideo:inst|Meteorito:Met3|clk_met ;      ;
+; 128.55 MHz ; 128.55 MHz      ; GeneradorVideo:inst|Meteorito:Met5|clk_met ;      ;
+; 135.76 MHz ; 135.76 MHz      ; GeneradorVideo:inst|Meteorito:Met7|clk_met ;      ;
+; 140.39 MHz ; 140.39 MHz      ; GeneradorVideo:inst|Meteorito:Met1|clk_met ;      ;
+; 148.04 MHz ; 148.04 MHz      ; GeneradorVideo:inst|clk_bullet             ;      ;
+; 167.42 MHz ; 167.42 MHz      ; Control:inst3|clk_velocidad                ;      ;
+; 187.27 MHz ; 187.27 MHz      ; clk                                        ;      ;
 +------------+-----------------+--------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -146,39 +146,39 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------------+---------+---------------+
 ; Clock                                      ; Slack   ; End Point TNS ;
 +--------------------------------------------+---------+---------------+
-; Sincronizador:inst2|clk25                  ; -11.524 ; -3383.151     ;
-; GeneradorVideo:inst|Meteorito:Met6|clk_met ; -8.666  ; -178.583      ;
-; GeneradorVideo:inst|Meteorito:Met2|clk_met ; -7.728  ; -150.657      ;
-; GeneradorVideo:inst|Meteorito:Met4|clk_met ; -7.486  ; -181.027      ;
-; GeneradorVideo:inst|Meteorito:Met5|clk_met ; -6.622  ; -188.569      ;
-; GeneradorVideo:inst|Meteorito:Met7|clk_met ; -6.371  ; -181.308      ;
-; GeneradorVideo:inst|Meteorito:Met3|clk_met ; -5.881  ; -152.885      ;
-; GeneradorVideo:inst|Meteorito:Met1|clk_met ; -5.835  ; -162.965      ;
-; Control:inst3|clk_velocidad                ; -5.053  ; -264.356      ;
-; GeneradorVideo:inst|clk_bullet             ; -4.926  ; -42.953       ;
-; clk                                        ; -4.500  ; -75.482       ;
-; GeneradorVideo:inst|Meteorito:Met8|clk_met ; -3.238  ; -101.075      ;
+; Sincronizador:inst2|clk25                  ; -24.551 ; -7593.332     ;
+; GeneradorVideo:inst|Meteorito:Met6|clk_met ; -8.898  ; -227.845      ;
+; GeneradorVideo:inst|Meteorito:Met8|clk_met ; -8.329  ; -206.314      ;
+; GeneradorVideo:inst|Meteorito:Met2|clk_met ; -8.275  ; -233.037      ;
+; GeneradorVideo:inst|Meteorito:Met4|clk_met ; -8.253  ; -237.195      ;
+; GeneradorVideo:inst|Meteorito:Met3|clk_met ; -6.806  ; -188.680      ;
+; GeneradorVideo:inst|Meteorito:Met5|clk_met ; -6.779  ; -223.126      ;
+; GeneradorVideo:inst|Meteorito:Met7|clk_met ; -6.366  ; -172.446      ;
+; GeneradorVideo:inst|Meteorito:Met1|clk_met ; -6.123  ; -175.040      ;
+; GeneradorVideo:inst|clk_bullet             ; -5.755  ; -135.738      ;
+; Control:inst3|clk_velocidad                ; -4.973  ; -278.158      ;
+; clk                                        ; -4.340  ; -72.764       ;
 +--------------------------------------------+---------+---------------+
 
 
-+---------------------------------------------------------------------+
-; Slow 1200mV 85C Model Hold Summary                                  ;
-+--------------------------------------------+--------+---------------+
-; Clock                                      ; Slack  ; End Point TNS ;
-+--------------------------------------------+--------+---------------+
-; Sincronizador:inst2|clk25                  ; -0.643 ; -0.643        ;
-; GeneradorVideo:inst|clk_bullet             ; 0.325  ; 0.000         ;
-; Control:inst3|clk_velocidad                ; 0.340  ; 0.000         ;
-; GeneradorVideo:inst|Meteorito:Met1|clk_met ; 0.340  ; 0.000         ;
-; GeneradorVideo:inst|Meteorito:Met2|clk_met ; 0.340  ; 0.000         ;
-; GeneradorVideo:inst|Meteorito:Met4|clk_met ; 0.340  ; 0.000         ;
-; GeneradorVideo:inst|Meteorito:Met3|clk_met ; 0.342  ; 0.000         ;
-; GeneradorVideo:inst|Meteorito:Met5|clk_met ; 0.342  ; 0.000         ;
-; GeneradorVideo:inst|Meteorito:Met6|clk_met ; 0.342  ; 0.000         ;
-; GeneradorVideo:inst|Meteorito:Met7|clk_met ; 0.342  ; 0.000         ;
-; clk                                        ; 0.617  ; 0.000         ;
-; GeneradorVideo:inst|Meteorito:Met8|clk_met ; 0.642  ; 0.000         ;
-+--------------------------------------------+--------+---------------+
++--------------------------------------------------------------------+
+; Slow 1200mV 85C Model Hold Summary                                 ;
++--------------------------------------------+-------+---------------+
+; Clock                                      ; Slack ; End Point TNS ;
++--------------------------------------------+-------+---------------+
+; GeneradorVideo:inst|clk_bullet             ; 0.323 ; 0.000         ;
+; Sincronizador:inst2|clk25                  ; 0.323 ; 0.000         ;
+; Control:inst3|clk_velocidad                ; 0.324 ; 0.000         ;
+; GeneradorVideo:inst|Meteorito:Met4|clk_met ; 0.340 ; 0.000         ;
+; GeneradorVideo:inst|Meteorito:Met5|clk_met ; 0.340 ; 0.000         ;
+; GeneradorVideo:inst|Meteorito:Met2|clk_met ; 0.341 ; 0.000         ;
+; GeneradorVideo:inst|Meteorito:Met3|clk_met ; 0.341 ; 0.000         ;
+; GeneradorVideo:inst|Meteorito:Met6|clk_met ; 0.341 ; 0.000         ;
+; GeneradorVideo:inst|Meteorito:Met8|clk_met ; 0.341 ; 0.000         ;
+; GeneradorVideo:inst|Meteorito:Met7|clk_met ; 0.355 ; 0.000         ;
+; GeneradorVideo:inst|Meteorito:Met1|clk_met ; 0.356 ; 0.000         ;
+; clk                                        ; 0.617 ; 0.000         ;
++--------------------------------------------+-------+---------------+
 
 
 ------------------------------------------
@@ -199,17 +199,17 @@ No paths to report.
 ; Clock                                      ; Slack  ; End Point TNS ;
 +--------------------------------------------+--------+---------------+
 ; clk                                        ; -3.000 ; -38.075       ;
-; Sincronizador:inst2|clk25                  ; -1.403 ; -648.186      ;
+; Sincronizador:inst2|clk25                  ; -1.403 ; -952.637      ;
 ; Control:inst3|clk_velocidad                ; -1.403 ; -85.583       ;
-; GeneradorVideo:inst|Meteorito:Met1|clk_met ; -1.403 ; -47.702       ;
-; GeneradorVideo:inst|Meteorito:Met2|clk_met ; -1.403 ; -47.702       ;
-; GeneradorVideo:inst|Meteorito:Met3|clk_met ; -1.403 ; -47.702       ;
-; GeneradorVideo:inst|Meteorito:Met4|clk_met ; -1.403 ; -47.702       ;
-; GeneradorVideo:inst|Meteorito:Met5|clk_met ; -1.403 ; -47.702       ;
-; GeneradorVideo:inst|Meteorito:Met6|clk_met ; -1.403 ; -47.702       ;
-; GeneradorVideo:inst|Meteorito:Met7|clk_met ; -1.403 ; -47.702       ;
-; GeneradorVideo:inst|Meteorito:Met8|clk_met ; -1.403 ; -46.299       ;
-; GeneradorVideo:inst|clk_bullet             ; -1.403 ; -14.030       ;
+; GeneradorVideo:inst|Meteorito:Met1|clk_met ; -1.403 ; -49.105       ;
+; GeneradorVideo:inst|Meteorito:Met2|clk_met ; -1.403 ; -49.105       ;
+; GeneradorVideo:inst|Meteorito:Met3|clk_met ; -1.403 ; -49.105       ;
+; GeneradorVideo:inst|Meteorito:Met4|clk_met ; -1.403 ; -49.105       ;
+; GeneradorVideo:inst|Meteorito:Met5|clk_met ; -1.403 ; -49.105       ;
+; GeneradorVideo:inst|Meteorito:Met6|clk_met ; -1.403 ; -49.105       ;
+; GeneradorVideo:inst|Meteorito:Met7|clk_met ; -1.403 ; -49.105       ;
+; GeneradorVideo:inst|Meteorito:Met8|clk_met ; -1.403 ; -49.105       ;
+; GeneradorVideo:inst|clk_bullet             ; -1.403 ; -43.493       ;
 +--------------------------------------------+--------+---------------+
 
 
@@ -224,18 +224,18 @@ No synchronizer chains to report.
 +------------+-----------------+--------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                 ; Note ;
 +------------+-----------------+--------------------------------------------+------+
-; 100.15 MHz ; 100.15 MHz      ; Sincronizador:inst2|clk25                  ;      ;
-; 114.32 MHz ; 114.32 MHz      ; GeneradorVideo:inst|Meteorito:Met6|clk_met ;      ;
-; 125.58 MHz ; 125.58 MHz      ; GeneradorVideo:inst|Meteorito:Met2|clk_met ;      ;
-; 129.3 MHz  ; 129.3 MHz       ; GeneradorVideo:inst|Meteorito:Met4|clk_met ;      ;
-; 145.71 MHz ; 145.71 MHz      ; GeneradorVideo:inst|Meteorito:Met5|clk_met ;      ;
-; 147.97 MHz ; 147.97 MHz      ; GeneradorVideo:inst|Meteorito:Met7|clk_met ;      ;
-; 160.8 MHz  ; 160.8 MHz       ; GeneradorVideo:inst|Meteorito:Met1|clk_met ;      ;
-; 161.11 MHz ; 161.11 MHz      ; GeneradorVideo:inst|Meteorito:Met3|clk_met ;      ;
-; 178.6 MHz  ; 178.6 MHz       ; Control:inst3|clk_velocidad                ;      ;
-; 183.65 MHz ; 183.65 MHz      ; GeneradorVideo:inst|clk_bullet             ;      ;
-; 195.73 MHz ; 195.73 MHz      ; clk                                        ;      ;
-; 255.49 MHz ; 255.49 MHz      ; GeneradorVideo:inst|Meteorito:Met8|clk_met ;      ;
+; 86.07 MHz  ; 86.07 MHz       ; Sincronizador:inst2|clk25                  ;      ;
+; 110.67 MHz ; 110.67 MHz      ; GeneradorVideo:inst|Meteorito:Met6|clk_met ;      ;
+; 117.98 MHz ; 117.98 MHz      ; GeneradorVideo:inst|Meteorito:Met4|clk_met ;      ;
+; 118.41 MHz ; 118.41 MHz      ; GeneradorVideo:inst|Meteorito:Met8|clk_met ;      ;
+; 118.91 MHz ; 118.91 MHz      ; GeneradorVideo:inst|Meteorito:Met2|clk_met ;      ;
+; 140.41 MHz ; 140.41 MHz      ; GeneradorVideo:inst|Meteorito:Met5|clk_met ;      ;
+; 141.4 MHz  ; 141.4 MHz       ; GeneradorVideo:inst|Meteorito:Met3|clk_met ;      ;
+; 148.57 MHz ; 148.57 MHz      ; GeneradorVideo:inst|Meteorito:Met7|clk_met ;      ;
+; 154.32 MHz ; 154.32 MHz      ; GeneradorVideo:inst|Meteorito:Met1|clk_met ;      ;
+; 160.26 MHz ; 160.26 MHz      ; GeneradorVideo:inst|clk_bullet             ;      ;
+; 181.09 MHz ; 181.09 MHz      ; Control:inst3|clk_velocidad                ;      ;
+; 201.21 MHz ; 201.21 MHz      ; clk                                        ;      ;
 +------------+-----------------+--------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -245,39 +245,39 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------------+---------+---------------+
 ; Clock                                      ; Slack   ; End Point TNS ;
 +--------------------------------------------+---------+---------------+
-; Sincronizador:inst2|clk25                  ; -10.473 ; -3056.847     ;
-; GeneradorVideo:inst|Meteorito:Met6|clk_met ; -7.747  ; -161.077      ;
-; GeneradorVideo:inst|Meteorito:Met2|clk_met ; -6.963  ; -135.967      ;
-; GeneradorVideo:inst|Meteorito:Met4|clk_met ; -6.734  ; -163.583      ;
-; GeneradorVideo:inst|Meteorito:Met5|clk_met ; -5.863  ; -170.347      ;
-; GeneradorVideo:inst|Meteorito:Met7|clk_met ; -5.758  ; -163.919      ;
-; GeneradorVideo:inst|Meteorito:Met1|clk_met ; -5.219  ; -148.525      ;
-; GeneradorVideo:inst|Meteorito:Met3|clk_met ; -5.207  ; -138.693      ;
-; Control:inst3|clk_velocidad                ; -4.599  ; -238.245      ;
-; GeneradorVideo:inst|clk_bullet             ; -4.445  ; -38.725       ;
-; clk                                        ; -4.109  ; -67.742       ;
-; GeneradorVideo:inst|Meteorito:Met8|clk_met ; -2.914  ; -90.752       ;
+; Sincronizador:inst2|clk25                  ; -22.323 ; -6886.864     ;
+; GeneradorVideo:inst|Meteorito:Met6|clk_met ; -8.036  ; -207.104      ;
+; GeneradorVideo:inst|Meteorito:Met4|clk_met ; -7.476  ; -216.423      ;
+; GeneradorVideo:inst|Meteorito:Met8|clk_met ; -7.445  ; -187.879      ;
+; GeneradorVideo:inst|Meteorito:Met2|clk_met ; -7.410  ; -212.418      ;
+; GeneradorVideo:inst|Meteorito:Met5|clk_met ; -6.122  ; -204.304      ;
+; GeneradorVideo:inst|Meteorito:Met3|clk_met ; -6.072  ; -170.931      ;
+; GeneradorVideo:inst|Meteorito:Met7|clk_met ; -5.731  ; -155.819      ;
+; GeneradorVideo:inst|Meteorito:Met1|clk_met ; -5.480  ; -157.477      ;
+; GeneradorVideo:inst|clk_bullet             ; -5.240  ; -122.717      ;
+; Control:inst3|clk_velocidad                ; -4.522  ; -252.736      ;
+; clk                                        ; -3.970  ; -65.285       ;
 +--------------------------------------------+---------+---------------+
 
 
-+---------------------------------------------------------------------+
-; Slow 1200mV 0C Model Hold Summary                                   ;
-+--------------------------------------------+--------+---------------+
-; Clock                                      ; Slack  ; End Point TNS ;
-+--------------------------------------------+--------+---------------+
-; Sincronizador:inst2|clk25                  ; -0.536 ; -0.536        ;
-; GeneradorVideo:inst|clk_bullet             ; 0.292  ; 0.000         ;
-; Control:inst3|clk_velocidad                ; 0.305  ; 0.000         ;
-; GeneradorVideo:inst|Meteorito:Met1|clk_met ; 0.305  ; 0.000         ;
-; GeneradorVideo:inst|Meteorito:Met2|clk_met ; 0.306  ; 0.000         ;
-; GeneradorVideo:inst|Meteorito:Met4|clk_met ; 0.306  ; 0.000         ;
-; GeneradorVideo:inst|Meteorito:Met5|clk_met ; 0.306  ; 0.000         ;
-; GeneradorVideo:inst|Meteorito:Met3|clk_met ; 0.307  ; 0.000         ;
-; GeneradorVideo:inst|Meteorito:Met7|clk_met ; 0.307  ; 0.000         ;
-; GeneradorVideo:inst|Meteorito:Met6|clk_met ; 0.308  ; 0.000         ;
-; clk                                        ; 0.572  ; 0.000         ;
-; GeneradorVideo:inst|Meteorito:Met8|clk_met ; 0.594  ; 0.000         ;
-+--------------------------------------------+--------+---------------+
++--------------------------------------------------------------------+
+; Slow 1200mV 0C Model Hold Summary                                  ;
++--------------------------------------------+-------+---------------+
+; Clock                                      ; Slack ; End Point TNS ;
++--------------------------------------------+-------+---------------+
+; GeneradorVideo:inst|clk_bullet             ; 0.289 ; 0.000         ;
+; Sincronizador:inst2|clk25                  ; 0.289 ; 0.000         ;
+; Control:inst3|clk_velocidad                ; 0.290 ; 0.000         ;
+; GeneradorVideo:inst|Meteorito:Met5|clk_met ; 0.305 ; 0.000         ;
+; GeneradorVideo:inst|Meteorito:Met3|clk_met ; 0.306 ; 0.000         ;
+; GeneradorVideo:inst|Meteorito:Met4|clk_met ; 0.306 ; 0.000         ;
+; GeneradorVideo:inst|Meteorito:Met6|clk_met ; 0.306 ; 0.000         ;
+; GeneradorVideo:inst|Meteorito:Met8|clk_met ; 0.306 ; 0.000         ;
+; GeneradorVideo:inst|Meteorito:Met2|clk_met ; 0.307 ; 0.000         ;
+; GeneradorVideo:inst|Meteorito:Met1|clk_met ; 0.321 ; 0.000         ;
+; GeneradorVideo:inst|Meteorito:Met7|clk_met ; 0.322 ; 0.000         ;
+; clk                                        ; 0.572 ; 0.000         ;
++--------------------------------------------+-------+---------------+
 
 
 -----------------------------------------
@@ -298,17 +298,17 @@ No paths to report.
 ; Clock                                      ; Slack  ; End Point TNS ;
 +--------------------------------------------+--------+---------------+
 ; clk                                        ; -3.000 ; -38.075       ;
-; Sincronizador:inst2|clk25                  ; -1.403 ; -648.186      ;
+; Sincronizador:inst2|clk25                  ; -1.403 ; -952.637      ;
 ; Control:inst3|clk_velocidad                ; -1.403 ; -85.583       ;
-; GeneradorVideo:inst|Meteorito:Met1|clk_met ; -1.403 ; -47.702       ;
-; GeneradorVideo:inst|Meteorito:Met2|clk_met ; -1.403 ; -47.702       ;
-; GeneradorVideo:inst|Meteorito:Met3|clk_met ; -1.403 ; -47.702       ;
-; GeneradorVideo:inst|Meteorito:Met4|clk_met ; -1.403 ; -47.702       ;
-; GeneradorVideo:inst|Meteorito:Met5|clk_met ; -1.403 ; -47.702       ;
-; GeneradorVideo:inst|Meteorito:Met6|clk_met ; -1.403 ; -47.702       ;
-; GeneradorVideo:inst|Meteorito:Met7|clk_met ; -1.403 ; -47.702       ;
-; GeneradorVideo:inst|Meteorito:Met8|clk_met ; -1.403 ; -46.299       ;
-; GeneradorVideo:inst|clk_bullet             ; -1.403 ; -14.030       ;
+; GeneradorVideo:inst|Meteorito:Met1|clk_met ; -1.403 ; -49.105       ;
+; GeneradorVideo:inst|Meteorito:Met2|clk_met ; -1.403 ; -49.105       ;
+; GeneradorVideo:inst|Meteorito:Met3|clk_met ; -1.403 ; -49.105       ;
+; GeneradorVideo:inst|Meteorito:Met4|clk_met ; -1.403 ; -49.105       ;
+; GeneradorVideo:inst|Meteorito:Met5|clk_met ; -1.403 ; -49.105       ;
+; GeneradorVideo:inst|Meteorito:Met6|clk_met ; -1.403 ; -49.105       ;
+; GeneradorVideo:inst|Meteorito:Met7|clk_met ; -1.403 ; -49.105       ;
+; GeneradorVideo:inst|Meteorito:Met8|clk_met ; -1.403 ; -49.105       ;
+; GeneradorVideo:inst|clk_bullet             ; -1.403 ; -43.493       ;
 +--------------------------------------------+--------+---------------+
 
 
@@ -323,39 +323,39 @@ No synchronizer chains to report.
 +--------------------------------------------+--------+---------------+
 ; Clock                                      ; Slack  ; End Point TNS ;
 +--------------------------------------------+--------+---------------+
-; Sincronizador:inst2|clk25                  ; -4.422 ; -1168.032     ;
-; GeneradorVideo:inst|Meteorito:Met6|clk_met ; -2.980 ; -55.968       ;
-; GeneradorVideo:inst|Meteorito:Met2|clk_met ; -2.537 ; -42.907       ;
-; GeneradorVideo:inst|Meteorito:Met4|clk_met ; -2.374 ; -57.191       ;
-; GeneradorVideo:inst|Meteorito:Met5|clk_met ; -2.128 ; -61.711       ;
-; GeneradorVideo:inst|Meteorito:Met7|clk_met ; -1.947 ; -58.272       ;
-; GeneradorVideo:inst|Meteorito:Met3|clk_met ; -1.796 ; -45.177       ;
-; GeneradorVideo:inst|Meteorito:Met1|clk_met ; -1.750 ; -48.998       ;
-; GeneradorVideo:inst|clk_bullet             ; -1.581 ; -13.177       ;
-; Control:inst3|clk_velocidad                ; -1.567 ; -77.264       ;
-; clk                                        ; -1.433 ; -16.989       ;
-; GeneradorVideo:inst|Meteorito:Met8|clk_met ; -0.850 ; -25.274       ;
+; Sincronizador:inst2|clk25                  ; -9.610 ; -2810.939     ;
+; GeneradorVideo:inst|Meteorito:Met6|clk_met ; -3.059 ; -78.480       ;
+; GeneradorVideo:inst|Meteorito:Met2|clk_met ; -2.802 ; -81.016       ;
+; GeneradorVideo:inst|Meteorito:Met8|clk_met ; -2.764 ; -68.677       ;
+; GeneradorVideo:inst|Meteorito:Met4|clk_met ; -2.696 ; -81.690       ;
+; GeneradorVideo:inst|Meteorito:Met5|clk_met ; -2.208 ; -76.473       ;
+; GeneradorVideo:inst|Meteorito:Met3|clk_met ; -2.197 ; -60.097       ;
+; GeneradorVideo:inst|clk_bullet             ; -2.031 ; -43.454       ;
+; GeneradorVideo:inst|Meteorito:Met7|clk_met ; -2.003 ; -53.105       ;
+; GeneradorVideo:inst|Meteorito:Met1|clk_met ; -1.856 ; -53.193       ;
+; Control:inst3|clk_velocidad                ; -1.622 ; -83.792       ;
+; clk                                        ; -1.327 ; -15.514       ;
 +--------------------------------------------+--------+---------------+
 
 
-+---------------------------------------------------------------------+
-; Fast 1200mV 0C Model Hold Summary                                   ;
-+--------------------------------------------+--------+---------------+
-; Clock                                      ; Slack  ; End Point TNS ;
-+--------------------------------------------+--------+---------------+
-; Sincronizador:inst2|clk25                  ; -0.520 ; -0.520        ;
-; GeneradorVideo:inst|clk_bullet             ; 0.142  ; 0.000         ;
-; Control:inst3|clk_velocidad                ; 0.148  ; 0.000         ;
-; GeneradorVideo:inst|Meteorito:Met1|clk_met ; 0.148  ; 0.000         ;
-; GeneradorVideo:inst|Meteorito:Met2|clk_met ; 0.148  ; 0.000         ;
-; GeneradorVideo:inst|Meteorito:Met4|clk_met ; 0.148  ; 0.000         ;
-; GeneradorVideo:inst|Meteorito:Met3|clk_met ; 0.149  ; 0.000         ;
-; GeneradorVideo:inst|Meteorito:Met5|clk_met ; 0.149  ; 0.000         ;
-; GeneradorVideo:inst|Meteorito:Met6|clk_met ; 0.149  ; 0.000         ;
-; GeneradorVideo:inst|Meteorito:Met7|clk_met ; 0.150  ; 0.000         ;
-; clk                                        ; 0.238  ; 0.000         ;
-; GeneradorVideo:inst|Meteorito:Met8|clk_met ; 0.249  ; 0.000         ;
-+--------------------------------------------+--------+---------------+
++--------------------------------------------------------------------+
+; Fast 1200mV 0C Model Hold Summary                                  ;
++--------------------------------------------+-------+---------------+
+; Clock                                      ; Slack ; End Point TNS ;
++--------------------------------------------+-------+---------------+
+; GeneradorVideo:inst|clk_bullet             ; 0.140 ; 0.000         ;
+; Control:inst3|clk_velocidad                ; 0.141 ; 0.000         ;
+; Sincronizador:inst2|clk25                  ; 0.141 ; 0.000         ;
+; GeneradorVideo:inst|Meteorito:Met5|clk_met ; 0.147 ; 0.000         ;
+; GeneradorVideo:inst|Meteorito:Met2|clk_met ; 0.148 ; 0.000         ;
+; GeneradorVideo:inst|Meteorito:Met3|clk_met ; 0.148 ; 0.000         ;
+; GeneradorVideo:inst|Meteorito:Met4|clk_met ; 0.148 ; 0.000         ;
+; GeneradorVideo:inst|Meteorito:Met6|clk_met ; 0.149 ; 0.000         ;
+; GeneradorVideo:inst|Meteorito:Met8|clk_met ; 0.149 ; 0.000         ;
+; GeneradorVideo:inst|Meteorito:Met1|clk_met ; 0.152 ; 0.000         ;
+; GeneradorVideo:inst|Meteorito:Met7|clk_met ; 0.153 ; 0.000         ;
+; clk                                        ; 0.237 ; 0.000         ;
++--------------------------------------------+-------+---------------+
 
 
 -----------------------------------------
@@ -375,18 +375,18 @@ No paths to report.
 +--------------------------------------------+--------+---------------+
 ; Clock                                      ; Slack  ; End Point TNS ;
 +--------------------------------------------+--------+---------------+
-; clk                                        ; -3.000 ; -28.860       ;
-; Sincronizador:inst2|clk25                  ; -1.000 ; -462.000      ;
+; clk                                        ; -3.000 ; -28.828       ;
+; Sincronizador:inst2|clk25                  ; -1.000 ; -679.000      ;
 ; Control:inst3|clk_velocidad                ; -1.000 ; -61.000       ;
-; GeneradorVideo:inst|Meteorito:Met1|clk_met ; -1.000 ; -34.000       ;
-; GeneradorVideo:inst|Meteorito:Met2|clk_met ; -1.000 ; -34.000       ;
-; GeneradorVideo:inst|Meteorito:Met3|clk_met ; -1.000 ; -34.000       ;
-; GeneradorVideo:inst|Meteorito:Met4|clk_met ; -1.000 ; -34.000       ;
-; GeneradorVideo:inst|Meteorito:Met5|clk_met ; -1.000 ; -34.000       ;
-; GeneradorVideo:inst|Meteorito:Met6|clk_met ; -1.000 ; -34.000       ;
-; GeneradorVideo:inst|Meteorito:Met7|clk_met ; -1.000 ; -34.000       ;
-; GeneradorVideo:inst|Meteorito:Met8|clk_met ; -1.000 ; -33.000       ;
-; GeneradorVideo:inst|clk_bullet             ; -1.000 ; -10.000       ;
+; GeneradorVideo:inst|Meteorito:Met1|clk_met ; -1.000 ; -35.000       ;
+; GeneradorVideo:inst|Meteorito:Met2|clk_met ; -1.000 ; -35.000       ;
+; GeneradorVideo:inst|Meteorito:Met3|clk_met ; -1.000 ; -35.000       ;
+; GeneradorVideo:inst|Meteorito:Met4|clk_met ; -1.000 ; -35.000       ;
+; GeneradorVideo:inst|Meteorito:Met5|clk_met ; -1.000 ; -35.000       ;
+; GeneradorVideo:inst|Meteorito:Met6|clk_met ; -1.000 ; -35.000       ;
+; GeneradorVideo:inst|Meteorito:Met7|clk_met ; -1.000 ; -35.000       ;
+; GeneradorVideo:inst|Meteorito:Met8|clk_met ; -1.000 ; -35.000       ;
+; GeneradorVideo:inst|clk_bullet             ; -1.000 ; -31.000       ;
 +--------------------------------------------+--------+---------------+
 
 
@@ -396,38 +396,38 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+-------------------------------------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                                                         ;
-+---------------------------------------------+-----------+--------+----------+---------+---------------------+
-; Clock                                       ; Setup     ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
-+---------------------------------------------+-----------+--------+----------+---------+---------------------+
-; Worst-case Slack                            ; -11.524   ; -0.643 ; N/A      ; N/A     ; -3.000              ;
-;  Control:inst3|clk_velocidad                ; -5.053    ; 0.148  ; N/A      ; N/A     ; -1.403              ;
-;  GeneradorVideo:inst|Meteorito:Met1|clk_met ; -5.835    ; 0.148  ; N/A      ; N/A     ; -1.403              ;
-;  GeneradorVideo:inst|Meteorito:Met2|clk_met ; -7.728    ; 0.148  ; N/A      ; N/A     ; -1.403              ;
-;  GeneradorVideo:inst|Meteorito:Met3|clk_met ; -5.881    ; 0.149  ; N/A      ; N/A     ; -1.403              ;
-;  GeneradorVideo:inst|Meteorito:Met4|clk_met ; -7.486    ; 0.148  ; N/A      ; N/A     ; -1.403              ;
-;  GeneradorVideo:inst|Meteorito:Met5|clk_met ; -6.622    ; 0.149  ; N/A      ; N/A     ; -1.403              ;
-;  GeneradorVideo:inst|Meteorito:Met6|clk_met ; -8.666    ; 0.149  ; N/A      ; N/A     ; -1.403              ;
-;  GeneradorVideo:inst|Meteorito:Met7|clk_met ; -6.371    ; 0.150  ; N/A      ; N/A     ; -1.403              ;
-;  GeneradorVideo:inst|Meteorito:Met8|clk_met ; -3.238    ; 0.249  ; N/A      ; N/A     ; -1.403              ;
-;  GeneradorVideo:inst|clk_bullet             ; -4.926    ; 0.142  ; N/A      ; N/A     ; -1.403              ;
-;  Sincronizador:inst2|clk25                  ; -11.524   ; -0.643 ; N/A      ; N/A     ; -1.403              ;
-;  clk                                        ; -4.500    ; 0.238  ; N/A      ; N/A     ; -3.000              ;
-; Design-wide TNS                             ; -5063.011 ; -0.643 ; 0.0      ; 0.0     ; -1166.087           ;
-;  Control:inst3|clk_velocidad                ; -264.356  ; 0.000  ; N/A      ; N/A     ; -85.583             ;
-;  GeneradorVideo:inst|Meteorito:Met1|clk_met ; -162.965  ; 0.000  ; N/A      ; N/A     ; -47.702             ;
-;  GeneradorVideo:inst|Meteorito:Met2|clk_met ; -150.657  ; 0.000  ; N/A      ; N/A     ; -47.702             ;
-;  GeneradorVideo:inst|Meteorito:Met3|clk_met ; -152.885  ; 0.000  ; N/A      ; N/A     ; -47.702             ;
-;  GeneradorVideo:inst|Meteorito:Met4|clk_met ; -181.027  ; 0.000  ; N/A      ; N/A     ; -47.702             ;
-;  GeneradorVideo:inst|Meteorito:Met5|clk_met ; -188.569  ; 0.000  ; N/A      ; N/A     ; -47.702             ;
-;  GeneradorVideo:inst|Meteorito:Met6|clk_met ; -178.583  ; 0.000  ; N/A      ; N/A     ; -47.702             ;
-;  GeneradorVideo:inst|Meteorito:Met7|clk_met ; -181.308  ; 0.000  ; N/A      ; N/A     ; -47.702             ;
-;  GeneradorVideo:inst|Meteorito:Met8|clk_met ; -101.075  ; 0.000  ; N/A      ; N/A     ; -46.299             ;
-;  GeneradorVideo:inst|clk_bullet             ; -42.953   ; 0.000  ; N/A      ; N/A     ; -14.030             ;
-;  Sincronizador:inst2|clk25                  ; -3383.151 ; -0.643 ; N/A      ; N/A     ; -648.186            ;
-;  clk                                        ; -75.482   ; 0.000  ; N/A      ; N/A     ; -38.075             ;
-+---------------------------------------------+-----------+--------+----------+---------+---------------------+
++------------------------------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                                        ;
++---------------------------------------------+-----------+-------+----------+---------+---------------------+
+; Clock                                       ; Setup     ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++---------------------------------------------+-----------+-------+----------+---------+---------------------+
+; Worst-case Slack                            ; -24.551   ; 0.140 ; N/A      ; N/A     ; -3.000              ;
+;  Control:inst3|clk_velocidad                ; -4.973    ; 0.141 ; N/A      ; N/A     ; -1.403              ;
+;  GeneradorVideo:inst|Meteorito:Met1|clk_met ; -6.123    ; 0.152 ; N/A      ; N/A     ; -1.403              ;
+;  GeneradorVideo:inst|Meteorito:Met2|clk_met ; -8.275    ; 0.148 ; N/A      ; N/A     ; -1.403              ;
+;  GeneradorVideo:inst|Meteorito:Met3|clk_met ; -6.806    ; 0.148 ; N/A      ; N/A     ; -1.403              ;
+;  GeneradorVideo:inst|Meteorito:Met4|clk_met ; -8.253    ; 0.148 ; N/A      ; N/A     ; -1.403              ;
+;  GeneradorVideo:inst|Meteorito:Met5|clk_met ; -6.779    ; 0.147 ; N/A      ; N/A     ; -1.403              ;
+;  GeneradorVideo:inst|Meteorito:Met6|clk_met ; -8.898    ; 0.149 ; N/A      ; N/A     ; -1.403              ;
+;  GeneradorVideo:inst|Meteorito:Met7|clk_met ; -6.366    ; 0.153 ; N/A      ; N/A     ; -1.403              ;
+;  GeneradorVideo:inst|Meteorito:Met8|clk_met ; -8.329    ; 0.149 ; N/A      ; N/A     ; -1.403              ;
+;  GeneradorVideo:inst|clk_bullet             ; -5.755    ; 0.140 ; N/A      ; N/A     ; -1.403              ;
+;  Sincronizador:inst2|clk25                  ; -24.551   ; 0.141 ; N/A      ; N/A     ; -1.403              ;
+;  clk                                        ; -4.340    ; 0.237 ; N/A      ; N/A     ; -3.000              ;
+; Design-wide TNS                             ; -9743.675 ; 0.0   ; 0.0      ; 0.0     ; -1512.628           ;
+;  Control:inst3|clk_velocidad                ; -278.158  ; 0.000 ; N/A      ; N/A     ; -85.583             ;
+;  GeneradorVideo:inst|Meteorito:Met1|clk_met ; -175.040  ; 0.000 ; N/A      ; N/A     ; -49.105             ;
+;  GeneradorVideo:inst|Meteorito:Met2|clk_met ; -233.037  ; 0.000 ; N/A      ; N/A     ; -49.105             ;
+;  GeneradorVideo:inst|Meteorito:Met3|clk_met ; -188.680  ; 0.000 ; N/A      ; N/A     ; -49.105             ;
+;  GeneradorVideo:inst|Meteorito:Met4|clk_met ; -237.195  ; 0.000 ; N/A      ; N/A     ; -49.105             ;
+;  GeneradorVideo:inst|Meteorito:Met5|clk_met ; -223.126  ; 0.000 ; N/A      ; N/A     ; -49.105             ;
+;  GeneradorVideo:inst|Meteorito:Met6|clk_met ; -227.845  ; 0.000 ; N/A      ; N/A     ; -49.105             ;
+;  GeneradorVideo:inst|Meteorito:Met7|clk_met ; -172.446  ; 0.000 ; N/A      ; N/A     ; -49.105             ;
+;  GeneradorVideo:inst|Meteorito:Met8|clk_met ; -206.314  ; 0.000 ; N/A      ; N/A     ; -49.105             ;
+;  GeneradorVideo:inst|clk_bullet             ; -135.738  ; 0.000 ; N/A      ; N/A     ; -43.493             ;
+;  Sincronizador:inst2|clk25                  ; -7593.332 ; 0.000 ; N/A      ; N/A     ; -952.637            ;
+;  clk                                        ; -72.764   ; 0.000 ; N/A      ; N/A     ; -38.075             ;
++---------------------------------------------+-----------+-------+----------+---------+---------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -459,12 +459,12 @@ No synchronizer chains to report.
 ; Pin                 ; I/O Standard          ; 10-90 Rise Time ; 90-10 Fall Time ;
 +---------------------+-----------------------+-----------------+-----------------+
 ; reset               ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
-; clk                 ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; b_fire              ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
-; b_izquierda         ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; b_derecha           ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; b_izquierda         ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; b_abajo             ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; b_arriba            ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; clk                 ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_TMS~        ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_TCK~        ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_TDI~        ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
@@ -544,115 +544,119 @@ No synchronizer chains to report.
 +--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Setup Transfers                                                                                                                     ;
-+--------------------------------------------+--------------------------------------------+----------+----------+----------+----------+
-; From Clock                                 ; To Clock                                   ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+--------------------------------------------+--------------------------------------------+----------+----------+----------+----------+
-; clk                                        ; clk                                        ; 660      ; 0        ; 0        ; 0        ;
-; Control:inst3|clk_velocidad                ; clk                                        ; 1        ; 1        ; 0        ; 0        ;
-; Sincronizador:inst2|clk25                  ; clk                                        ; 1        ; 1        ; 0        ; 0        ;
-; Control:inst3|clk_velocidad                ; Control:inst3|clk_velocidad                ; 8532     ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|clk_bullet             ; 189      ; 0        ; 0        ; 0        ;
-; Control:inst3|clk_velocidad                ; GeneradorVideo:inst|Meteorito:Met1|clk_met ; 6        ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met1|clk_met ; 1        ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met1|clk_met ; GeneradorVideo:inst|Meteorito:Met1|clk_met ; 3579     ; 0        ; 0        ; 0        ;
-; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met1|clk_met ; 323      ; 0        ; 0        ; 0        ;
-; Control:inst3|clk_velocidad                ; GeneradorVideo:inst|Meteorito:Met2|clk_met ; 6        ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met2|clk_met ; 1        ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met2|clk_met ; GeneradorVideo:inst|Meteorito:Met2|clk_met ; 23291    ; 0        ; 0        ; 0        ;
-; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met2|clk_met ; 323      ; 0        ; 0        ; 0        ;
-; Control:inst3|clk_velocidad                ; GeneradorVideo:inst|Meteorito:Met3|clk_met ; 6        ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met3|clk_met ; 1        ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met3|clk_met ; GeneradorVideo:inst|Meteorito:Met3|clk_met ; 3579     ; 0        ; 0        ; 0        ;
-; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met3|clk_met ; 323      ; 0        ; 0        ; 0        ;
-; Control:inst3|clk_velocidad                ; GeneradorVideo:inst|Meteorito:Met4|clk_met ; 6        ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met4|clk_met ; 1        ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met4|clk_met ; GeneradorVideo:inst|Meteorito:Met4|clk_met ; 23291    ; 0        ; 0        ; 0        ;
-; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met4|clk_met ; 323      ; 0        ; 0        ; 0        ;
-; Control:inst3|clk_velocidad                ; GeneradorVideo:inst|Meteorito:Met5|clk_met ; 6        ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met5|clk_met ; 1        ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met5|clk_met ; GeneradorVideo:inst|Meteorito:Met5|clk_met ; 3579     ; 0        ; 0        ; 0        ;
-; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met5|clk_met ; 323      ; 0        ; 0        ; 0        ;
-; Control:inst3|clk_velocidad                ; GeneradorVideo:inst|Meteorito:Met6|clk_met ; 6        ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met6|clk_met ; 1        ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met6|clk_met ; GeneradorVideo:inst|Meteorito:Met6|clk_met ; 23291    ; 0        ; 0        ; 0        ;
-; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met6|clk_met ; 323      ; 0        ; 0        ; 0        ;
-; Control:inst3|clk_velocidad                ; GeneradorVideo:inst|Meteorito:Met7|clk_met ; 6        ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met7|clk_met ; 1        ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met7|clk_met ; GeneradorVideo:inst|Meteorito:Met7|clk_met ; 3579     ; 0        ; 0        ; 0        ;
-; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met7|clk_met ; 323      ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met8|clk_met ; 1        ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met8|clk_met ; GeneradorVideo:inst|Meteorito:Met8|clk_met ; 1520     ; 0        ; 0        ; 0        ;
-; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met8|clk_met ; 91       ; 0        ; 0        ; 0        ;
-; Control:inst3|clk_velocidad                ; Sincronizador:inst2|clk25                  ; 278142   ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|clk_bullet             ; Sincronizador:inst2|clk25                  ; 570      ; 1        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met1|clk_met ; Sincronizador:inst2|clk25                  ; 83525    ; 1        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met2|clk_met ; Sincronizador:inst2|clk25                  ; 128677   ; 1        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met3|clk_met ; Sincronizador:inst2|clk25                  ; 58525    ; 1        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met4|clk_met ; Sincronizador:inst2|clk25                  ; 85189    ; 1        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met5|clk_met ; Sincronizador:inst2|clk25                  ; 49525    ; 1        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met6|clk_met ; Sincronizador:inst2|clk25                  ; 73411    ; 1        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met7|clk_met ; Sincronizador:inst2|clk25                  ; 32525    ; 1        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met8|clk_met ; Sincronizador:inst2|clk25                  ; 42604    ; 1        ; 0        ; 0        ;
-; Sincronizador:inst2|clk25                  ; Sincronizador:inst2|clk25                  ; 237865   ; 0        ; 0        ; 0        ;
-+--------------------------------------------+--------------------------------------------+----------+----------+----------+----------+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                                                         ;
++--------------------------------------------+--------------------------------------------+--------------+----------+----------+----------+
+; From Clock                                 ; To Clock                                   ; RR Paths     ; FR Paths ; RF Paths ; FF Paths ;
++--------------------------------------------+--------------------------------------------+--------------+----------+----------+----------+
+; clk                                        ; clk                                        ; 660          ; 0        ; 0        ; 0        ;
+; Control:inst3|clk_velocidad                ; clk                                        ; 1            ; 1        ; 0        ; 0        ;
+; Sincronizador:inst2|clk25                  ; clk                                        ; 1            ; 1        ; 0        ; 0        ;
+; Control:inst3|clk_velocidad                ; Control:inst3|clk_velocidad                ; 10540        ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|clk_bullet             ; 793          ; 0        ; 0        ; 0        ;
+; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|clk_bullet             ; 151          ; 0        ; 0        ; 0        ;
+; Control:inst3|clk_velocidad                ; GeneradorVideo:inst|Meteorito:Met1|clk_met ; 9            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met1|clk_met ; 1            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met1|clk_met ; GeneradorVideo:inst|Meteorito:Met1|clk_met ; 4520         ; 0        ; 0        ; 0        ;
+; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met1|clk_met ; 517          ; 0        ; 0        ; 0        ;
+; Control:inst3|clk_velocidad                ; GeneradorVideo:inst|Meteorito:Met2|clk_met ; 9            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met2|clk_met ; 1            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met2|clk_met ; GeneradorVideo:inst|Meteorito:Met2|clk_met ; 34100        ; 0        ; 0        ; 0        ;
+; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met2|clk_met ; 517          ; 0        ; 0        ; 0        ;
+; Control:inst3|clk_velocidad                ; GeneradorVideo:inst|Meteorito:Met3|clk_met ; 9            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met3|clk_met ; 1            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met3|clk_met ; GeneradorVideo:inst|Meteorito:Met3|clk_met ; 4520         ; 0        ; 0        ; 0        ;
+; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met3|clk_met ; 517          ; 0        ; 0        ; 0        ;
+; Control:inst3|clk_velocidad                ; GeneradorVideo:inst|Meteorito:Met4|clk_met ; 9            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met4|clk_met ; 1            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met4|clk_met ; GeneradorVideo:inst|Meteorito:Met4|clk_met ; 34100        ; 0        ; 0        ; 0        ;
+; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met4|clk_met ; 517          ; 0        ; 0        ; 0        ;
+; Control:inst3|clk_velocidad                ; GeneradorVideo:inst|Meteorito:Met5|clk_met ; 9            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met5|clk_met ; 1            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met5|clk_met ; GeneradorVideo:inst|Meteorito:Met5|clk_met ; 4520         ; 0        ; 0        ; 0        ;
+; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met5|clk_met ; 517          ; 0        ; 0        ; 0        ;
+; Control:inst3|clk_velocidad                ; GeneradorVideo:inst|Meteorito:Met6|clk_met ; 9            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met6|clk_met ; 1            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met6|clk_met ; GeneradorVideo:inst|Meteorito:Met6|clk_met ; 34100        ; 0        ; 0        ; 0        ;
+; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met6|clk_met ; 517          ; 0        ; 0        ; 0        ;
+; Control:inst3|clk_velocidad                ; GeneradorVideo:inst|Meteorito:Met7|clk_met ; 9            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met7|clk_met ; 1            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met7|clk_met ; GeneradorVideo:inst|Meteorito:Met7|clk_met ; 4520         ; 0        ; 0        ; 0        ;
+; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met7|clk_met ; 517          ; 0        ; 0        ; 0        ;
+; Control:inst3|clk_velocidad                ; GeneradorVideo:inst|Meteorito:Met8|clk_met ; 9            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met8|clk_met ; 1            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met8|clk_met ; GeneradorVideo:inst|Meteorito:Met8|clk_met ; 34100        ; 0        ; 0        ; 0        ;
+; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met8|clk_met ; 517          ; 0        ; 0        ; 0        ;
+; Control:inst3|clk_velocidad                ; Sincronizador:inst2|clk25                  ; 333822       ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|clk_bullet             ; Sincronizador:inst2|clk25                  ; > 2147483647 ; 1        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met1|clk_met ; Sincronizador:inst2|clk25                  ; 59530        ; 1        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met2|clk_met ; Sincronizador:inst2|clk25                  ; 114190       ; 1        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met3|clk_met ; Sincronizador:inst2|clk25                  ; 54030        ; 1        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met4|clk_met ; Sincronizador:inst2|clk25                  ; 84288        ; 1        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met5|clk_met ; Sincronizador:inst2|clk25                  ; 42034        ; 1        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met6|clk_met ; Sincronizador:inst2|clk25                  ; 61638        ; 1        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met7|clk_met ; Sincronizador:inst2|clk25                  ; 25030        ; 1        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met8|clk_met ; Sincronizador:inst2|clk25                  ; 41706        ; 1        ; 0        ; 0        ;
+; Sincronizador:inst2|clk25                  ; Sincronizador:inst2|clk25                  ; 303100       ; 0        ; 0        ; 0        ;
++--------------------------------------------+--------------------------------------------+--------------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Hold Transfers                                                                                                                      ;
-+--------------------------------------------+--------------------------------------------+----------+----------+----------+----------+
-; From Clock                                 ; To Clock                                   ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+--------------------------------------------+--------------------------------------------+----------+----------+----------+----------+
-; clk                                        ; clk                                        ; 660      ; 0        ; 0        ; 0        ;
-; Control:inst3|clk_velocidad                ; clk                                        ; 1        ; 1        ; 0        ; 0        ;
-; Sincronizador:inst2|clk25                  ; clk                                        ; 1        ; 1        ; 0        ; 0        ;
-; Control:inst3|clk_velocidad                ; Control:inst3|clk_velocidad                ; 8532     ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|clk_bullet             ; 189      ; 0        ; 0        ; 0        ;
-; Control:inst3|clk_velocidad                ; GeneradorVideo:inst|Meteorito:Met1|clk_met ; 6        ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met1|clk_met ; 1        ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met1|clk_met ; GeneradorVideo:inst|Meteorito:Met1|clk_met ; 3579     ; 0        ; 0        ; 0        ;
-; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met1|clk_met ; 323      ; 0        ; 0        ; 0        ;
-; Control:inst3|clk_velocidad                ; GeneradorVideo:inst|Meteorito:Met2|clk_met ; 6        ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met2|clk_met ; 1        ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met2|clk_met ; GeneradorVideo:inst|Meteorito:Met2|clk_met ; 23291    ; 0        ; 0        ; 0        ;
-; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met2|clk_met ; 323      ; 0        ; 0        ; 0        ;
-; Control:inst3|clk_velocidad                ; GeneradorVideo:inst|Meteorito:Met3|clk_met ; 6        ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met3|clk_met ; 1        ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met3|clk_met ; GeneradorVideo:inst|Meteorito:Met3|clk_met ; 3579     ; 0        ; 0        ; 0        ;
-; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met3|clk_met ; 323      ; 0        ; 0        ; 0        ;
-; Control:inst3|clk_velocidad                ; GeneradorVideo:inst|Meteorito:Met4|clk_met ; 6        ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met4|clk_met ; 1        ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met4|clk_met ; GeneradorVideo:inst|Meteorito:Met4|clk_met ; 23291    ; 0        ; 0        ; 0        ;
-; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met4|clk_met ; 323      ; 0        ; 0        ; 0        ;
-; Control:inst3|clk_velocidad                ; GeneradorVideo:inst|Meteorito:Met5|clk_met ; 6        ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met5|clk_met ; 1        ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met5|clk_met ; GeneradorVideo:inst|Meteorito:Met5|clk_met ; 3579     ; 0        ; 0        ; 0        ;
-; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met5|clk_met ; 323      ; 0        ; 0        ; 0        ;
-; Control:inst3|clk_velocidad                ; GeneradorVideo:inst|Meteorito:Met6|clk_met ; 6        ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met6|clk_met ; 1        ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met6|clk_met ; GeneradorVideo:inst|Meteorito:Met6|clk_met ; 23291    ; 0        ; 0        ; 0        ;
-; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met6|clk_met ; 323      ; 0        ; 0        ; 0        ;
-; Control:inst3|clk_velocidad                ; GeneradorVideo:inst|Meteorito:Met7|clk_met ; 6        ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met7|clk_met ; 1        ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met7|clk_met ; GeneradorVideo:inst|Meteorito:Met7|clk_met ; 3579     ; 0        ; 0        ; 0        ;
-; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met7|clk_met ; 323      ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met8|clk_met ; 1        ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met8|clk_met ; GeneradorVideo:inst|Meteorito:Met8|clk_met ; 1520     ; 0        ; 0        ; 0        ;
-; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met8|clk_met ; 91       ; 0        ; 0        ; 0        ;
-; Control:inst3|clk_velocidad                ; Sincronizador:inst2|clk25                  ; 278142   ; 0        ; 0        ; 0        ;
-; GeneradorVideo:inst|clk_bullet             ; Sincronizador:inst2|clk25                  ; 570      ; 1        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met1|clk_met ; Sincronizador:inst2|clk25                  ; 83525    ; 1        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met2|clk_met ; Sincronizador:inst2|clk25                  ; 128677   ; 1        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met3|clk_met ; Sincronizador:inst2|clk25                  ; 58525    ; 1        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met4|clk_met ; Sincronizador:inst2|clk25                  ; 85189    ; 1        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met5|clk_met ; Sincronizador:inst2|clk25                  ; 49525    ; 1        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met6|clk_met ; Sincronizador:inst2|clk25                  ; 73411    ; 1        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met7|clk_met ; Sincronizador:inst2|clk25                  ; 32525    ; 1        ; 0        ; 0        ;
-; GeneradorVideo:inst|Meteorito:Met8|clk_met ; Sincronizador:inst2|clk25                  ; 42604    ; 1        ; 0        ; 0        ;
-; Sincronizador:inst2|clk25                  ; Sincronizador:inst2|clk25                  ; 237865   ; 0        ; 0        ; 0        ;
-+--------------------------------------------+--------------------------------------------+----------+----------+----------+----------+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                                                          ;
++--------------------------------------------+--------------------------------------------+--------------+----------+----------+----------+
+; From Clock                                 ; To Clock                                   ; RR Paths     ; FR Paths ; RF Paths ; FF Paths ;
++--------------------------------------------+--------------------------------------------+--------------+----------+----------+----------+
+; clk                                        ; clk                                        ; 660          ; 0        ; 0        ; 0        ;
+; Control:inst3|clk_velocidad                ; clk                                        ; 1            ; 1        ; 0        ; 0        ;
+; Sincronizador:inst2|clk25                  ; clk                                        ; 1            ; 1        ; 0        ; 0        ;
+; Control:inst3|clk_velocidad                ; Control:inst3|clk_velocidad                ; 10540        ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|clk_bullet             ; 793          ; 0        ; 0        ; 0        ;
+; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|clk_bullet             ; 151          ; 0        ; 0        ; 0        ;
+; Control:inst3|clk_velocidad                ; GeneradorVideo:inst|Meteorito:Met1|clk_met ; 9            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met1|clk_met ; 1            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met1|clk_met ; GeneradorVideo:inst|Meteorito:Met1|clk_met ; 4520         ; 0        ; 0        ; 0        ;
+; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met1|clk_met ; 517          ; 0        ; 0        ; 0        ;
+; Control:inst3|clk_velocidad                ; GeneradorVideo:inst|Meteorito:Met2|clk_met ; 9            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met2|clk_met ; 1            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met2|clk_met ; GeneradorVideo:inst|Meteorito:Met2|clk_met ; 34100        ; 0        ; 0        ; 0        ;
+; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met2|clk_met ; 517          ; 0        ; 0        ; 0        ;
+; Control:inst3|clk_velocidad                ; GeneradorVideo:inst|Meteorito:Met3|clk_met ; 9            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met3|clk_met ; 1            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met3|clk_met ; GeneradorVideo:inst|Meteorito:Met3|clk_met ; 4520         ; 0        ; 0        ; 0        ;
+; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met3|clk_met ; 517          ; 0        ; 0        ; 0        ;
+; Control:inst3|clk_velocidad                ; GeneradorVideo:inst|Meteorito:Met4|clk_met ; 9            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met4|clk_met ; 1            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met4|clk_met ; GeneradorVideo:inst|Meteorito:Met4|clk_met ; 34100        ; 0        ; 0        ; 0        ;
+; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met4|clk_met ; 517          ; 0        ; 0        ; 0        ;
+; Control:inst3|clk_velocidad                ; GeneradorVideo:inst|Meteorito:Met5|clk_met ; 9            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met5|clk_met ; 1            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met5|clk_met ; GeneradorVideo:inst|Meteorito:Met5|clk_met ; 4520         ; 0        ; 0        ; 0        ;
+; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met5|clk_met ; 517          ; 0        ; 0        ; 0        ;
+; Control:inst3|clk_velocidad                ; GeneradorVideo:inst|Meteorito:Met6|clk_met ; 9            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met6|clk_met ; 1            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met6|clk_met ; GeneradorVideo:inst|Meteorito:Met6|clk_met ; 34100        ; 0        ; 0        ; 0        ;
+; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met6|clk_met ; 517          ; 0        ; 0        ; 0        ;
+; Control:inst3|clk_velocidad                ; GeneradorVideo:inst|Meteorito:Met7|clk_met ; 9            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met7|clk_met ; 1            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met7|clk_met ; GeneradorVideo:inst|Meteorito:Met7|clk_met ; 4520         ; 0        ; 0        ; 0        ;
+; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met7|clk_met ; 517          ; 0        ; 0        ; 0        ;
+; Control:inst3|clk_velocidad                ; GeneradorVideo:inst|Meteorito:Met8|clk_met ; 9            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|clk_bullet             ; GeneradorVideo:inst|Meteorito:Met8|clk_met ; 1            ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met8|clk_met ; GeneradorVideo:inst|Meteorito:Met8|clk_met ; 34100        ; 0        ; 0        ; 0        ;
+; Sincronizador:inst2|clk25                  ; GeneradorVideo:inst|Meteorito:Met8|clk_met ; 517          ; 0        ; 0        ; 0        ;
+; Control:inst3|clk_velocidad                ; Sincronizador:inst2|clk25                  ; 333822       ; 0        ; 0        ; 0        ;
+; GeneradorVideo:inst|clk_bullet             ; Sincronizador:inst2|clk25                  ; > 2147483647 ; 1        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met1|clk_met ; Sincronizador:inst2|clk25                  ; 59530        ; 1        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met2|clk_met ; Sincronizador:inst2|clk25                  ; 114190       ; 1        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met3|clk_met ; Sincronizador:inst2|clk25                  ; 54030        ; 1        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met4|clk_met ; Sincronizador:inst2|clk25                  ; 84288        ; 1        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met5|clk_met ; Sincronizador:inst2|clk25                  ; 42034        ; 1        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met6|clk_met ; Sincronizador:inst2|clk25                  ; 61638        ; 1        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met7|clk_met ; Sincronizador:inst2|clk25                  ; 25030        ; 1        ; 0        ; 0        ;
+; GeneradorVideo:inst|Meteorito:Met8|clk_met ; Sincronizador:inst2|clk25                  ; 41706        ; 1        ; 0        ; 0        ;
+; Sincronizador:inst2|clk25                  ; Sincronizador:inst2|clk25                  ; 303100       ; 0        ; 0        ; 0        ;
++--------------------------------------------+--------------------------------------------+--------------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
@@ -676,7 +680,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 6     ; 6    ;
-; Unconstrained Input Port Paths  ; 251   ; 251  ;
+; Unconstrained Input Port Paths  ; 276   ; 276  ;
 ; Unconstrained Output Ports      ; 14    ; 14   ;
 ; Unconstrained Output Port Paths ; 14    ; 14   ;
 +---------------------------------+-------+------+
@@ -780,10 +784,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Sun Nov 18 20:18:39 2018
+    Info: Processing started: Tue Dec 04 16:07:37 2018
 Info: Command: quartus_sta VGA -c VGA
 Info: qsta_default_script.tcl version: #3
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
@@ -793,176 +796,176 @@ Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name Sincronizador:inst2|clk25 Sincronizador:inst2|clk25
     Info (332105): create_clock -period 1.000 -name clk clk
     Info (332105): create_clock -period 1.000 -name Control:inst3|clk_velocidad Control:inst3|clk_velocidad
-    Info (332105): create_clock -period 1.000 -name GeneradorVideo:inst|Meteorito:Met8|clk_met GeneradorVideo:inst|Meteorito:Met8|clk_met
-    Info (332105): create_clock -period 1.000 -name GeneradorVideo:inst|clk_bullet GeneradorVideo:inst|clk_bullet
-    Info (332105): create_clock -period 1.000 -name GeneradorVideo:inst|Meteorito:Met7|clk_met GeneradorVideo:inst|Meteorito:Met7|clk_met
     Info (332105): create_clock -period 1.000 -name GeneradorVideo:inst|Meteorito:Met4|clk_met GeneradorVideo:inst|Meteorito:Met4|clk_met
-    Info (332105): create_clock -period 1.000 -name GeneradorVideo:inst|Meteorito:Met2|clk_met GeneradorVideo:inst|Meteorito:Met2|clk_met
+    Info (332105): create_clock -period 1.000 -name GeneradorVideo:inst|clk_bullet GeneradorVideo:inst|clk_bullet
+    Info (332105): create_clock -period 1.000 -name GeneradorVideo:inst|Meteorito:Met8|clk_met GeneradorVideo:inst|Meteorito:Met8|clk_met
     Info (332105): create_clock -period 1.000 -name GeneradorVideo:inst|Meteorito:Met3|clk_met GeneradorVideo:inst|Meteorito:Met3|clk_met
-    Info (332105): create_clock -period 1.000 -name GeneradorVideo:inst|Meteorito:Met1|clk_met GeneradorVideo:inst|Meteorito:Met1|clk_met
     Info (332105): create_clock -period 1.000 -name GeneradorVideo:inst|Meteorito:Met5|clk_met GeneradorVideo:inst|Meteorito:Met5|clk_met
     Info (332105): create_clock -period 1.000 -name GeneradorVideo:inst|Meteorito:Met6|clk_met GeneradorVideo:inst|Meteorito:Met6|clk_met
+    Info (332105): create_clock -period 1.000 -name GeneradorVideo:inst|Meteorito:Met7|clk_met GeneradorVideo:inst|Meteorito:Met7|clk_met
+    Info (332105): create_clock -period 1.000 -name GeneradorVideo:inst|Meteorito:Met2|clk_met GeneradorVideo:inst|Meteorito:Met2|clk_met
+    Info (332105): create_clock -period 1.000 -name GeneradorVideo:inst|Meteorito:Met1|clk_met GeneradorVideo:inst|Meteorito:Met1|clk_met
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -11.524
+Info (332146): Worst-case setup slack is -24.551
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -11.524           -3383.151 Sincronizador:inst2|clk25 
-    Info (332119):    -8.666            -178.583 GeneradorVideo:inst|Meteorito:Met6|clk_met 
-    Info (332119):    -7.728            -150.657 GeneradorVideo:inst|Meteorito:Met2|clk_met 
-    Info (332119):    -7.486            -181.027 GeneradorVideo:inst|Meteorito:Met4|clk_met 
-    Info (332119):    -6.622            -188.569 GeneradorVideo:inst|Meteorito:Met5|clk_met 
-    Info (332119):    -6.371            -181.308 GeneradorVideo:inst|Meteorito:Met7|clk_met 
-    Info (332119):    -5.881            -152.885 GeneradorVideo:inst|Meteorito:Met3|clk_met 
-    Info (332119):    -5.835            -162.965 GeneradorVideo:inst|Meteorito:Met1|clk_met 
-    Info (332119):    -5.053            -264.356 Control:inst3|clk_velocidad 
-    Info (332119):    -4.926             -42.953 GeneradorVideo:inst|clk_bullet 
-    Info (332119):    -4.500             -75.482 clk 
-    Info (332119):    -3.238            -101.075 GeneradorVideo:inst|Meteorito:Met8|clk_met 
-Info (332146): Worst-case hold slack is -0.643
+    Info (332119):   -24.551           -7593.332 Sincronizador:inst2|clk25 
+    Info (332119):    -8.898            -227.845 GeneradorVideo:inst|Meteorito:Met6|clk_met 
+    Info (332119):    -8.329            -206.314 GeneradorVideo:inst|Meteorito:Met8|clk_met 
+    Info (332119):    -8.275            -233.037 GeneradorVideo:inst|Meteorito:Met2|clk_met 
+    Info (332119):    -8.253            -237.195 GeneradorVideo:inst|Meteorito:Met4|clk_met 
+    Info (332119):    -6.806            -188.680 GeneradorVideo:inst|Meteorito:Met3|clk_met 
+    Info (332119):    -6.779            -223.126 GeneradorVideo:inst|Meteorito:Met5|clk_met 
+    Info (332119):    -6.366            -172.446 GeneradorVideo:inst|Meteorito:Met7|clk_met 
+    Info (332119):    -6.123            -175.040 GeneradorVideo:inst|Meteorito:Met1|clk_met 
+    Info (332119):    -5.755            -135.738 GeneradorVideo:inst|clk_bullet 
+    Info (332119):    -4.973            -278.158 Control:inst3|clk_velocidad 
+    Info (332119):    -4.340             -72.764 clk 
+Info (332146): Worst-case hold slack is 0.323
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.643              -0.643 Sincronizador:inst2|clk25 
-    Info (332119):     0.325               0.000 GeneradorVideo:inst|clk_bullet 
-    Info (332119):     0.340               0.000 Control:inst3|clk_velocidad 
-    Info (332119):     0.340               0.000 GeneradorVideo:inst|Meteorito:Met1|clk_met 
-    Info (332119):     0.340               0.000 GeneradorVideo:inst|Meteorito:Met2|clk_met 
+    Info (332119):     0.323               0.000 GeneradorVideo:inst|clk_bullet 
+    Info (332119):     0.323               0.000 Sincronizador:inst2|clk25 
+    Info (332119):     0.324               0.000 Control:inst3|clk_velocidad 
     Info (332119):     0.340               0.000 GeneradorVideo:inst|Meteorito:Met4|clk_met 
-    Info (332119):     0.342               0.000 GeneradorVideo:inst|Meteorito:Met3|clk_met 
-    Info (332119):     0.342               0.000 GeneradorVideo:inst|Meteorito:Met5|clk_met 
-    Info (332119):     0.342               0.000 GeneradorVideo:inst|Meteorito:Met6|clk_met 
-    Info (332119):     0.342               0.000 GeneradorVideo:inst|Meteorito:Met7|clk_met 
+    Info (332119):     0.340               0.000 GeneradorVideo:inst|Meteorito:Met5|clk_met 
+    Info (332119):     0.341               0.000 GeneradorVideo:inst|Meteorito:Met2|clk_met 
+    Info (332119):     0.341               0.000 GeneradorVideo:inst|Meteorito:Met3|clk_met 
+    Info (332119):     0.341               0.000 GeneradorVideo:inst|Meteorito:Met6|clk_met 
+    Info (332119):     0.341               0.000 GeneradorVideo:inst|Meteorito:Met8|clk_met 
+    Info (332119):     0.355               0.000 GeneradorVideo:inst|Meteorito:Met7|clk_met 
+    Info (332119):     0.356               0.000 GeneradorVideo:inst|Meteorito:Met1|clk_met 
     Info (332119):     0.617               0.000 clk 
-    Info (332119):     0.642               0.000 GeneradorVideo:inst|Meteorito:Met8|clk_met 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -3.000             -38.075 clk 
-    Info (332119):    -1.403            -648.186 Sincronizador:inst2|clk25 
+    Info (332119):    -1.403            -952.637 Sincronizador:inst2|clk25 
     Info (332119):    -1.403             -85.583 Control:inst3|clk_velocidad 
-    Info (332119):    -1.403             -47.702 GeneradorVideo:inst|Meteorito:Met1|clk_met 
-    Info (332119):    -1.403             -47.702 GeneradorVideo:inst|Meteorito:Met2|clk_met 
-    Info (332119):    -1.403             -47.702 GeneradorVideo:inst|Meteorito:Met3|clk_met 
-    Info (332119):    -1.403             -47.702 GeneradorVideo:inst|Meteorito:Met4|clk_met 
-    Info (332119):    -1.403             -47.702 GeneradorVideo:inst|Meteorito:Met5|clk_met 
-    Info (332119):    -1.403             -47.702 GeneradorVideo:inst|Meteorito:Met6|clk_met 
-    Info (332119):    -1.403             -47.702 GeneradorVideo:inst|Meteorito:Met7|clk_met 
-    Info (332119):    -1.403             -46.299 GeneradorVideo:inst|Meteorito:Met8|clk_met 
-    Info (332119):    -1.403             -14.030 GeneradorVideo:inst|clk_bullet 
+    Info (332119):    -1.403             -49.105 GeneradorVideo:inst|Meteorito:Met1|clk_met 
+    Info (332119):    -1.403             -49.105 GeneradorVideo:inst|Meteorito:Met2|clk_met 
+    Info (332119):    -1.403             -49.105 GeneradorVideo:inst|Meteorito:Met3|clk_met 
+    Info (332119):    -1.403             -49.105 GeneradorVideo:inst|Meteorito:Met4|clk_met 
+    Info (332119):    -1.403             -49.105 GeneradorVideo:inst|Meteorito:Met5|clk_met 
+    Info (332119):    -1.403             -49.105 GeneradorVideo:inst|Meteorito:Met6|clk_met 
+    Info (332119):    -1.403             -49.105 GeneradorVideo:inst|Meteorito:Met7|clk_met 
+    Info (332119):    -1.403             -49.105 GeneradorVideo:inst|Meteorito:Met8|clk_met 
+    Info (332119):    -1.403             -43.493 GeneradorVideo:inst|clk_bullet 
 Info: Analyzing Slow 1200mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -10.473
+Info (332146): Worst-case setup slack is -22.323
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -10.473           -3056.847 Sincronizador:inst2|clk25 
-    Info (332119):    -7.747            -161.077 GeneradorVideo:inst|Meteorito:Met6|clk_met 
-    Info (332119):    -6.963            -135.967 GeneradorVideo:inst|Meteorito:Met2|clk_met 
-    Info (332119):    -6.734            -163.583 GeneradorVideo:inst|Meteorito:Met4|clk_met 
-    Info (332119):    -5.863            -170.347 GeneradorVideo:inst|Meteorito:Met5|clk_met 
-    Info (332119):    -5.758            -163.919 GeneradorVideo:inst|Meteorito:Met7|clk_met 
-    Info (332119):    -5.219            -148.525 GeneradorVideo:inst|Meteorito:Met1|clk_met 
-    Info (332119):    -5.207            -138.693 GeneradorVideo:inst|Meteorito:Met3|clk_met 
-    Info (332119):    -4.599            -238.245 Control:inst3|clk_velocidad 
-    Info (332119):    -4.445             -38.725 GeneradorVideo:inst|clk_bullet 
-    Info (332119):    -4.109             -67.742 clk 
-    Info (332119):    -2.914             -90.752 GeneradorVideo:inst|Meteorito:Met8|clk_met 
-Info (332146): Worst-case hold slack is -0.536
+    Info (332119):   -22.323           -6886.864 Sincronizador:inst2|clk25 
+    Info (332119):    -8.036            -207.104 GeneradorVideo:inst|Meteorito:Met6|clk_met 
+    Info (332119):    -7.476            -216.423 GeneradorVideo:inst|Meteorito:Met4|clk_met 
+    Info (332119):    -7.445            -187.879 GeneradorVideo:inst|Meteorito:Met8|clk_met 
+    Info (332119):    -7.410            -212.418 GeneradorVideo:inst|Meteorito:Met2|clk_met 
+    Info (332119):    -6.122            -204.304 GeneradorVideo:inst|Meteorito:Met5|clk_met 
+    Info (332119):    -6.072            -170.931 GeneradorVideo:inst|Meteorito:Met3|clk_met 
+    Info (332119):    -5.731            -155.819 GeneradorVideo:inst|Meteorito:Met7|clk_met 
+    Info (332119):    -5.480            -157.477 GeneradorVideo:inst|Meteorito:Met1|clk_met 
+    Info (332119):    -5.240            -122.717 GeneradorVideo:inst|clk_bullet 
+    Info (332119):    -4.522            -252.736 Control:inst3|clk_velocidad 
+    Info (332119):    -3.970             -65.285 clk 
+Info (332146): Worst-case hold slack is 0.289
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.536              -0.536 Sincronizador:inst2|clk25 
-    Info (332119):     0.292               0.000 GeneradorVideo:inst|clk_bullet 
-    Info (332119):     0.305               0.000 Control:inst3|clk_velocidad 
-    Info (332119):     0.305               0.000 GeneradorVideo:inst|Meteorito:Met1|clk_met 
-    Info (332119):     0.306               0.000 GeneradorVideo:inst|Meteorito:Met2|clk_met 
+    Info (332119):     0.289               0.000 GeneradorVideo:inst|clk_bullet 
+    Info (332119):     0.289               0.000 Sincronizador:inst2|clk25 
+    Info (332119):     0.290               0.000 Control:inst3|clk_velocidad 
+    Info (332119):     0.305               0.000 GeneradorVideo:inst|Meteorito:Met5|clk_met 
+    Info (332119):     0.306               0.000 GeneradorVideo:inst|Meteorito:Met3|clk_met 
     Info (332119):     0.306               0.000 GeneradorVideo:inst|Meteorito:Met4|clk_met 
-    Info (332119):     0.306               0.000 GeneradorVideo:inst|Meteorito:Met5|clk_met 
-    Info (332119):     0.307               0.000 GeneradorVideo:inst|Meteorito:Met3|clk_met 
-    Info (332119):     0.307               0.000 GeneradorVideo:inst|Meteorito:Met7|clk_met 
-    Info (332119):     0.308               0.000 GeneradorVideo:inst|Meteorito:Met6|clk_met 
+    Info (332119):     0.306               0.000 GeneradorVideo:inst|Meteorito:Met6|clk_met 
+    Info (332119):     0.306               0.000 GeneradorVideo:inst|Meteorito:Met8|clk_met 
+    Info (332119):     0.307               0.000 GeneradorVideo:inst|Meteorito:Met2|clk_met 
+    Info (332119):     0.321               0.000 GeneradorVideo:inst|Meteorito:Met1|clk_met 
+    Info (332119):     0.322               0.000 GeneradorVideo:inst|Meteorito:Met7|clk_met 
     Info (332119):     0.572               0.000 clk 
-    Info (332119):     0.594               0.000 GeneradorVideo:inst|Meteorito:Met8|clk_met 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -3.000             -38.075 clk 
-    Info (332119):    -1.403            -648.186 Sincronizador:inst2|clk25 
+    Info (332119):    -1.403            -952.637 Sincronizador:inst2|clk25 
     Info (332119):    -1.403             -85.583 Control:inst3|clk_velocidad 
-    Info (332119):    -1.403             -47.702 GeneradorVideo:inst|Meteorito:Met1|clk_met 
-    Info (332119):    -1.403             -47.702 GeneradorVideo:inst|Meteorito:Met2|clk_met 
-    Info (332119):    -1.403             -47.702 GeneradorVideo:inst|Meteorito:Met3|clk_met 
-    Info (332119):    -1.403             -47.702 GeneradorVideo:inst|Meteorito:Met4|clk_met 
-    Info (332119):    -1.403             -47.702 GeneradorVideo:inst|Meteorito:Met5|clk_met 
-    Info (332119):    -1.403             -47.702 GeneradorVideo:inst|Meteorito:Met6|clk_met 
-    Info (332119):    -1.403             -47.702 GeneradorVideo:inst|Meteorito:Met7|clk_met 
-    Info (332119):    -1.403             -46.299 GeneradorVideo:inst|Meteorito:Met8|clk_met 
-    Info (332119):    -1.403             -14.030 GeneradorVideo:inst|clk_bullet 
+    Info (332119):    -1.403             -49.105 GeneradorVideo:inst|Meteorito:Met1|clk_met 
+    Info (332119):    -1.403             -49.105 GeneradorVideo:inst|Meteorito:Met2|clk_met 
+    Info (332119):    -1.403             -49.105 GeneradorVideo:inst|Meteorito:Met3|clk_met 
+    Info (332119):    -1.403             -49.105 GeneradorVideo:inst|Meteorito:Met4|clk_met 
+    Info (332119):    -1.403             -49.105 GeneradorVideo:inst|Meteorito:Met5|clk_met 
+    Info (332119):    -1.403             -49.105 GeneradorVideo:inst|Meteorito:Met6|clk_met 
+    Info (332119):    -1.403             -49.105 GeneradorVideo:inst|Meteorito:Met7|clk_met 
+    Info (332119):    -1.403             -49.105 GeneradorVideo:inst|Meteorito:Met8|clk_met 
+    Info (332119):    -1.403             -43.493 GeneradorVideo:inst|clk_bullet 
 Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -4.422
+Info (332146): Worst-case setup slack is -9.610
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.422           -1168.032 Sincronizador:inst2|clk25 
-    Info (332119):    -2.980             -55.968 GeneradorVideo:inst|Meteorito:Met6|clk_met 
-    Info (332119):    -2.537             -42.907 GeneradorVideo:inst|Meteorito:Met2|clk_met 
-    Info (332119):    -2.374             -57.191 GeneradorVideo:inst|Meteorito:Met4|clk_met 
-    Info (332119):    -2.128             -61.711 GeneradorVideo:inst|Meteorito:Met5|clk_met 
-    Info (332119):    -1.947             -58.272 GeneradorVideo:inst|Meteorito:Met7|clk_met 
-    Info (332119):    -1.796             -45.177 GeneradorVideo:inst|Meteorito:Met3|clk_met 
-    Info (332119):    -1.750             -48.998 GeneradorVideo:inst|Meteorito:Met1|clk_met 
-    Info (332119):    -1.581             -13.177 GeneradorVideo:inst|clk_bullet 
-    Info (332119):    -1.567             -77.264 Control:inst3|clk_velocidad 
-    Info (332119):    -1.433             -16.989 clk 
-    Info (332119):    -0.850             -25.274 GeneradorVideo:inst|Meteorito:Met8|clk_met 
-Info (332146): Worst-case hold slack is -0.520
+    Info (332119):    -9.610           -2810.939 Sincronizador:inst2|clk25 
+    Info (332119):    -3.059             -78.480 GeneradorVideo:inst|Meteorito:Met6|clk_met 
+    Info (332119):    -2.802             -81.016 GeneradorVideo:inst|Meteorito:Met2|clk_met 
+    Info (332119):    -2.764             -68.677 GeneradorVideo:inst|Meteorito:Met8|clk_met 
+    Info (332119):    -2.696             -81.690 GeneradorVideo:inst|Meteorito:Met4|clk_met 
+    Info (332119):    -2.208             -76.473 GeneradorVideo:inst|Meteorito:Met5|clk_met 
+    Info (332119):    -2.197             -60.097 GeneradorVideo:inst|Meteorito:Met3|clk_met 
+    Info (332119):    -2.031             -43.454 GeneradorVideo:inst|clk_bullet 
+    Info (332119):    -2.003             -53.105 GeneradorVideo:inst|Meteorito:Met7|clk_met 
+    Info (332119):    -1.856             -53.193 GeneradorVideo:inst|Meteorito:Met1|clk_met 
+    Info (332119):    -1.622             -83.792 Control:inst3|clk_velocidad 
+    Info (332119):    -1.327             -15.514 clk 
+Info (332146): Worst-case hold slack is 0.140
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.520              -0.520 Sincronizador:inst2|clk25 
-    Info (332119):     0.142               0.000 GeneradorVideo:inst|clk_bullet 
-    Info (332119):     0.148               0.000 Control:inst3|clk_velocidad 
-    Info (332119):     0.148               0.000 GeneradorVideo:inst|Meteorito:Met1|clk_met 
+    Info (332119):     0.140               0.000 GeneradorVideo:inst|clk_bullet 
+    Info (332119):     0.141               0.000 Control:inst3|clk_velocidad 
+    Info (332119):     0.141               0.000 Sincronizador:inst2|clk25 
+    Info (332119):     0.147               0.000 GeneradorVideo:inst|Meteorito:Met5|clk_met 
     Info (332119):     0.148               0.000 GeneradorVideo:inst|Meteorito:Met2|clk_met 
+    Info (332119):     0.148               0.000 GeneradorVideo:inst|Meteorito:Met3|clk_met 
     Info (332119):     0.148               0.000 GeneradorVideo:inst|Meteorito:Met4|clk_met 
-    Info (332119):     0.149               0.000 GeneradorVideo:inst|Meteorito:Met3|clk_met 
-    Info (332119):     0.149               0.000 GeneradorVideo:inst|Meteorito:Met5|clk_met 
     Info (332119):     0.149               0.000 GeneradorVideo:inst|Meteorito:Met6|clk_met 
-    Info (332119):     0.150               0.000 GeneradorVideo:inst|Meteorito:Met7|clk_met 
-    Info (332119):     0.238               0.000 clk 
-    Info (332119):     0.249               0.000 GeneradorVideo:inst|Meteorito:Met8|clk_met 
+    Info (332119):     0.149               0.000 GeneradorVideo:inst|Meteorito:Met8|clk_met 
+    Info (332119):     0.152               0.000 GeneradorVideo:inst|Meteorito:Met1|clk_met 
+    Info (332119):     0.153               0.000 GeneradorVideo:inst|Meteorito:Met7|clk_met 
+    Info (332119):     0.237               0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000             -28.860 clk 
-    Info (332119):    -1.000            -462.000 Sincronizador:inst2|clk25 
+    Info (332119):    -3.000             -28.828 clk 
+    Info (332119):    -1.000            -679.000 Sincronizador:inst2|clk25 
     Info (332119):    -1.000             -61.000 Control:inst3|clk_velocidad 
-    Info (332119):    -1.000             -34.000 GeneradorVideo:inst|Meteorito:Met1|clk_met 
-    Info (332119):    -1.000             -34.000 GeneradorVideo:inst|Meteorito:Met2|clk_met 
-    Info (332119):    -1.000             -34.000 GeneradorVideo:inst|Meteorito:Met3|clk_met 
-    Info (332119):    -1.000             -34.000 GeneradorVideo:inst|Meteorito:Met4|clk_met 
-    Info (332119):    -1.000             -34.000 GeneradorVideo:inst|Meteorito:Met5|clk_met 
-    Info (332119):    -1.000             -34.000 GeneradorVideo:inst|Meteorito:Met6|clk_met 
-    Info (332119):    -1.000             -34.000 GeneradorVideo:inst|Meteorito:Met7|clk_met 
-    Info (332119):    -1.000             -33.000 GeneradorVideo:inst|Meteorito:Met8|clk_met 
-    Info (332119):    -1.000             -10.000 GeneradorVideo:inst|clk_bullet 
+    Info (332119):    -1.000             -35.000 GeneradorVideo:inst|Meteorito:Met1|clk_met 
+    Info (332119):    -1.000             -35.000 GeneradorVideo:inst|Meteorito:Met2|clk_met 
+    Info (332119):    -1.000             -35.000 GeneradorVideo:inst|Meteorito:Met3|clk_met 
+    Info (332119):    -1.000             -35.000 GeneradorVideo:inst|Meteorito:Met4|clk_met 
+    Info (332119):    -1.000             -35.000 GeneradorVideo:inst|Meteorito:Met5|clk_met 
+    Info (332119):    -1.000             -35.000 GeneradorVideo:inst|Meteorito:Met6|clk_met 
+    Info (332119):    -1.000             -35.000 GeneradorVideo:inst|Meteorito:Met7|clk_met 
+    Info (332119):    -1.000             -35.000 GeneradorVideo:inst|Meteorito:Met8|clk_met 
+    Info (332119):    -1.000             -31.000 GeneradorVideo:inst|clk_bullet 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4966 megabytes
-    Info: Processing ended: Sun Nov 18 20:19:03 2018
-    Info: Elapsed time: 00:00:24
-    Info: Total CPU time (on all processors): 00:00:36
+Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4981 megabytes
+    Info: Processing ended: Tue Dec 04 16:07:58 2018
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:31
 
 

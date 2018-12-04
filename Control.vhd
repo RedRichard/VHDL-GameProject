@@ -10,7 +10,7 @@ PORT( clk:		in std_logic;
 		boton_arriba	:in std_logic;
 		boton_abajo		:in std_logic;
 		boton_fire		:in std_logic;
-		c_nave 	:out integer range 1 to 8;
+		c_nave 	:out integer range 0 to 8;
 		control_x, control_y: out integer;
 		control_fire	:out std_logic);
 end Control;
@@ -32,7 +32,7 @@ architecture behavioral of Control is
 	
 	signal allow_fire: std_logic := '0';
 	
-	signal carril_nave: integer range 1 to 8 := 1;
+	signal carril_nave: integer range 0 to 8 := 0;
 	
 begin
 	ButtonDisparo: process(boton_fire)
@@ -60,24 +60,24 @@ begin
 	begin
 		if(clk_velocidad'event and clk_velocidad = '1') then
 			-- Vertical:
-			if(boton_arriba = '1' and pos_y > 79)then
+			if(boton_arriba = '0' and pos_y > 79)then
 				pos_y <= pos_y - 80;
-			elsif(boton_abajo = '1' and pos_y < 319)then
+			elsif(boton_abajo = '0' and pos_y < 319)then
 				pos_y <= pos_y + 80;
 			end if;
 			
 			-- Horizontal:
-			if(boton_derecha = '1' and pos_x < 559)then
+			if(boton_derecha = '0' and pos_x < 559)then
 				pos_x <= pos_x + 80;
 				pos_y <= pos_y;
 				
 				carril_nave <= carril_nave + 1;
-			elsif(boton_izquierda = '1' and pos_x > 79)then
+			elsif(boton_izquierda = '0' and pos_x > 79)then
 				pos_x <= pos_x - 80;
 				pos_y <= pos_y;
 				
 				carril_nave <= carril_nave - 1;
-			elsif(boton_derecha = '1' or boton_izquierda = '1')then
+			elsif(boton_derecha = '0' or boton_izquierda = '0')then
 				pos_y <= pos_y;
 			end if;
 			
