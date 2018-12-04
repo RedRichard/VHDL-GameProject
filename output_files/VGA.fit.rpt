@@ -1,5 +1,5 @@
 Fitter report for VGA
-Tue Dec 04 16:07:26 2018
+Tue Dec 04 17:11:58 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -68,17 +68,17 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Tue Dec 04 16:07:26 2018       ;
+; Fitter Status                      ; Successful - Tue Dec 04 17:11:58 2018       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; VGA                                         ;
 ; Top-level Entity Name              ; VGA                                         ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 18,339 / 49,760 ( 37 % )                    ;
+; Total logic elements               ; 18,345 / 49,760 ( 37 % )                    ;
 ;     Total combinational functions  ; 18,302 / 49,760 ( 37 % )                    ;
-;     Dedicated logic registers      ; 1,076 / 49,760 ( 2 % )                      ;
-; Total registers                    ; 1076                                        ;
+;     Dedicated logic registers      ; 1,085 / 49,760 ( 2 % )                      ;
+; Total registers                    ; 1085                                        ;
 ; Total pins                         ; 21 / 360 ( 6 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
@@ -155,12 +155,12 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.17        ;
+; Average used               ; 1.20        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  17.4%      ;
+;     Processor 2            ;  20.2%      ;
 +----------------------------+-------------+
 
 
@@ -170,8 +170,8 @@ refer to the applicable agreement for further details.
 ; Type                ; Total [A + B]        ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+----------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                      ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 19448 ) ; 0.00 % ( 0 / 19448 )       ; 0.00 % ( 0 / 19448 )     ;
-;     -- Achieved     ; 0.00 % ( 0 / 19448 ) ; 0.00 % ( 0 / 19448 )       ; 0.00 % ( 0 / 19448 )     ;
+;     -- Requested    ; 0.00 % ( 0 / 19457 ) ; 0.00 % ( 0 / 19457 )       ; 0.00 % ( 0 / 19457 )     ;
+;     -- Achieved     ; 0.00 % ( 0 / 19457 ) ; 0.00 % ( 0 / 19457 )       ; 0.00 % ( 0 / 19457 )     ;
 ;                     ;                      ;                            ;                          ;
 ; Routing (by net)    ;                      ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )     ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -194,7 +194,7 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 19432 )  ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 19441 )  ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 16 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -210,26 +210,26 @@ The pin-out file can be found in C:/Users/gomri/Documents/UNAM/SéptimoSemestre/D
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-; Total logic elements                        ; 18,339 / 49,760 ( 37 % ) ;
-;     -- Combinational with no register       ; 17263                    ;
-;     -- Register only                        ; 37                       ;
-;     -- Combinational with a register        ; 1039                     ;
+; Total logic elements                        ; 18,345 / 49,760 ( 37 % ) ;
+;     -- Combinational with no register       ; 17260                    ;
+;     -- Register only                        ; 43                       ;
+;     -- Combinational with a register        ; 1042                     ;
 ;                                             ;                          ;
 ; Logic element usage by number of LUT inputs ;                          ;
-;     -- 4 input functions                    ; 11831                    ;
-;     -- 3 input functions                    ; 3453                     ;
-;     -- <=2 input functions                  ; 3018                     ;
-;     -- Register only                        ; 37                       ;
+;     -- 4 input functions                    ; 11841                    ;
+;     -- 3 input functions                    ; 3449                     ;
+;     -- <=2 input functions                  ; 3012                     ;
+;     -- Register only                        ; 43                       ;
 ;                                             ;                          ;
 ; Logic elements by mode                      ;                          ;
-;     -- normal mode                          ; 14697                    ;
-;     -- arithmetic mode                      ; 3605                     ;
+;     -- normal mode                          ; 14698                    ;
+;     -- arithmetic mode                      ; 3604                     ;
 ;                                             ;                          ;
-; Total registers*                            ; 1,076 / 51,509 ( 2 % )   ;
-;     -- Dedicated logic registers            ; 1,076 / 49,760 ( 2 % )   ;
+; Total registers*                            ; 1,085 / 51,509 ( 2 % )   ;
+;     -- Dedicated logic registers            ; 1,085 / 49,760 ( 2 % )   ;
 ;     -- I/O registers                        ; 0 / 1,749 ( 0 % )        ;
 ;                                             ;                          ;
-; Total LABs:  partially or completely used   ; 1,240 / 3,110 ( 40 % )   ;
+; Total LABs:  partially or completely used   ; 1,236 / 3,110 ( 40 % )   ;
 ; Virtual pins                                ; 0                        ;
 ; I/O pins                                    ; 21 / 360 ( 6 % )         ;
 ;     -- Clock pins                           ; 2 / 8 ( 25 % )           ;
@@ -249,11 +249,11 @@ The pin-out file can be found in C:/Users/gomri/Documents/UNAM/SéptimoSemestre/D
 ; Remote update blocks                        ; 0 / 1 ( 0 % )            ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )            ;
 ; Impedance control blocks                    ; 0 / 1 ( 0 % )            ;
-; Average interconnect usage (total/H/V)      ; 8.4% / 8.2% / 8.6%       ;
-; Peak interconnect usage (total/H/V)         ; 40.1% / 42.9% / 36.1%    ;
-; Maximum fan-out                             ; 679                      ;
-; Highest non-global fan-out                  ; 514                      ;
-; Total fan-out                               ; 66865                    ;
+; Average interconnect usage (total/H/V)      ; 8.4% / 8.1% / 8.9%       ;
+; Peak interconnect usage (total/H/V)         ; 35.4% / 34.4% / 36.7%    ;
+; Maximum fan-out                             ; 689                      ;
+; Highest non-global fan-out                  ; 515                      ;
+; Total fan-out                               ; 66921                    ;
 ; Average fan-out                             ; 3.43                     ;
 +---------------------------------------------+--------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
@@ -267,26 +267,26 @@ The pin-out file can be found in C:/Users/gomri/Documents/UNAM/SéptimoSemestre/D
 +---------------------------------------------+------------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                    ; Low                            ;
 ;                                             ;                        ;                                ;
-; Total logic elements                        ; 18339 / 49760 ( 37 % ) ; 0 / 49760 ( 0 % )              ;
-;     -- Combinational with no register       ; 17263                  ; 0                              ;
-;     -- Register only                        ; 37                     ; 0                              ;
-;     -- Combinational with a register        ; 1039                   ; 0                              ;
+; Total logic elements                        ; 18345 / 49760 ( 37 % ) ; 0 / 49760 ( 0 % )              ;
+;     -- Combinational with no register       ; 17260                  ; 0                              ;
+;     -- Register only                        ; 43                     ; 0                              ;
+;     -- Combinational with a register        ; 1042                   ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Logic element usage by number of LUT inputs ;                        ;                                ;
-;     -- 4 input functions                    ; 11831                  ; 0                              ;
-;     -- 3 input functions                    ; 3453                   ; 0                              ;
-;     -- <=2 input functions                  ; 3018                   ; 0                              ;
-;     -- Register only                        ; 37                     ; 0                              ;
+;     -- 4 input functions                    ; 11841                  ; 0                              ;
+;     -- 3 input functions                    ; 3449                   ; 0                              ;
+;     -- <=2 input functions                  ; 3012                   ; 0                              ;
+;     -- Register only                        ; 43                     ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Logic elements by mode                      ;                        ;                                ;
-;     -- normal mode                          ; 14697                  ; 0                              ;
-;     -- arithmetic mode                      ; 3605                   ; 0                              ;
+;     -- normal mode                          ; 14698                  ; 0                              ;
+;     -- arithmetic mode                      ; 3604                   ; 0                              ;
 ;                                             ;                        ;                                ;
-; Total registers                             ; 1076                   ; 0                              ;
-;     -- Dedicated logic registers            ; 1076 / 49760 ( 2 % )   ; 0 / 49760 ( 0 % )              ;
+; Total registers                             ; 1085                   ; 0                              ;
+;     -- Dedicated logic registers            ; 1085 / 49760 ( 2 % )   ; 0 / 49760 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
-; Total LABs:  partially or completely used   ; 1240 / 3110 ( 40 % )   ; 0 / 3110 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 1236 / 3110 ( 40 % )   ; 0 / 3110 ( 0 % )               ;
 ;                                             ;                        ;                                ;
 ; Virtual pins                                ; 0                      ; 0                              ;
 ; I/O pins                                    ; 21                     ; 0                              ;
@@ -304,8 +304,8 @@ The pin-out file can be found in C:/Users/gomri/Documents/UNAM/SéptimoSemestre/D
 ;     -- Registered Output Connections        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Internal Connections                        ;                        ;                                ;
-;     -- Total Connections                    ; 66871                  ; 8                              ;
-;     -- Registered Connections               ; 35870                  ; 0                              ;
+;     -- Total Connections                    ; 66927                  ; 8                              ;
+;     -- Registered Connections               ; 35885                  ; 0                              ;
 ;                                             ;                        ;                                ;
 ; External Connections                        ;                        ;                                ;
 ;     -- Top                                  ; 0                      ; 0                              ;
@@ -340,7 +340,7 @@ The pin-out file can be found in C:/Users/gomri/Documents/UNAM/SéptimoSemestre/D
 ; b_abajo     ; V9    ; 3        ; 31           ; 0            ; 28           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 ; b_arriba    ; W9    ; 3        ; 22           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 ; b_derecha   ; W10   ; 3        ; 24           ; 0            ; 28           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; b_fire      ; W8    ; 3        ; 24           ; 0            ; 0            ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; b_fire      ; W8    ; 3        ; 24           ; 0            ; 0            ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 ; b_izquierda ; V10   ; 3        ; 31           ; 0            ; 21           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 ; clk         ; P11   ; 3        ; 34           ; 0            ; 28           ; 25                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 ; reset       ; A7    ; 7        ; 49           ; 54           ; 28           ; 67                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
@@ -929,29 +929,29 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------------------------+---------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+---------------+-------------------+------------------+------------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                   ; Logic Cells   ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs  ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name                                                                                                                      ; Entity Name         ; Library Name ;
 +----------------------------------------------+---------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+---------------+-------------------+------------------+------------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |VGA                                         ; 18339 (1)     ; 1076 (0)                  ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 21   ; 0            ; 17263 (1)     ; 37 (0)            ; 1039 (0)         ; 0          ; |VGA                                                                                                                                     ; VGA                 ; work         ;
-;    |Control:inst3|                           ; 256 (256)     ; 85 (85)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 171 (171)     ; 2 (2)             ; 83 (83)          ; 0          ; |VGA|Control:inst3                                                                                                                       ; Control             ; work         ;
-;    |GeneradorVideo:inst|                     ; 17988 (14846) ; 923 (453)                 ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 17061 (14438) ; 34 (21)           ; 893 (405)        ; 0          ; |VGA|GeneradorVideo:inst                                                                                                                 ; GeneradorVideo      ; work         ;
+; |VGA                                         ; 18345 (1)     ; 1085 (0)                  ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 21   ; 0            ; 17260 (1)     ; 43 (0)            ; 1042 (0)         ; 0          ; |VGA                                                                                                                                     ; VGA                 ; work         ;
+;    |Control:inst3|                           ; 254 (254)     ; 85 (85)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 169 (169)     ; 1 (1)             ; 84 (84)          ; 0          ; |VGA|Control:inst3                                                                                                                       ; Control             ; work         ;
+;    |GeneradorVideo:inst|                     ; 17995 (14864) ; 932 (462)                 ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 17060 (14434) ; 41 (29)           ; 894 (408)        ; 0          ; |VGA|GeneradorVideo:inst                                                                                                                 ; GeneradorVideo      ; work         ;
 ;       |Digit:MunDig1|                        ; 206 (73)      ; 30 (30)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 176 (43)      ; 0 (0)             ; 30 (30)          ; 0          ; |VGA|GeneradorVideo:inst|Digit:MunDig1                                                                                                   ; Digit               ; work         ;
 ;          |lpm_divide:Mod0|                   ; 133 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 133 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:MunDig1|lpm_divide:Mod0                                                                                   ; lpm_divide          ; work         ;
 ;             |lpm_divide_2nl:auto_generated|  ; 133 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 133 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:MunDig1|lpm_divide:Mod0|lpm_divide_2nl:auto_generated                                                     ; lpm_divide_2nl      ; work         ;
 ;                |sign_div_unsign_1nh:divider| ; 133 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 133 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:MunDig1|lpm_divide:Mod0|lpm_divide_2nl:auto_generated|sign_div_unsign_1nh:divider                         ; sign_div_unsign_1nh ; work         ;
 ;                   |alt_u_div_cke:divider|    ; 133 (133)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 133 (133)     ; 0 (0)             ; 0 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:MunDig1|lpm_divide:Mod0|lpm_divide_2nl:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_cke:divider   ; alt_u_div_cke       ; work         ;
-;       |Digit:MunDig2|                        ; 280 (70)      ; 30 (30)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 249 (40)      ; 2 (2)             ; 29 (28)          ; 0          ; |VGA|GeneradorVideo:inst|Digit:MunDig2                                                                                                   ; Digit               ; work         ;
-;          |lpm_divide:Div0|                   ; 118 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 117 (0)       ; 0 (0)             ; 1 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:MunDig2|lpm_divide:Div0                                                                                   ; lpm_divide          ; work         ;
-;             |lpm_divide_ltl:auto_generated|  ; 118 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 117 (0)       ; 0 (0)             ; 1 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:MunDig2|lpm_divide:Div0|lpm_divide_ltl:auto_generated                                                     ; lpm_divide_ltl      ; work         ;
-;                |sign_div_unsign_nlh:divider| ; 118 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 117 (0)       ; 0 (0)             ; 1 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:MunDig2|lpm_divide:Div0|lpm_divide_ltl:auto_generated|sign_div_unsign_nlh:divider                         ; sign_div_unsign_nlh ; work         ;
-;                   |alt_u_div_ohe:divider|    ; 118 (118)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 117 (117)     ; 0 (0)             ; 1 (1)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:MunDig2|lpm_divide:Div0|lpm_divide_ltl:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_ohe:divider   ; alt_u_div_ohe       ; work         ;
+;       |Digit:MunDig2|                        ; 279 (69)      ; 30 (30)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 249 (39)      ; 1 (1)             ; 29 (29)          ; 0          ; |VGA|GeneradorVideo:inst|Digit:MunDig2                                                                                                   ; Digit               ; work         ;
+;          |lpm_divide:Div0|                   ; 118 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 118 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:MunDig2|lpm_divide:Div0                                                                                   ; lpm_divide          ; work         ;
+;             |lpm_divide_ltl:auto_generated|  ; 118 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 118 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:MunDig2|lpm_divide:Div0|lpm_divide_ltl:auto_generated                                                     ; lpm_divide_ltl      ; work         ;
+;                |sign_div_unsign_nlh:divider| ; 118 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 118 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:MunDig2|lpm_divide:Div0|lpm_divide_ltl:auto_generated|sign_div_unsign_nlh:divider                         ; sign_div_unsign_nlh ; work         ;
+;                   |alt_u_div_ohe:divider|    ; 118 (118)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 118 (118)     ; 0 (0)             ; 0 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:MunDig2|lpm_divide:Div0|lpm_divide_ltl:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_ohe:divider   ; alt_u_div_ohe       ; work         ;
 ;          |lpm_divide:Mod0|                   ; 92 (0)        ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 92 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:MunDig2|lpm_divide:Mod0                                                                                   ; lpm_divide          ; work         ;
 ;             |lpm_divide_2nl:auto_generated|  ; 92 (0)        ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 92 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:MunDig2|lpm_divide:Mod0|lpm_divide_2nl:auto_generated                                                     ; lpm_divide_2nl      ; work         ;
 ;                |sign_div_unsign_1nh:divider| ; 92 (0)        ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 92 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:MunDig2|lpm_divide:Mod0|lpm_divide_2nl:auto_generated|sign_div_unsign_1nh:divider                         ; sign_div_unsign_1nh ; work         ;
 ;                   |alt_u_div_cke:divider|    ; 92 (92)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 92 (92)       ; 0 (0)             ; 0 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:MunDig2|lpm_divide:Mod0|lpm_divide_2nl:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_cke:divider   ; alt_u_div_cke       ; work         ;
-;       |Digit:PointDig1|                      ; 206 (73)      ; 30 (30)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 176 (43)      ; 2 (2)             ; 28 (28)          ; 0          ; |VGA|GeneradorVideo:inst|Digit:PointDig1                                                                                                 ; Digit               ; work         ;
+;       |Digit:PointDig1|                      ; 206 (73)      ; 30 (30)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 176 (43)      ; 0 (0)             ; 30 (30)          ; 0          ; |VGA|GeneradorVideo:inst|Digit:PointDig1                                                                                                 ; Digit               ; work         ;
 ;          |lpm_divide:Mod0|                   ; 133 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 133 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:PointDig1|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
 ;             |lpm_divide_2nl:auto_generated|  ; 133 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 133 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:PointDig1|lpm_divide:Mod0|lpm_divide_2nl:auto_generated                                                   ; lpm_divide_2nl      ; work         ;
 ;                |sign_div_unsign_1nh:divider| ; 133 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 133 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:PointDig1|lpm_divide:Mod0|lpm_divide_2nl:auto_generated|sign_div_unsign_1nh:divider                       ; sign_div_unsign_1nh ; work         ;
 ;                   |alt_u_div_cke:divider|    ; 133 (133)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 133 (133)     ; 0 (0)             ; 0 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:PointDig1|lpm_divide:Mod0|lpm_divide_2nl:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_cke:divider ; alt_u_div_cke       ; work         ;
-;       |Digit:PointDig2|                      ; 280 (70)      ; 30 (30)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 250 (40)      ; 1 (1)             ; 29 (29)          ; 0          ; |VGA|GeneradorVideo:inst|Digit:PointDig2                                                                                                 ; Digit               ; work         ;
+;       |Digit:PointDig2|                      ; 278 (68)      ; 30 (30)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 248 (38)      ; 0 (0)             ; 30 (30)          ; 0          ; |VGA|GeneradorVideo:inst|Digit:PointDig2                                                                                                 ; Digit               ; work         ;
 ;          |lpm_divide:Div0|                   ; 118 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 118 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:PointDig2|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
 ;             |lpm_divide_ltl:auto_generated|  ; 118 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 118 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:PointDig2|lpm_divide:Div0|lpm_divide_ltl:auto_generated                                                   ; lpm_divide_ltl      ; work         ;
 ;                |sign_div_unsign_nlh:divider| ; 118 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 118 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:PointDig2|lpm_divide:Div0|lpm_divide_ltl:auto_generated|sign_div_unsign_nlh:divider                       ; sign_div_unsign_nlh ; work         ;
@@ -960,7 +960,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;             |lpm_divide_2nl:auto_generated|  ; 92 (0)        ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 92 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:PointDig2|lpm_divide:Mod0|lpm_divide_2nl:auto_generated                                                   ; lpm_divide_2nl      ; work         ;
 ;                |sign_div_unsign_1nh:divider| ; 92 (0)        ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 92 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:PointDig2|lpm_divide:Mod0|lpm_divide_2nl:auto_generated|sign_div_unsign_1nh:divider                       ; sign_div_unsign_1nh ; work         ;
 ;                   |alt_u_div_cke:divider|    ; 92 (92)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 92 (92)       ; 0 (0)             ; 0 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:PointDig2|lpm_divide:Mod0|lpm_divide_2nl:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_cke:divider ; alt_u_div_cke       ; work         ;
-;       |Digit:PointDig3|                      ; 142 (59)      ; 30 (30)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 112 (29)      ; 1 (1)             ; 29 (29)          ; 0          ; |VGA|GeneradorVideo:inst|Digit:PointDig3                                                                                                 ; Digit               ; work         ;
+;       |Digit:PointDig3|                      ; 144 (61)      ; 30 (30)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 114 (31)      ; 2 (2)             ; 28 (28)          ; 0          ; |VGA|GeneradorVideo:inst|Digit:PointDig3                                                                                                 ; Digit               ; work         ;
 ;          |lpm_divide:Div0|                   ; 69 (0)        ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 69 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:PointDig3|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
 ;             |lpm_divide_ltl:auto_generated|  ; 69 (0)        ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 69 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:PointDig3|lpm_divide:Div0|lpm_divide_ltl:auto_generated                                                   ; lpm_divide_ltl      ; work         ;
 ;                |sign_div_unsign_nlh:divider| ; 69 (0)        ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 69 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:PointDig3|lpm_divide:Div0|lpm_divide_ltl:auto_generated|sign_div_unsign_nlh:divider                       ; sign_div_unsign_nlh ; work         ;
@@ -969,14 +969,14 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;             |lpm_divide_2nl:auto_generated|  ; 14 (0)        ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:PointDig3|lpm_divide:Mod0|lpm_divide_2nl:auto_generated                                                   ; lpm_divide_2nl      ; work         ;
 ;                |sign_div_unsign_1nh:divider| ; 14 (0)        ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:PointDig3|lpm_divide:Mod0|lpm_divide_2nl:auto_generated|sign_div_unsign_1nh:divider                       ; sign_div_unsign_1nh ; work         ;
 ;                   |alt_u_div_cke:divider|    ; 14 (14)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (14)       ; 0 (0)             ; 0 (0)            ; 0          ; |VGA|GeneradorVideo:inst|Digit:PointDig3|lpm_divide:Mod0|lpm_divide_2nl:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_cke:divider ; alt_u_div_cke       ; work         ;
-;       |Meteorito:Met1|                       ; 263 (263)     ; 68 (68)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 177 (177)     ; 1 (1)             ; 85 (85)          ; 0          ; |VGA|GeneradorVideo:inst|Meteorito:Met1                                                                                                  ; Meteorito           ; work         ;
-;       |Meteorito:Met2|                       ; 272 (272)     ; 36 (36)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 225 (225)     ; 1 (1)             ; 46 (46)          ; 0          ; |VGA|GeneradorVideo:inst|Meteorito:Met2                                                                                                  ; Meteorito           ; work         ;
-;       |Meteorito:Met3|                       ; 210 (210)     ; 36 (36)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 158 (158)     ; 1 (1)             ; 51 (51)          ; 0          ; |VGA|GeneradorVideo:inst|Meteorito:Met3                                                                                                  ; Meteorito           ; work         ;
-;       |Meteorito:Met4|                       ; 283 (283)     ; 36 (36)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 247 (247)     ; 0 (0)             ; 36 (36)          ; 0          ; |VGA|GeneradorVideo:inst|Meteorito:Met4                                                                                                  ; Meteorito           ; work         ;
+;       |Meteorito:Met1|                       ; 264 (264)     ; 68 (68)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 177 (177)     ; 1 (1)             ; 86 (86)          ; 0          ; |VGA|GeneradorVideo:inst|Meteorito:Met1                                                                                                  ; Meteorito           ; work         ;
+;       |Meteorito:Met2|                       ; 273 (273)     ; 36 (36)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 222 (222)     ; 2 (2)             ; 49 (49)          ; 0          ; |VGA|GeneradorVideo:inst|Meteorito:Met2                                                                                                  ; Meteorito           ; work         ;
+;       |Meteorito:Met3|                       ; 210 (210)     ; 36 (36)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 174 (174)     ; 1 (1)             ; 35 (35)          ; 0          ; |VGA|GeneradorVideo:inst|Meteorito:Met3                                                                                                  ; Meteorito           ; work         ;
+;       |Meteorito:Met4|                       ; 271 (271)     ; 36 (36)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 233 (233)     ; 1 (1)             ; 37 (37)          ; 0          ; |VGA|GeneradorVideo:inst|Meteorito:Met4                                                                                                  ; Meteorito           ; work         ;
 ;       |Meteorito:Met5|                       ; 213 (213)     ; 36 (36)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 177 (177)     ; 1 (1)             ; 35 (35)          ; 0          ; |VGA|GeneradorVideo:inst|Meteorito:Met5                                                                                                  ; Meteorito           ; work         ;
-;       |Meteorito:Met6|                       ; 272 (272)     ; 36 (36)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 236 (236)     ; 1 (1)             ; 35 (35)          ; 0          ; |VGA|GeneradorVideo:inst|Meteorito:Met6                                                                                                  ; Meteorito           ; work         ;
+;       |Meteorito:Met6|                       ; 273 (273)     ; 36 (36)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 237 (237)     ; 1 (1)             ; 35 (35)          ; 0          ; |VGA|GeneradorVideo:inst|Meteorito:Met6                                                                                                  ; Meteorito           ; work         ;
 ;       |Meteorito:Met7|                       ; 224 (224)     ; 36 (36)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 188 (188)     ; 1 (1)             ; 35 (35)          ; 0          ; |VGA|GeneradorVideo:inst|Meteorito:Met7                                                                                                  ; Meteorito           ; work         ;
-;       |Meteorito:Met8|                       ; 293 (293)     ; 36 (36)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 252 (252)     ; 1 (1)             ; 40 (40)          ; 0          ; |VGA|GeneradorVideo:inst|Meteorito:Met8                                                                                                  ; Meteorito           ; work         ;
+;       |Meteorito:Met8|                       ; 291 (291)     ; 36 (36)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 255 (255)     ; 1 (1)             ; 35 (35)          ; 0          ; |VGA|GeneradorVideo:inst|Meteorito:Met8                                                                                                  ; Meteorito           ; work         ;
 ;    |Sincronizador:inst2|                     ; 98 (98)       ; 68 (68)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 30 (30)       ; 1 (1)             ; 67 (67)          ; 0          ; |VGA|Sincronizador:inst2                                                                                                                 ; Sincronizador       ; work         ;
 +----------------------------------------------+---------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+---------------+-------------------+------------------+------------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -1003,9 +1003,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; vSync       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; reset       ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; b_fire      ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
-; b_derecha   ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
-; b_izquierda ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; b_abajo     ; Input    ; --            ; (0) 0 ps      ; --                    ; --  ; --   ;
+; b_derecha   ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; b_izquierda ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
+; b_abajo     ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 ; b_arriba    ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 ; clk         ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 +-------------+----------+---------------+---------------+-----------------------+-----+------+
@@ -1088,18 +1088,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - GeneradorVideo:inst|num_pantalla[1]~1 ; 1                 ; 6       ;
 ;      - GeneradorVideo:inst|num_pantalla[0]~2 ; 1                 ; 6       ;
 ;      - GeneradorVideo:inst|BulletMovement~0  ; 1                 ; 6       ;
-;      - GeneradorVideo:inst|vida~2            ; 1                 ; 6       ;
-;      - GeneradorVideo:inst|vida[2]~9         ; 1                 ; 6       ;
-;      - GeneradorVideo:inst|vida~16           ; 1                 ; 6       ;
-;      - GeneradorVideo:inst|puntuacion[9]~30  ; 1                 ; 6       ;
+;      - GeneradorVideo:inst|Life~0            ; 1                 ; 6       ;
 ; b_derecha                                    ;                   ;         ;
-;      - Control:inst3|Direcciones~7           ; 1                 ; 6       ;
-;      - Control:inst3|pos_y[4]~0              ; 1                 ; 6       ;
+;      - Control:inst3|Direcciones~7           ; 0                 ; 6       ;
+;      - Control:inst3|pos_y[13]~0             ; 0                 ; 6       ;
 ; b_izquierda                                  ;                   ;         ;
-;      - Control:inst3|pos_y[4]~0              ; 0                 ; 0       ;
-;      - Control:inst3|carril_nave[0]~2        ; 0                 ; 0       ;
+;      - Control:inst3|pos_y[13]~0             ; 1                 ; 6       ;
+;      - Control:inst3|carril_nave[0]~2        ; 1                 ; 6       ;
 ; b_abajo                                      ;                   ;         ;
-;      - Control:inst3|pos_y[4]~2              ; 1                 ; 0       ;
+;      - Control:inst3|pos_y[13]~2             ; 1                 ; 6       ;
 ; b_arriba                                     ;                   ;         ;
 ;      - Control:inst3|Direcciones~8           ; 1                 ; 6       ;
 ; clk                                          ;                   ;         ;
@@ -1112,54 +1109,55 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                                    ; Location           ; Fan-Out ; Usage                     ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +---------------------------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
 ; Control:inst3|LessThan0~5                               ; LCCOMB_X1_Y38_N8   ; 23      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
-; Control:inst3|carril_nave[0]~2                          ; LCCOMB_X58_Y25_N18 ; 6       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; Control:inst3|carril_nave[0]~2                          ; LCCOMB_X19_Y14_N22 ; 6       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
 ; Control:inst3|clk_velocidad                             ; FF_X2_Y38_N3       ; 61      ; Clock                     ; yes    ; Global Clock         ; GCLK0            ; --                        ;
-; Control:inst3|pos_x[14]~6                               ; LCCOMB_X58_Y25_N6  ; 26      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; Control:inst3|pos_y[4]~3                                ; LCCOMB_X49_Y25_N0  ; 28      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|BulletMovement~1                    ; LCCOMB_X40_Y29_N14 ; 26      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|Digit:MunDig1|sprite_actual~6       ; LCCOMB_X39_Y27_N6  ; 30      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|Digit:MunDig2|sprite_actual~4       ; LCCOMB_X31_Y25_N20 ; 30      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|Digit:PointDig1|sprite_actual~6     ; LCCOMB_X20_Y24_N30 ; 30      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|Digit:PointDig2|sprite_actual~4     ; LCCOMB_X25_Y23_N22 ; 30      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|Digit:PointDig3|sprite_actual~4     ; LCCOMB_X34_Y24_N14 ; 30      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|Equal1~6                            ; LCCOMB_X46_Y23_N0  ; 7       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|LessThan10~2                        ; LCCOMB_X76_Y39_N30 ; 15      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|LessThan9~5                         ; LCCOMB_X46_Y23_N16 ; 26      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|Meteorito:Met1|clk_met              ; FF_X50_Y50_N31     ; 35      ; Clock                     ; yes    ; Global Clock         ; GCLK12           ; --                        ;
-; GeneradorVideo:inst|Meteorito:Met1|count_meteor[10]~104 ; LCCOMB_X50_Y32_N16 ; 32      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|Meteorito:Met2|clk_met              ; FF_X50_Y46_N25     ; 35      ; Clock                     ; yes    ; Global Clock         ; GCLK14           ; --                        ;
-; GeneradorVideo:inst|Meteorito:Met2|count_meteor[13]~104 ; LCCOMB_X50_Y32_N6  ; 32      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|Meteorito:Met3|clk_met              ; FF_X49_Y50_N3      ; 35      ; Clock                     ; yes    ; Global Clock         ; GCLK11           ; --                        ;
-; GeneradorVideo:inst|Meteorito:Met3|count_meteor[27]~104 ; LCCOMB_X50_Y32_N24 ; 32      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|Meteorito:Met4|clk_met              ; FF_X50_Y46_N11     ; 35      ; Clock                     ; yes    ; Global Clock         ; GCLK5            ; --                        ;
-; GeneradorVideo:inst|Meteorito:Met4|count_meteor[9]~104  ; LCCOMB_X50_Y32_N28 ; 32      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|Meteorito:Met5|clk_met              ; FF_X50_Y46_N7      ; 35      ; Clock                     ; yes    ; Global Clock         ; GCLK13           ; --                        ;
-; GeneradorVideo:inst|Meteorito:Met5|count_meteor[27]~104 ; LCCOMB_X50_Y32_N26 ; 32      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|Meteorito:Met6|clk_met              ; FF_X50_Y50_N1      ; 35      ; Clock                     ; yes    ; Global Clock         ; GCLK10           ; --                        ;
-; GeneradorVideo:inst|Meteorito:Met6|count_meteor[5]~104  ; LCCOMB_X50_Y32_N0  ; 32      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|Meteorito:Met7|clk_met              ; FF_X54_Y46_N31     ; 35      ; Clock                     ; yes    ; Global Clock         ; GCLK8            ; --                        ;
-; GeneradorVideo:inst|Meteorito:Met7|count_meteor[11]~104 ; LCCOMB_X50_Y32_N4  ; 32      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|Meteorito:Met8|LessThan0~8          ; LCCOMB_X50_Y46_N16 ; 40      ; Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|Meteorito:Met8|clk_met              ; FF_X50_Y46_N27     ; 35      ; Clock                     ; yes    ; Global Clock         ; GCLK9            ; --                        ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[0]~104  ; LCCOMB_X50_Y32_N20 ; 32      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|aux_met1_x[5]~0                     ; LCCOMB_X42_Y22_N30 ; 12      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|aux_met2_x[5]~0                     ; LCCOMB_X55_Y10_N26 ; 12      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|aux_met3_x[5]~1                     ; LCCOMB_X18_Y23_N6  ; 12      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|aux_met4_x[5]~1                     ; LCCOMB_X46_Y24_N30 ; 12      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|aux_met5_x[5]~1                     ; LCCOMB_X35_Y33_N14 ; 12      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|aux_met6_x[5]~1                     ; LCCOMB_X22_Y12_N14 ; 12      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|aux_met7_x[5]~1                     ; LCCOMB_X37_Y18_N10 ; 12      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|aux_met8_x[5]~2                     ; LCCOMB_X46_Y26_N4  ; 12      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|aux_x_cor[3]~13                     ; LCCOMB_X43_Y26_N22 ; 5       ; Sync. load                ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|aux_x_cor[4]~14                     ; LCCOMB_X46_Y26_N22 ; 10      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|clk_bullet                          ; FF_X77_Y39_N13     ; 31      ; Clock                     ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; GeneradorVideo:inst|count_bullet_movement[5]~3          ; LCCOMB_X40_Y29_N0  ; 6       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|posx_nave_der[3]~0                  ; LCCOMB_X52_Y26_N30 ; 252     ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|puntuacion[9]~30                    ; LCCOMB_X50_Y32_N30 ; 10      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; GeneradorVideo:inst|ship[54][46][0]~0                   ; LCCOMB_X46_Y23_N10 ; 1       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; Sincronizador:inst2|Equal0~11                           ; LCCOMB_X32_Y24_N0  ; 64      ; Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
-; Sincronizador:inst2|Equal1~10                           ; LCCOMB_X45_Y27_N18 ; 32      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
-; Sincronizador:inst2|clk25                               ; FF_X43_Y4_N31      ; 679     ; Clock                     ; yes    ; Global Clock         ; GCLK17           ; --                        ;
+; Control:inst3|pos_x[25]~6                               ; LCCOMB_X19_Y14_N6  ; 26      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; Control:inst3|pos_y[13]~3                               ; LCCOMB_X19_Y14_N26 ; 28      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|BulletMovement~1                    ; LCCOMB_X23_Y19_N20 ; 27      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|Digit:MunDig1|sprite_actual~6       ; LCCOMB_X31_Y17_N30 ; 30      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|Digit:MunDig2|sprite_actual~4       ; LCCOMB_X38_Y23_N14 ; 30      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|Digit:PointDig1|sprite_actual~6     ; LCCOMB_X32_Y26_N14 ; 30      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|Digit:PointDig2|sprite_actual~4     ; LCCOMB_X41_Y27_N14 ; 30      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|Digit:PointDig3|sprite_actual~4     ; LCCOMB_X35_Y14_N12 ; 30      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|Equal1~6                            ; LCCOMB_X43_Y5_N22  ; 17      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|LessThan10~2                        ; LCCOMB_X71_Y41_N2  ; 15      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|LessThan9~5                         ; LCCOMB_X43_Y5_N24  ; 26      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|Meteorito:Met1|clk_met              ; FF_X36_Y38_N31     ; 35      ; Clock                     ; yes    ; Global Clock         ; GCLK13           ; --                        ;
+; GeneradorVideo:inst|Meteorito:Met1|count_meteor[10]~104 ; LCCOMB_X16_Y23_N8  ; 32      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|Meteorito:Met2|clk_met              ; FF_X35_Y38_N3      ; 35      ; Clock                     ; yes    ; Global Clock         ; GCLK10           ; --                        ;
+; GeneradorVideo:inst|Meteorito:Met2|count_meteor[21]~104 ; LCCOMB_X16_Y23_N14 ; 32      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|Meteorito:Met3|clk_met              ; FF_X36_Y38_N21     ; 35      ; Clock                     ; yes    ; Global Clock         ; GCLK4            ; --                        ;
+; GeneradorVideo:inst|Meteorito:Met3|count_meteor[27]~104 ; LCCOMB_X16_Y23_N22 ; 32      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|Meteorito:Met4|clk_met              ; FF_X35_Y38_N9      ; 35      ; Clock                     ; yes    ; Global Clock         ; GCLK1            ; --                        ;
+; GeneradorVideo:inst|Meteorito:Met4|count_meteor[9]~104  ; LCCOMB_X16_Y23_N28 ; 32      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|Meteorito:Met5|clk_met              ; FF_X36_Y38_N17     ; 35      ; Clock                     ; yes    ; Global Clock         ; GCLK12           ; --                        ;
+; GeneradorVideo:inst|Meteorito:Met5|count_meteor[1]~104  ; LCCOMB_X16_Y23_N2  ; 32      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|Meteorito:Met6|clk_met              ; FF_X31_Y38_N19     ; 35      ; Clock                     ; yes    ; Global Clock         ; GCLK3            ; --                        ;
+; GeneradorVideo:inst|Meteorito:Met6|count_meteor[9]~104  ; LCCOMB_X16_Y23_N20 ; 32      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|Meteorito:Met7|clk_met              ; FF_X39_Y38_N31     ; 35      ; Clock                     ; yes    ; Global Clock         ; GCLK14           ; --                        ;
+; GeneradorVideo:inst|Meteorito:Met7|count_meteor[2]~104  ; LCCOMB_X16_Y23_N0  ; 32      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|Meteorito:Met8|LessThan0~8          ; LCCOMB_X35_Y38_N20 ; 40      ; Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|Meteorito:Met8|clk_met              ; FF_X36_Y38_N5      ; 35      ; Clock                     ; yes    ; Global Clock         ; GCLK11           ; --                        ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[3]~104  ; LCCOMB_X16_Y23_N16 ; 32      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|aux_met1_x[5]~0                     ; LCCOMB_X27_Y20_N20 ; 12      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|aux_met2_x[5]~0                     ; LCCOMB_X51_Y12_N26 ; 12      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|aux_met3_x[5]~1                     ; LCCOMB_X36_Y34_N2  ; 12      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|aux_met4_x[5]~1                     ; LCCOMB_X30_Y23_N22 ; 12      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|aux_met5_x[5]~1                     ; LCCOMB_X42_Y20_N18 ; 12      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|aux_met6_x[5]~1                     ; LCCOMB_X56_Y24_N2  ; 12      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|aux_met7_x[5]~1                     ; LCCOMB_X58_Y20_N2  ; 12      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|aux_met8_x[5]~2                     ; LCCOMB_X27_Y20_N28 ; 12      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|aux_x_cor[1]~13                     ; LCCOMB_X27_Y22_N26 ; 5       ; Sync. load                ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|aux_x_cor[4]~14                     ; LCCOMB_X27_Y20_N30 ; 10      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|clk_bullet                          ; FF_X72_Y41_N1      ; 30      ; Clock                     ; yes    ; Global Clock         ; GCLK9            ; --                        ;
+; GeneradorVideo:inst|count_bullet_movement[8]~3          ; LCCOMB_X15_Y15_N24 ; 6       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|municion[7]~4                       ; LCCOMB_X23_Y19_N2  ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|posx_nave_der[3]~0                  ; LCCOMB_X22_Y16_N22 ; 252     ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|puntuacion[8]~30                    ; LCCOMB_X23_Y20_N30 ; 10      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; GeneradorVideo:inst|ship[54][46][0]~0                   ; LCCOMB_X43_Y5_N20  ; 1       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; Sincronizador:inst2|Equal0~11                           ; LCCOMB_X34_Y21_N22 ; 64      ; Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
+; Sincronizador:inst2|Equal1~10                           ; LCCOMB_X23_Y18_N10 ; 32      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; Sincronizador:inst2|clk25                               ; FF_X43_Y1_N27      ; 689     ; Clock                     ; yes    ; Global Clock         ; GCLK17           ; --                        ;
 ; clk                                                     ; PIN_P11            ; 25      ; Clock                     ; yes    ; Global Clock         ; GCLK19           ; --                        ;
 ; reset                                                   ; PIN_A7             ; 67      ; Async. clear              ; no     ; --                   ; --               ; --                        ;
 +---------------------------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
@@ -1170,17 +1168,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name                                       ; Location       ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +--------------------------------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; Control:inst3|clk_velocidad                ; FF_X2_Y38_N3   ; 61      ; 6                                    ; Global Clock         ; GCLK0            ; --                        ;
-; GeneradorVideo:inst|Meteorito:Met1|clk_met ; FF_X50_Y50_N31 ; 35      ; 0                                    ; Global Clock         ; GCLK12           ; --                        ;
-; GeneradorVideo:inst|Meteorito:Met2|clk_met ; FF_X50_Y46_N25 ; 35      ; 0                                    ; Global Clock         ; GCLK14           ; --                        ;
-; GeneradorVideo:inst|Meteorito:Met3|clk_met ; FF_X49_Y50_N3  ; 35      ; 0                                    ; Global Clock         ; GCLK11           ; --                        ;
-; GeneradorVideo:inst|Meteorito:Met4|clk_met ; FF_X50_Y46_N11 ; 35      ; 0                                    ; Global Clock         ; GCLK5            ; --                        ;
-; GeneradorVideo:inst|Meteorito:Met5|clk_met ; FF_X50_Y46_N7  ; 35      ; 0                                    ; Global Clock         ; GCLK13           ; --                        ;
-; GeneradorVideo:inst|Meteorito:Met6|clk_met ; FF_X50_Y50_N1  ; 35      ; 0                                    ; Global Clock         ; GCLK10           ; --                        ;
-; GeneradorVideo:inst|Meteorito:Met7|clk_met ; FF_X54_Y46_N31 ; 35      ; 0                                    ; Global Clock         ; GCLK8            ; --                        ;
-; GeneradorVideo:inst|Meteorito:Met8|clk_met ; FF_X50_Y46_N27 ; 35      ; 0                                    ; Global Clock         ; GCLK9            ; --                        ;
-; GeneradorVideo:inst|clk_bullet             ; FF_X77_Y39_N13 ; 31      ; 16                                   ; Global Clock         ; GCLK6            ; --                        ;
-; Sincronizador:inst2|clk25                  ; FF_X43_Y4_N31  ; 679     ; 169                                  ; Global Clock         ; GCLK17           ; --                        ;
+; Control:inst3|clk_velocidad                ; FF_X2_Y38_N3   ; 61      ; 8                                    ; Global Clock         ; GCLK0            ; --                        ;
+; GeneradorVideo:inst|Meteorito:Met1|clk_met ; FF_X36_Y38_N31 ; 35      ; 0                                    ; Global Clock         ; GCLK13           ; --                        ;
+; GeneradorVideo:inst|Meteorito:Met2|clk_met ; FF_X35_Y38_N3  ; 35      ; 0                                    ; Global Clock         ; GCLK10           ; --                        ;
+; GeneradorVideo:inst|Meteorito:Met3|clk_met ; FF_X36_Y38_N21 ; 35      ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
+; GeneradorVideo:inst|Meteorito:Met4|clk_met ; FF_X35_Y38_N9  ; 35      ; 0                                    ; Global Clock         ; GCLK1            ; --                        ;
+; GeneradorVideo:inst|Meteorito:Met5|clk_met ; FF_X36_Y38_N17 ; 35      ; 0                                    ; Global Clock         ; GCLK12           ; --                        ;
+; GeneradorVideo:inst|Meteorito:Met6|clk_met ; FF_X31_Y38_N19 ; 35      ; 0                                    ; Global Clock         ; GCLK3            ; --                        ;
+; GeneradorVideo:inst|Meteorito:Met7|clk_met ; FF_X39_Y38_N31 ; 35      ; 0                                    ; Global Clock         ; GCLK14           ; --                        ;
+; GeneradorVideo:inst|Meteorito:Met8|clk_met ; FF_X36_Y38_N5  ; 35      ; 0                                    ; Global Clock         ; GCLK11           ; --                        ;
+; GeneradorVideo:inst|clk_bullet             ; FF_X72_Y41_N1  ; 30      ; 15                                   ; Global Clock         ; GCLK9            ; --                        ;
+; Sincronizador:inst2|clk25                  ; FF_X43_Y1_N27  ; 689     ; 156                                  ; Global Clock         ; GCLK17           ; --                        ;
 ; clk                                        ; PIN_P11        ; 25      ; 1                                    ; Global Clock         ; GCLK19           ; --                        ;
 +--------------------------------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
@@ -1190,7 +1188,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------+---------+
 ; Name                              ; Fan-Out ;
 +-----------------------------------+---------+
-; GeneradorVideo:inst|aux_x[1]      ; 514     ;
+; GeneradorVideo:inst|aux_x[1]      ; 515     ;
 ; GeneradorVideo:inst|aux_met6_x[1] ; 507     ;
 ; GeneradorVideo:inst|aux_met5_x[1] ; 506     ;
 ; GeneradorVideo:inst|aux_met2_x[1] ; 506     ;
@@ -1207,172 +1205,171 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+---------------------------+
 ; Routing Resource Type ; Usage                     ;
 +-----------------------+---------------------------+
-; Block interconnects   ; 22,204 / 148,641 ( 15 % ) ;
-; C16 interconnects     ; 159 / 5,382 ( 3 % )       ;
-; C4 interconnects      ; 9,531 / 106,704 ( 9 % )   ;
-; Direct links          ; 2,941 / 148,641 ( 2 % )   ;
+; Block interconnects   ; 22,803 / 148,641 ( 15 % ) ;
+; C16 interconnects     ; 178 / 5,382 ( 3 % )       ;
+; C4 interconnects      ; 9,806 / 106,704 ( 9 % )   ;
+; Direct links          ; 3,137 / 148,641 ( 2 % )   ;
 ; Global clocks         ; 12 / 20 ( 60 % )          ;
-; Local interconnects   ; 10,955 / 49,760 ( 22 % )  ;
+; Local interconnects   ; 10,973 / 49,760 ( 22 % )  ;
 ; NSLEEPs               ; 0 / 500 ( 0 % )           ;
-; R24 interconnects     ; 339 / 5,406 ( 6 % )       ;
-; R4 interconnects      ; 11,771 / 147,764 ( 8 % )  ;
+; R24 interconnects     ; 277 / 5,406 ( 5 % )       ;
+; R4 interconnects      ; 12,021 / 147,764 ( 8 % )  ;
 +-----------------------+---------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Logic Elements                                                           ;
 +---------------------------------------------+--------------------------------+
-; Number of Logic Elements  (Average = 14.79) ; Number of LABs  (Total = 1240) ;
+; Number of Logic Elements  (Average = 14.84) ; Number of LABs  (Total = 1236) ;
 +---------------------------------------------+--------------------------------+
-; 1                                           ; 14                             ;
-; 2                                           ; 13                             ;
-; 3                                           ; 11                             ;
-; 4                                           ; 14                             ;
-; 5                                           ; 3                              ;
-; 6                                           ; 6                              ;
-; 7                                           ; 3                              ;
-; 8                                           ; 7                              ;
-; 9                                           ; 7                              ;
-; 10                                          ; 13                             ;
-; 11                                          ; 14                             ;
+; 1                                           ; 19                             ;
+; 2                                           ; 11                             ;
+; 3                                           ; 12                             ;
+; 4                                           ; 5                              ;
+; 5                                           ; 5                              ;
+; 6                                           ; 5                              ;
+; 7                                           ; 4                              ;
+; 8                                           ; 9                              ;
+; 9                                           ; 5                              ;
+; 10                                          ; 10                             ;
+; 11                                          ; 15                             ;
 ; 12                                          ; 13                             ;
-; 13                                          ; 25                             ;
-; 14                                          ; 65                             ;
-; 15                                          ; 168                            ;
-; 16                                          ; 864                            ;
+; 13                                          ; 30                             ;
+; 14                                          ; 53                             ;
+; 15                                          ; 145                            ;
+; 16                                          ; 895                            ;
 +---------------------------------------------+--------------------------------+
 
 
 +---------------------------------------------------------------------+
 ; LAB-wide Signals                                                    ;
 +------------------------------------+--------------------------------+
-; LAB-wide Signals  (Average = 0.24) ; Number of LABs  (Total = 1240) ;
+; LAB-wide Signals  (Average = 0.23) ; Number of LABs  (Total = 1236) ;
 +------------------------------------+--------------------------------+
 ; 1 Async. clear                     ; 6                              ;
-; 1 Clock                            ; 155                            ;
-; 1 Clock enable                     ; 87                             ;
-; 1 Sync. clear                      ; 31                             ;
+; 1 Clock                            ; 148                            ;
+; 1 Clock enable                     ; 90                             ;
+; 1 Sync. clear                      ; 28                             ;
 ; 1 Sync. load                       ; 1                              ;
-; 2 Clock enables                    ; 4                              ;
-; 2 Clocks                           ; 9                              ;
+; 2 Clock enables                    ; 5                              ;
+; 2 Clocks                           ; 10                             ;
 +------------------------------------+--------------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                           ;
 +----------------------------------------------+--------------------------------+
-; Number of Signals Sourced  (Average = 14.26) ; Number of LABs  (Total = 1240) ;
+; Number of Signals Sourced  (Average = 14.32) ; Number of LABs  (Total = 1236) ;
 +----------------------------------------------+--------------------------------+
-; 0                                            ; 18                             ;
-; 1                                            ; 84                             ;
-; 2                                            ; 20                             ;
-; 3                                            ; 18                             ;
-; 4                                            ; 15                             ;
-; 5                                            ; 5                              ;
-; 6                                            ; 6                              ;
-; 7                                            ; 6                              ;
-; 8                                            ; 9                              ;
-; 9                                            ; 9                              ;
-; 10                                           ; 11                             ;
+; 0                                            ; 22                             ;
+; 1                                            ; 93                             ;
+; 2                                            ; 16                             ;
+; 3                                            ; 15                             ;
+; 4                                            ; 5                              ;
+; 5                                            ; 4                              ;
+; 6                                            ; 8                              ;
+; 7                                            ; 7                              ;
+; 8                                            ; 7                              ;
+; 9                                            ; 8                              ;
+; 10                                           ; 12                             ;
 ; 11                                           ; 13                             ;
-; 12                                           ; 17                             ;
-; 13                                           ; 24                             ;
-; 14                                           ; 55                             ;
-; 15                                           ; 155                            ;
-; 16                                           ; 653                            ;
+; 12                                           ; 13                             ;
+; 13                                           ; 30                             ;
+; 14                                           ; 48                             ;
+; 15                                           ; 127                            ;
+; 16                                           ; 688                            ;
 ; 17                                           ; 17                             ;
-; 18                                           ; 19                             ;
-; 19                                           ; 8                              ;
+; 18                                           ; 13                             ;
+; 19                                           ; 9                              ;
 ; 20                                           ; 5                              ;
-; 21                                           ; 3                              ;
-; 22                                           ; 9                              ;
-; 23                                           ; 7                              ;
-; 24                                           ; 3                              ;
-; 25                                           ; 9                              ;
-; 26                                           ; 2                              ;
-; 27                                           ; 0                              ;
-; 28                                           ; 9                              ;
-; 29                                           ; 2                              ;
-; 30                                           ; 5                              ;
+; 21                                           ; 5                              ;
+; 22                                           ; 10                             ;
+; 23                                           ; 6                              ;
+; 24                                           ; 5                              ;
+; 25                                           ; 4                              ;
+; 26                                           ; 4                              ;
+; 27                                           ; 1                              ;
+; 28                                           ; 6                              ;
+; 29                                           ; 4                              ;
+; 30                                           ; 6                              ;
 ; 31                                           ; 6                              ;
-; 32                                           ; 18                             ;
+; 32                                           ; 19                             ;
 +----------------------------------------------+--------------------------------+
 
 
 +----------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                          ;
 +-------------------------------------------------+--------------------------------+
-; Number of Signals Sourced Out  (Average = 5.93) ; Number of LABs  (Total = 1240) ;
+; Number of Signals Sourced Out  (Average = 5.98) ; Number of LABs  (Total = 1236) ;
 +-------------------------------------------------+--------------------------------+
-; 0                                               ; 39                             ;
-; 1                                               ; 122                            ;
-; 2                                               ; 108                            ;
-; 3                                               ; 110                            ;
-; 4                                               ; 163                            ;
-; 5                                               ; 150                            ;
-; 6                                               ; 131                            ;
-; 7                                               ; 93                             ;
-; 8                                               ; 73                             ;
-; 9                                               ; 45                             ;
-; 10                                              ; 37                             ;
-; 11                                              ; 18                             ;
-; 12                                              ; 15                             ;
-; 13                                              ; 8                              ;
-; 14                                              ; 18                             ;
-; 15                                              ; 40                             ;
-; 16                                              ; 59                             ;
-; 17                                              ; 3                              ;
+; 0                                               ; 44                             ;
+; 1                                               ; 138                            ;
+; 2                                               ; 94                             ;
+; 3                                               ; 127                            ;
+; 4                                               ; 145                            ;
+; 5                                               ; 123                            ;
+; 6                                               ; 133                            ;
+; 7                                               ; 69                             ;
+; 8                                               ; 85                             ;
+; 9                                               ; 49                             ;
+; 10                                              ; 42                             ;
+; 11                                              ; 33                             ;
+; 12                                              ; 22                             ;
+; 13                                              ; 12                             ;
+; 14                                              ; 15                             ;
+; 15                                              ; 32                             ;
+; 16                                              ; 61                             ;
+; 17                                              ; 4                              ;
 ; 18                                              ; 2                              ;
-; 19                                              ; 2                              ;
+; 19                                              ; 4                              ;
 ; 20                                              ; 1                              ;
 ; 21                                              ; 1                              ;
-; 22                                              ; 2                              ;
 +-------------------------------------------------+--------------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                           ;
 +----------------------------------------------+--------------------------------+
-; Number of Distinct Inputs  (Average = 16.29) ; Number of LABs  (Total = 1240) ;
+; Number of Distinct Inputs  (Average = 16.51) ; Number of LABs  (Total = 1236) ;
 +----------------------------------------------+--------------------------------+
 ; 0                                            ; 0                              ;
 ; 1                                            ; 2                              ;
-; 2                                            ; 12                             ;
-; 3                                            ; 14                             ;
-; 4                                            ; 17                             ;
-; 5                                            ; 9                              ;
-; 6                                            ; 50                             ;
-; 7                                            ; 63                             ;
-; 8                                            ; 58                             ;
-; 9                                            ; 70                             ;
-; 10                                           ; 68                             ;
-; 11                                           ; 65                             ;
-; 12                                           ; 55                             ;
-; 13                                           ; 61                             ;
-; 14                                           ; 60                             ;
-; 15                                           ; 73                             ;
-; 16                                           ; 76                             ;
-; 17                                           ; 47                             ;
+; 2                                            ; 15                             ;
+; 3                                            ; 22                             ;
+; 4                                            ; 12                             ;
+; 5                                            ; 6                              ;
+; 6                                            ; 46                             ;
+; 7                                            ; 52                             ;
+; 8                                            ; 65                             ;
+; 9                                            ; 55                             ;
+; 10                                           ; 70                             ;
+; 11                                           ; 56                             ;
+; 12                                           ; 71                             ;
+; 13                                           ; 52                             ;
+; 14                                           ; 64                             ;
+; 15                                           ; 66                             ;
+; 16                                           ; 71                             ;
+; 17                                           ; 53                             ;
 ; 18                                           ; 43                             ;
-; 19                                           ; 45                             ;
-; 20                                           ; 37                             ;
-; 21                                           ; 24                             ;
-; 22                                           ; 20                             ;
-; 23                                           ; 8                              ;
-; 24                                           ; 20                             ;
-; 25                                           ; 15                             ;
-; 26                                           ; 17                             ;
-; 27                                           ; 18                             ;
-; 28                                           ; 7                              ;
-; 29                                           ; 14                             ;
-; 30                                           ; 40                             ;
-; 31                                           ; 29                             ;
-; 32                                           ; 27                             ;
-; 33                                           ; 46                             ;
-; 34                                           ; 10                             ;
-; 35                                           ; 9                              ;
-; 36                                           ; 7                              ;
-; 37                                           ; 3                              ;
+; 19                                           ; 40                             ;
+; 20                                           ; 38                             ;
+; 21                                           ; 29                             ;
+; 22                                           ; 25                             ;
+; 23                                           ; 22                             ;
+; 24                                           ; 19                             ;
+; 25                                           ; 14                             ;
+; 26                                           ; 15                             ;
+; 27                                           ; 5                              ;
+; 28                                           ; 14                             ;
+; 29                                           ; 17                             ;
+; 30                                           ; 41                             ;
+; 31                                           ; 31                             ;
+; 32                                           ; 33                             ;
+; 33                                           ; 51                             ;
+; 34                                           ; 7                              ;
+; 35                                           ; 7                              ;
+; 36                                           ; 5                              ;
+; 37                                           ; 1                              ;
 +----------------------------------------------+--------------------------------+
 
 
@@ -1498,130 +1495,130 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Summary                                                                                           ;
-+------------------------------------------------------------------------+--------------------------------------------+-------------------+
-; Source Clock(s)                                                        ; Destination Clock(s)                       ; Delay Added in ns ;
-+------------------------------------------------------------------------+--------------------------------------------+-------------------+
-; Sincronizador:inst2|clk25                                              ; Sincronizador:inst2|clk25                  ; 30.3              ;
-; GeneradorVideo:inst|clk_bullet                                         ; Sincronizador:inst2|clk25                  ; 9.8               ;
-; clk                                                                    ; clk                                        ; 9.7               ;
-; Sincronizador:inst2|clk25                                              ; GeneradorVideo:inst|Meteorito:Met7|clk_met ; 3.9               ;
-; Sincronizador:inst2|clk25                                              ; GeneradorVideo:inst|Meteorito:Met4|clk_met ; 2.2               ;
-; Control:inst3|clk_velocidad                                            ; GeneradorVideo:inst|Meteorito:Met7|clk_met ; 1.9               ;
-; Control:inst3|clk_velocidad,GeneradorVideo:inst|Meteorito:Met7|clk_met ; GeneradorVideo:inst|Meteorito:Met7|clk_met ; 1.9               ;
-; Sincronizador:inst2|clk25                                              ; GeneradorVideo:inst|Meteorito:Met8|clk_met ; 1.4               ;
-+------------------------------------------------------------------------+--------------------------------------------+-------------------+
++--------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary                                              ;
++---------------------------+--------------------------------------------+-------------------+
+; Source Clock(s)           ; Destination Clock(s)                       ; Delay Added in ns ;
++---------------------------+--------------------------------------------+-------------------+
+; Sincronizador:inst2|clk25 ; Sincronizador:inst2|clk25                  ; 30.8              ;
+; clk                       ; clk                                        ; 9.3               ;
+; Sincronizador:inst2|clk25 ; GeneradorVideo:inst|Meteorito:Met4|clk_met ; 3.3               ;
+; Sincronizador:inst2|clk25 ; GeneradorVideo:inst|clk_bullet             ; 2.9               ;
+; Sincronizador:inst2|clk25 ; GeneradorVideo:inst|Meteorito:Met5|clk_met ; 2.9               ;
+; Sincronizador:inst2|clk25 ; GeneradorVideo:inst|Meteorito:Met1|clk_met ; 2.6               ;
+; Sincronizador:inst2|clk25 ; GeneradorVideo:inst|Meteorito:Met2|clk_met ; 1.5               ;
+; Sincronizador:inst2|clk25 ; GeneradorVideo:inst|Meteorito:Met3|clk_met ; 1.1               ;
++---------------------------+--------------------------------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the TimeQuest Timing Analyzer.
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                                                                                       ;
-+-----------------------------------------------------+-----------------------------------------------------------+-------------------+
-; Source Register                                     ; Destination Register                                      ; Delay Added in ns ;
-+-----------------------------------------------------+-----------------------------------------------------------+-------------------+
-; Control:inst3|clk_velocidad                         ; Control:inst3|clk_velocidad                               ; 5.046             ;
-; Sincronizador:inst2|clk25                           ; Sincronizador:inst2|clk25                                 ; 4.671             ;
-; GeneradorVideo:inst|clk_bullet                      ; GeneradorVideo:inst|clk_bullet                            ; 3.768             ;
-; GeneradorVideo:inst|Meteorito:Met8|clk_met          ; GeneradorVideo:inst|Meteorito:Met8|clk_met                ; 3.485             ;
-; GeneradorVideo:inst|Meteorito:Met2|clk_met          ; GeneradorVideo:inst|Meteorito:Met2|clk_met                ; 3.454             ;
-; GeneradorVideo:inst|Meteorito:Met5|clk_met          ; GeneradorVideo:inst|Meteorito:Met5|clk_met                ; 3.454             ;
-; GeneradorVideo:inst|Meteorito:Met1|clk_met          ; GeneradorVideo:inst|Meteorito:Met1|clk_met                ; 3.452             ;
-; GeneradorVideo:inst|Meteorito:Met6|clk_met          ; GeneradorVideo:inst|Meteorito:Met6|clk_met                ; 3.450             ;
-; GeneradorVideo:inst|Meteorito:Met3|clk_met          ; GeneradorVideo:inst|Meteorito:Met3|clk_met                ; 3.442             ;
-; GeneradorVideo:inst|Meteorito:Met4|clk_met          ; GeneradorVideo:inst|Meteorito:Met4|clk_met                ; 3.307             ;
-; GeneradorVideo:inst|Meteorito:Met7|clk_met          ; GeneradorVideo:inst|Meteorito:Met7|clk_met                ; 2.470             ;
-; GeneradorVideo:inst|count_bullet[12]                ; GeneradorVideo:inst|clk_bullet                            ; 1.884             ;
-; GeneradorVideo:inst|count_bullet[11]                ; GeneradorVideo:inst|clk_bullet                            ; 1.884             ;
-; GeneradorVideo:inst|count_bullet[10]                ; GeneradorVideo:inst|clk_bullet                            ; 1.884             ;
-; GeneradorVideo:inst|count_bullet[9]                 ; GeneradorVideo:inst|clk_bullet                            ; 1.884             ;
-; GeneradorVideo:inst|count_bullet[8]                 ; GeneradorVideo:inst|clk_bullet                            ; 1.884             ;
-; GeneradorVideo:inst|count_bullet[7]                 ; GeneradorVideo:inst|clk_bullet                            ; 1.884             ;
-; GeneradorVideo:inst|count_bullet[6]                 ; GeneradorVideo:inst|clk_bullet                            ; 1.884             ;
-; GeneradorVideo:inst|count_bullet[5]                 ; GeneradorVideo:inst|clk_bullet                            ; 1.884             ;
-; GeneradorVideo:inst|count_bullet[4]                 ; GeneradorVideo:inst|clk_bullet                            ; 1.884             ;
-; GeneradorVideo:inst|count_bullet[13]                ; GeneradorVideo:inst|clk_bullet                            ; 1.884             ;
-; Control:inst3|count[21]                             ; Control:inst3|clk_velocidad                               ; 1.759             ;
-; Control:inst3|count[19]                             ; Control:inst3|clk_velocidad                               ; 1.759             ;
-; Control:inst3|count[18]                             ; Control:inst3|clk_velocidad                               ; 1.759             ;
-; Control:inst3|count[17]                             ; Control:inst3|clk_velocidad                               ; 1.759             ;
-; Control:inst3|count[16]                             ; Control:inst3|clk_velocidad                               ; 1.759             ;
-; Control:inst3|count[15]                             ; Control:inst3|clk_velocidad                               ; 1.759             ;
-; Control:inst3|count[14]                             ; Control:inst3|clk_velocidad                               ; 1.759             ;
-; Control:inst3|count[13]                             ; Control:inst3|clk_velocidad                               ; 1.759             ;
-; Control:inst3|count[12]                             ; Control:inst3|clk_velocidad                               ; 1.759             ;
-; Control:inst3|count[11]                             ; Control:inst3|clk_velocidad                               ; 1.759             ;
-; Control:inst3|count[10]                             ; Control:inst3|clk_velocidad                               ; 1.759             ;
-; Control:inst3|count[9]                              ; Control:inst3|clk_velocidad                               ; 1.759             ;
-; Control:inst3|count[8]                              ; Control:inst3|clk_velocidad                               ; 1.759             ;
-; Control:inst3|count[7]                              ; Control:inst3|clk_velocidad                               ; 1.759             ;
-; Control:inst3|count[22]                             ; Control:inst3|clk_velocidad                               ; 1.759             ;
-; Control:inst3|count[20]                             ; Control:inst3|clk_velocidad                               ; 1.759             ;
-; Control:inst3|carril_nave[2]                        ; GeneradorVideo:inst|Meteorito:Met7|vida[1]                ; 1.412             ;
-; Control:inst3|carril_nave[1]                        ; GeneradorVideo:inst|Meteorito:Met7|vida[1]                ; 1.403             ;
-; GeneradorVideo:inst|vida[0]                         ; GeneradorVideo:inst|Meteorito:Met7|vida[0]                ; 1.265             ;
-; GeneradorVideo:inst|count_bullet_movement[0]        ; GeneradorVideo:inst|posy_proyectil_inferior[0]            ; 1.254             ;
-; GeneradorVideo:inst|vida[1]                         ; GeneradorVideo:inst|Meteorito:Met7|vida[1]                ; 1.187             ;
-; Control:inst3|carril_nave[0]                        ; GeneradorVideo:inst|Meteorito:Met7|vida[1]                ; 1.182             ;
-; GeneradorVideo:inst|count_bullet_movement[6]        ; GeneradorVideo:inst|posy_proyectil_superior[30]           ; 0.963             ;
-; GeneradorVideo:inst|num_pantalla[1]                 ; GeneradorVideo:inst|Meteorito:Met7|count_meteor[31]       ; 0.769             ;
-; GeneradorVideo:inst|num_pantalla[0]                 ; GeneradorVideo:inst|Meteorito:Met7|count_meteor[31]       ; 0.727             ;
-; GeneradorVideo:inst|Meteorito:Met7|met1_exists      ; GeneradorVideo:inst|Meteorito:Met7|vida[1]                ; 0.704             ;
-; GeneradorVideo:inst|count_bullet_movement[1]        ; GeneradorVideo:inst|posy_proyectil_inferior[31]           ; 0.650             ;
-; GeneradorVideo:inst|municion[0]                     ; GeneradorVideo:inst|Digit:MunDig1|sprite_actual[20][5][0] ; 0.524             ;
-; GeneradorVideo:inst|Meteorito:Met8|met1_exists      ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.492             ;
-; GeneradorVideo:inst|Meteorito:Met4|met1_exists      ; GeneradorVideo:inst|Meteorito:Met4|vida[1]                ; 0.399             ;
-; GeneradorVideo:inst|posx_proyectil_der[31]          ; GeneradorVideo:inst|Meteorito:Met8|met1_exists            ; 0.303             ;
-; GeneradorVideo:inst|posy_nave_superior[31]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.266             ;
-; GeneradorVideo:inst|Meteorito:Met3|met1_exists      ; GeneradorVideo:inst|Meteorito:Met3|vida[1]                ; 0.248             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[31] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[29] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[28] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[27] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[26] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[25] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[24] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[23] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[22] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[21] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[20] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[19] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[18] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[17] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[16] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[15] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[14] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[13] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[12] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[11] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[10] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[9]  ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[8]  ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[7]  ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[6]  ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[5]  ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[4]  ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[3]  ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[2]  ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[1]  ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[30] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|Meteorito:Met8|count_meteor[0]  ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|posy_nave_inferior[31]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|posy_nave_inferior[30]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|posy_nave_inferior[29]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|posy_nave_inferior[28]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|posy_nave_inferior[27]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|posy_nave_inferior[26]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|posy_nave_inferior[25]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|posy_nave_inferior[24]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|posy_nave_inferior[23]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|posy_nave_inferior[22]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|posy_nave_inferior[21]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|posy_nave_inferior[20]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|posy_nave_inferior[19]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-; GeneradorVideo:inst|posy_nave_inferior[18]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]                ; 0.246             ;
-+-----------------------------------------------------+-----------------------------------------------------------+-------------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                                                                ;
++-----------------------------------------------------+----------------------------------------------------+-------------------+
+; Source Register                                     ; Destination Register                               ; Delay Added in ns ;
++-----------------------------------------------------+----------------------------------------------------+-------------------+
+; Sincronizador:inst2|clk25                           ; Sincronizador:inst2|clk25                          ; 4.671             ;
+; Control:inst3|clk_velocidad                         ; Control:inst3|clk_velocidad                        ; 4.622             ;
+; GeneradorVideo:inst|clk_bullet                      ; GeneradorVideo:inst|clk_bullet                     ; 3.586             ;
+; GeneradorVideo:inst|Meteorito:Met5|clk_met          ; GeneradorVideo:inst|Meteorito:Met5|clk_met         ; 3.523             ;
+; GeneradorVideo:inst|Meteorito:Met4|clk_met          ; GeneradorVideo:inst|Meteorito:Met4|clk_met         ; 3.521             ;
+; GeneradorVideo:inst|Meteorito:Met1|clk_met          ; GeneradorVideo:inst|Meteorito:Met1|clk_met         ; 3.515             ;
+; GeneradorVideo:inst|Meteorito:Met3|clk_met          ; GeneradorVideo:inst|Meteorito:Met3|clk_met         ; 3.513             ;
+; GeneradorVideo:inst|Meteorito:Met6|clk_met          ; GeneradorVideo:inst|Meteorito:Met6|clk_met         ; 3.498             ;
+; GeneradorVideo:inst|Meteorito:Met8|clk_met          ; GeneradorVideo:inst|Meteorito:Met8|clk_met         ; 3.496             ;
+; GeneradorVideo:inst|Meteorito:Met2|clk_met          ; GeneradorVideo:inst|Meteorito:Met2|clk_met         ; 3.496             ;
+; GeneradorVideo:inst|Meteorito:Met7|clk_met          ; GeneradorVideo:inst|Meteorito:Met7|clk_met         ; 2.610             ;
+; GeneradorVideo:inst|count_bullet[12]                ; GeneradorVideo:inst|clk_bullet                     ; 1.793             ;
+; GeneradorVideo:inst|count_bullet[11]                ; GeneradorVideo:inst|clk_bullet                     ; 1.793             ;
+; GeneradorVideo:inst|count_bullet[10]                ; GeneradorVideo:inst|clk_bullet                     ; 1.793             ;
+; GeneradorVideo:inst|count_bullet[9]                 ; GeneradorVideo:inst|clk_bullet                     ; 1.793             ;
+; GeneradorVideo:inst|count_bullet[8]                 ; GeneradorVideo:inst|clk_bullet                     ; 1.793             ;
+; GeneradorVideo:inst|count_bullet[7]                 ; GeneradorVideo:inst|clk_bullet                     ; 1.793             ;
+; GeneradorVideo:inst|count_bullet[6]                 ; GeneradorVideo:inst|clk_bullet                     ; 1.793             ;
+; GeneradorVideo:inst|count_bullet[5]                 ; GeneradorVideo:inst|clk_bullet                     ; 1.793             ;
+; GeneradorVideo:inst|count_bullet[4]                 ; GeneradorVideo:inst|clk_bullet                     ; 1.793             ;
+; GeneradorVideo:inst|count_bullet[13]                ; GeneradorVideo:inst|clk_bullet                     ; 1.793             ;
+; Control:inst3|count[21]                             ; Control:inst3|clk_velocidad                        ; 1.744             ;
+; Control:inst3|count[19]                             ; Control:inst3|clk_velocidad                        ; 1.744             ;
+; Control:inst3|count[18]                             ; Control:inst3|clk_velocidad                        ; 1.744             ;
+; Control:inst3|count[17]                             ; Control:inst3|clk_velocidad                        ; 1.744             ;
+; Control:inst3|count[16]                             ; Control:inst3|clk_velocidad                        ; 1.744             ;
+; Control:inst3|count[15]                             ; Control:inst3|clk_velocidad                        ; 1.744             ;
+; Control:inst3|count[14]                             ; Control:inst3|clk_velocidad                        ; 1.744             ;
+; Control:inst3|count[13]                             ; Control:inst3|clk_velocidad                        ; 1.744             ;
+; Control:inst3|count[12]                             ; Control:inst3|clk_velocidad                        ; 1.744             ;
+; Control:inst3|count[11]                             ; Control:inst3|clk_velocidad                        ; 1.744             ;
+; Control:inst3|count[10]                             ; Control:inst3|clk_velocidad                        ; 1.744             ;
+; Control:inst3|count[9]                              ; Control:inst3|clk_velocidad                        ; 1.744             ;
+; Control:inst3|count[8]                              ; Control:inst3|clk_velocidad                        ; 1.744             ;
+; Control:inst3|count[7]                              ; Control:inst3|clk_velocidad                        ; 1.744             ;
+; Control:inst3|count[22]                             ; Control:inst3|clk_velocidad                        ; 1.744             ;
+; Control:inst3|count[20]                             ; Control:inst3|clk_velocidad                        ; 1.744             ;
+; GeneradorVideo:inst|vida[1]                         ; GeneradorVideo:inst|Meteorito:Met4|vida[1]         ; 1.637             ;
+; GeneradorVideo:inst|vida[0]                         ; GeneradorVideo:inst|Meteorito:Met4|vida[0]         ; 1.132             ;
+; Control:inst3|carril_nave[0]                        ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.957             ;
+; Control:inst3|carril_nave[1]                        ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.938             ;
+; GeneradorVideo:inst|num_pantalla[1]                 ; GeneradorVideo:inst|Meteorito:Met1|count_meteor[0] ; 0.907             ;
+; Control:inst3|carril_nave[2]                        ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.905             ;
+; GeneradorVideo:inst|num_pantalla[0]                 ; GeneradorVideo:inst|Meteorito:Met1|count_meteor[0] ; 0.888             ;
+; GeneradorVideo:inst|Meteorito:Met8|met1_exists      ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.611             ;
+; GeneradorVideo:inst|Meteorito:Met5|met1_exists      ; GeneradorVideo:inst|Meteorito:Met5|vida[1]         ; 0.598             ;
+; GeneradorVideo:inst|next_municion[6]                ; GeneradorVideo:inst|municion[6]                    ; 0.468             ;
+; GeneradorVideo:inst|next_municion[5]                ; GeneradorVideo:inst|municion[5]                    ; 0.468             ;
+; GeneradorVideo:inst|next_municion[0]                ; GeneradorVideo:inst|municion[0]                    ; 0.468             ;
+; GeneradorVideo:inst|next_municion[2]                ; GeneradorVideo:inst|municion[2]                    ; 0.415             ;
+; GeneradorVideo:inst|next_municion[4]                ; GeneradorVideo:inst|municion[4]                    ; 0.382             ;
+; GeneradorVideo:inst|Meteorito:Met3|met1_exists      ; GeneradorVideo:inst|Meteorito:Met3|vida[1]         ; 0.314             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[31] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[29] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[28] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[27] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[26] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[25] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[24] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[23] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[22] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[21] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[20] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[19] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[18] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[17] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[16] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[15] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[14] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[13] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[12] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[11] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[10] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[9]  ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[8]  ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[7]  ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[6]  ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[5]  ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[4]  ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[3]  ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[2]  ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[1]  ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[30] ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|Meteorito:Met8|count_meteor[0]  ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|posy_nave_inferior[31]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|posy_nave_inferior[30]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|posy_nave_inferior[29]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|posy_nave_inferior[28]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|posy_nave_inferior[27]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|posy_nave_inferior[26]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|posy_nave_inferior[25]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|posy_nave_inferior[24]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|posy_nave_inferior[23]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|posy_nave_inferior[22]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|posy_nave_inferior[21]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|posy_nave_inferior[20]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|posy_nave_inferior[19]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|posy_nave_inferior[18]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|posy_nave_inferior[17]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
+; GeneradorVideo:inst|posy_nave_inferior[16]          ; GeneradorVideo:inst|Meteorito:Met8|vida[1]         ; 0.311             ;
++-----------------------------------------------------+----------------------------------------------------+-------------------+
 Note: This table only shows the top 100 path(s) that have the largest delay added for hold.
 
 
@@ -1713,31 +1710,31 @@ Info (176353): Automatically promoted node GeneradorVideo:inst|clk_bullet  File:
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:15
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:14
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:09
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:01:17
+Info (170192): Fitter placement operations ending: elapsed time is 00:01:22
 Info (170193): Fitter routing operations beginning
-Info (170195): Router estimated average interconnect usage is 7% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 33% of the available device resources in the region that extends from location X45_Y22 to location X55_Y32
+Info (170195): Router estimated average interconnect usage is 6% of the available device resources
+    Info (170196): Router estimated peak interconnect usage is 28% of the available device resources in the region that extends from location X11_Y11 to location X21_Y21
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:49
-Info (11888): Total time spent on timing analysis during the Fitter is 21.86 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:01:27
+Info (11888): Total time spent on timing analysis during the Fitter is 28.37 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:28
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:38
 Info (144001): Generated suppressed messages file C:/Users/gomri/Documents/UNAM/SéptimoSemestre/DiseñoDigitalVLSI/Juego/VHDL-GameProject/output_files/VGA.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 5561 megabytes
-    Info: Processing ended: Tue Dec 04 16:07:30 2018
-    Info: Elapsed time: 00:03:18
-    Info: Total CPU time (on all processors): 00:05:02
+    Info: Peak virtual memory: 5558 megabytes
+    Info: Processing ended: Tue Dec 04 17:12:03 2018
+    Info: Elapsed time: 00:04:11
+    Info: Total CPU time (on all processors): 00:06:05
 
 
 +----------------------------+

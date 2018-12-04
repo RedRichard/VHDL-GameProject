@@ -231,7 +231,7 @@ architecture behavioral of GeneradorVideo is
 	signal puntuacion: integer range 0 to 999 := 000;
 	
 	-- Munición
-	signal municion: integer range 0 to 999 := 10;
+	signal municion: integer range 0 to 999 := 12;
 	
 	signal mun_izq: integer range 0 to 639 := 20;
 	--signal mun_der: integer range 0 to 639 := 60;
@@ -249,7 +249,7 @@ architecture behavioral of GeneradorVideo is
 	--signal count_aux: integer;
 	
 	signal add_ammo: std_logic;
-	signal allow_add_ammo: std_logic := '0';
+	signal next_municion: integer range 0 to 999;
 	
 begin
 	new_game <= control_fire;
@@ -318,8 +318,7 @@ begin
 		if (clk'event and clk = '1') then
 			if(new_game = '1') and (num_pantalla = 2) then
 				vida <= 3;
-			end if;
-			if (aux_vida1 < vida) then
+			elsif (aux_vida1 < vida) then
 				vida <= aux_vida1;
 			elsif (aux_vida2 < vida) then
 				vida <= aux_vida2;
@@ -345,6 +344,7 @@ begin
 		if(clk'event and clk = '1') then
 			if(count = half_count)then
 				ship <= ship_idle1;
+				next_municion <= municion + 2;
 				if (mun_izq > 800) then
 					mun_izq <= 20;
 				else
@@ -399,19 +399,16 @@ begin
 		if(clk_bullet'event and clk_bullet = '1') then
 			if(new_game = '1') and (num_pantalla = 2) then
 				puntuacion <= 0;
-				--municion <= 10;
+				municion <= 10;
 			end if;
-			if ((allow_add_ammo = '0') and (mun_izq > posx_nave_izq) and (mun_izq < posx_nave_der) and (210 > posy_nave_superior) and (210 < posy_nave_inferior))then
-				allow_add_ammo <= '1';
+			if (mun_izq > posx_nave_izq) and (mun_izq < posx_nave_der) and (210 > posy_nave_superior) and (210 < posy_nave_inferior)then
+				municion <= next_municion;
 			end if;
 			if(control_fire = '1' and allow_fire = '0' and municion > 0)then
 				municion <= municion - 1; 			-- Reducción de munición
 				puntuacion <= puntuacion + 1;
 				allow_fire <= '1';
 				count_bullet_movement <= 0;
-			elsif (allow_add_ammo = '1') then
-				municion <= municion + 1;
-				allow_add_ammo <= '0';
 			end if;
 			if(count_bullet_movement < max_b_movement)then
 				count_bullet_movement <= count_bullet_movement + 1;

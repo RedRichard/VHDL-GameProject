@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Tue Dec 04 16:04:10 2018
+Analysis & Synthesis Status : Successful - Tue Dec 04 17:07:50 2018
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : VGA
 Top-level Entity Name : VGA
 Family : MAX 10
-Total logic elements : 18,385
+Total logic elements : 18,386
     Total combinational functions : 18,298
-    Dedicated logic registers : 1,076
-Total registers : 1076
+    Dedicated logic registers : 1,085
+Total registers : 1085
 Total pins : 21
 Total virtual pins : 0
 Total memory bits : 0
