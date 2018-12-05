@@ -69,7 +69,7 @@ set_location_assignment PIN_V9 -to b_abajo
 set_location_assignment PIN_W9 -to b_arriba
 set_location_assignment PIN_W10 -to b_derecha
 set_location_assignment PIN_V10 -to b_izquierda
-set_location_assignment PIN_W8 -to b_fire
+set_location_assignment PIN_B8 -to b_fire
 set_global_assignment -name VHDL_FILE Meteorito.vhd
 set_global_assignment -name VHDL_FILE Sincronizador.vhd
 set_global_assignment -name VHDL_FILE GeneradorVideo.vhd

@@ -60,24 +60,24 @@ begin
 	begin
 		if(clk_velocidad'event and clk_velocidad = '1') then
 			-- Vertical:
-			if(boton_arriba = '0' and pos_y > 79)then
+			if(boton_arriba = '1' and pos_y > 79)then
 				pos_y <= pos_y - 80;
-			elsif(boton_abajo = '0' and pos_y < 319)then
+			elsif(boton_abajo = '1' and pos_y < 319)then
 				pos_y <= pos_y + 80;
 			end if;
 			
 			-- Horizontal:
-			if(boton_derecha = '0' and pos_x < 559)then
+			if(boton_derecha = '1' and pos_x < 559)then
 				pos_x <= pos_x + 80;
 				pos_y <= pos_y;
 				
 				carril_nave <= carril_nave + 1;
-			elsif(boton_izquierda = '0' and pos_x > 79)then
+			elsif(boton_izquierda = '1' and pos_x > 79)then
 				pos_x <= pos_x - 80;
 				pos_y <= pos_y;
 				
 				carril_nave <= carril_nave - 1;
-			elsif(boton_derecha = '0' or boton_izquierda = '0')then
+			elsif(boton_derecha = '1' or boton_izquierda = '1')then
 				pos_y <= pos_y;
 			end if;
 			

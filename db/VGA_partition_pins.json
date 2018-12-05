@@ -72,15 +72,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "b_izquierda",
-					"strict" : false
-				},
-				{
 					"name" : "b_abajo",
 					"strict" : false
 				},
 				{
 					"name" : "b_arriba",
+					"strict" : false
+				},
+				{
+					"name" : "b_izquierda",
 					"strict" : false
 				},
 				{
